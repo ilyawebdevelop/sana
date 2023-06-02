@@ -10874,7 +10874,7 @@ table {
 }
 
 .form-block {
-  margin-bottom: 27px;
+  margin-bottom: 17px;
 }
 
 .form-block__title {
@@ -11063,6 +11063,7 @@ h4 {
   justify-content: center;
   width: 100%;
   transition: opacity 0.2s linear;
+  margin-top: 43px;
 }
 .authorize-form__btn:hover {
   opacity: 0.85;
@@ -11071,7 +11072,12 @@ h4 {
 .header__action-btn {
   position: relative;
 }
-.header__action-btn span {
+.header__action-btn svg {
+  width: 33px;
+  max-height: 33px;
+}
+.header__action-btn.active:before {
+  content: "";
   position: absolute;
   background-color: #184aa3;
   width: 13px;
@@ -11080,12 +11086,12 @@ h4 {
   border-radius: 50%;
 }
 
-.header__action_1 span {
+.header__action_1.active:before {
   right: -5px;
   top: 5px;
 }
 
-.header__action_2 span {
+.header__action_2.active::before {
   right: 3px;
   top: 7px;
 }
@@ -11095,6 +11101,10 @@ h4 {
   border-color: #585858;
   color: #000;
   font-size: 18px;
+}
+.footer__contacts-btn:hover {
+  color: #0353a1;
+  border-color: #0353a1;
 }
 
 .golosovanie__item-btn {
@@ -11123,6 +11133,22 @@ h4 {
   font-size: 20px;
   color: #000000;
   margin-top: 41px;
+}
+
+.header__menu {
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.header__menu.active {
+  border: 1px solid #585858;
+}
+
+.header__exit:hover svg {
+  fill: red;
+}
+.header__exit svg {
+  width: 39px;
+  height: 34px;
 }
 
 /* Hamburger Menu */
@@ -11313,11 +11339,37 @@ div.events-item__image:hover {
 .header__menu-list {
   display: flex;
   align-items: center;
-  column-gap: 64px;
 }
 .header__menu-list a {
   column-gap: 12px;
+  height: 50px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.2s linear;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.header__menu-list a.active {
+  color: #0353a1;
+  border: 2px solid #0353a1;
+}
+.header__menu-list a:hover {
+  color: #0353a1;
+}
+.header__menu-list a:hover svg {
+  fill: red;
+}
+.header__menu-list a svg {
+  fill: #000;
+  width: 40px;
+  height: auto;
+  max-height: 35px;
 }
 
 .header__action {
@@ -11354,7 +11406,7 @@ div.events-item__image:hover {
   width: 345px;
   position: absolute;
   height: 100%;
-  top: 122px;
+  top: 125px;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -11396,6 +11448,36 @@ div.events-item__image:hover {
   padding-top: 22px;
   position: relative;
 }
+.header__nav-list li a:hover {
+  color: #0353a1;
+}
+.header__nav-list li a.active {
+  color: #fff;
+}
+.header__nav-list li a.active svg {
+  fill: #fff;
+}
+.header__nav-list li a.active svg path {
+  fill: #fff;
+}
+.header__nav-list li a.active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #0353a1;
+  z-index: 0;
+}
+.header__nav-list li a span {
+  z-index: 1;
+}
+.header__nav-list li a svg {
+  z-index: 1;
+  width: 40px;
+  height: 33px;
+}
 .header__nav-list li a::before {
   content: "";
   position: absolute;
@@ -11406,34 +11488,38 @@ div.events-item__image:hover {
   background-color: #e8edf0;
 }
 
-.menu-wrapper {
-  height: 38px;
+.authorize {
+  background-color: #fff;
 }
-
 .authorize__wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 .authorize__left {
-  padding-top: 100px;
+  padding-top: 40px;
   max-width: 530px;
   margin-left: auto;
   width: 530px;
   margin-right: 84px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 .authorize__right {
   background-image: linear-gradient(to right, #0353a1 0%, #0374e2 100%);
   position: relative;
-  min-height: 1100px;
+  min-height: auto;
 }
 .authorize__logo {
   position: absolute;
-  left: 265px;
-  top: 215px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .authorize__logo img {
   width: 377px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .authorize__houses {
   position: absolute;
@@ -11452,10 +11538,10 @@ div.events-item__image:hover {
   font-size: 26px;
   font-weight: 500;
   line-height: 40px;
-  margin-bottom: 56px;
+  margin-bottom: 46px;
 }
 .authorize-header {
-  margin-bottom: 88px;
+  margin-bottom: 79px;
 }
 
 .authorize-header__logo-sana {
@@ -11595,8 +11681,6 @@ div.events-item__image:hover {
   column-gap: 13px;
 }
 .chat-sort__select-wrapper {
-  border: 1px solid #ffffff;
-  border-radius: 18px;
   height: 38px;
   display: flex;
   align-items: center;
@@ -11609,9 +11693,10 @@ div.events-item__image:hover {
   appearance: none;
   width: 100%;
   padding-left: 23px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  height: 100%;
   padding-right: 23px;
+  border-radius: 18px;
+  border: 1px solid #ffffff;
   cursor: pointer;
 }
 .chat-sort select option {
@@ -11641,13 +11726,8 @@ div.events-item__image:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.chat-person__image img {
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.chat-person__image span {
+.chat-person__image.active::before {
+  content: "";
   position: absolute;
   right: 2px;
   top: 7px;
@@ -11656,6 +11736,12 @@ div.events-item__image:hover {
   background-color: #4caf50;
   border: 3px solid #fff;
   border-radius: 50%;
+}
+.chat-person__image img {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .chat-person__title {
@@ -11725,9 +11811,27 @@ div.events-item__image:hover {
 }
 
 .chat-item {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #e8edf0;
+}
+.chat-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: #e8edf0;
+}
+.chat-item.active::before {
+  content: "";
+  position: absolute;
+  right: calc(100% + 26px);
+  top: 0;
+  height: 100%;
+  width: 34px;
+  background-color: #0353a1;
 }
 
 .chat-item__date {
@@ -11808,6 +11912,21 @@ div.events-item__image:hover {
   right: 28px;
 }
 
+.filename-wrapper {
+  display: none;
+}
+.filename-wrapper.active {
+  display: block;
+}
+
+#chat-message-file {
+  display: none;
+}
+
+.chat-textarea-wrapper {
+  position: relative;
+}
+
 .events {
   padding-top: 45px;
   padding-bottom: 60px;
@@ -11885,6 +12004,11 @@ div.events-item__image:hover {
 .footer__socials-list {
   column-gap: 30px;
 }
+.footer__socials-list li a svg {
+  width: 28px;
+  fill: #000;
+  height: 23px;
+}
 
 .footer__socials {
   margin-top: 45px;
@@ -11908,6 +12032,10 @@ div.events-item__image:hover {
   background: url("../img/footer/phone.svg") no-repeat left center/31px;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: color 0.2s linear;
+}
+.footer__phone:hover {
+  color: #0353a1;
 }
 
 .footer__politics {
@@ -11917,6 +12045,10 @@ div.events-item__image:hover {
 .footer__politics a {
   color: #686868;
   position: relative;
+  transition: color 0.2s linear;
+}
+.footer__politics a:hover {
+  color: #000;
 }
 .footer__politics a::after {
   content: "";
