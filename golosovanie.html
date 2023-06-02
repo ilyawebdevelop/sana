@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Голосование</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container d-flex justify-content-between">
+    <div class="header__left d-flex align-items-center">
+
+      <div class="menu-wrapper">
+        <button class="header__menu"><img src="img/header/menu_icon.svg" alt="menu"></button>
+        <div class="container-menu">
+     
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-1.svg" alt="icon">
+                    Квитанции и оплата
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-2.svg" alt="icon">
+                    Заявки и обращения
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-3.svg" alt="icon">
+                    Приборы учета
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-4.svg" alt="icon">
+                    Голосование
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-5.svg" alt="icon">
+                    Чат
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-6.svg" alt="icon">
+                    Сведения об УК
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-7.svg" alt="icon">
+                    Услуги
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-8.svg" alt="icon">
+                    Видеонаблюдение
+                  </a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="d-flex align-items-center" href="#">
+                    <img src="img/events/menu/menu-9.svg" alt="icon">
+                    События и сообщения
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            123
+     
+
+        </div>
+      </div>
+
+      <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
+    </div>
+    <div class="header__center d-flex align-items-center">
+      <div class="header__menu">
+        <ul class="header__menu-list">
+          <li>
+            <a class="d-flex" href="#">
+              <img src="img/header/menu-1.svg" alt="icon">
+              <span>Квитанции и оплата</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex" href="#">
+              <img src="img/header/menu-2.svg" alt="icon">
+              <span>Заявки</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex" href="#">
+              <img src="img/header/menu-3.svg" alt="icon">
+              <span>Приборы учета</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn header__btn-golos">
+        <img src="img/header/golos.png" alt="icon">
+        Голосование
+      </button>
+
+    </div>
+    <div class="header__right d-flex align-items-center">
+      <div class="header__action d-flex align-items-center">
+        <button class="header__action-btn header__action_1"><img src="img/header/action-1.svg"
+            alt="icon"><span></span></button>
+        <button class="header__action-btn header__action_2"><img src="img/header/action-2.svg"
+            alt="icon"><span></span></button>
+      </div>
+      <div class="header__person d-flex align-items-center">
+        <img src="img/header/face.webp" alt="face" class="header__person-img">
+        <div class="header__person-content d-flex flex-column">
+          <span class="header__person-name">Перова О.Н.</span>
+          <span class="header__person-address">ул. Чкалова, д.40, кв.44</span>
+        </div>
+      </div>
+      <button class="header__exit"><img src="img/header/exit.svg" alt="icon"></button>
+    </div>
+  </div>
+</header>
+		<main class="main">
+			<section class="golosovanie" id="golosovanie">
+  <div class="container">
+    <div class="golosovanie__grid">
+      <form class="golosovanie__item" action="#">
+        <div class="golosovanie__item-top">
+          <div class="golosovanie__item-title">Закрытая территория ЖК “Высокий стандарт”</div>
+          <p class="golosovanie__item-subtitle">Хотите ли вы чтобы в ЖК “Высокий стандарт” была закрытая территория с
+            охранным пунктом?
+          </p>
+
+          <ul class="golosovanie-quest-list">
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-1" type="checkbox">
+                <label for="golos-1">
+                  <div class="rect"></div>
+                  <span>Да, я за закрытую территорию</span>
+                </label>
+              </div>
+
+            </li>
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-2" type="checkbox">
+                <label for="golos-2">
+                  <div class="rect"></div>
+                  <span>Нет, я против закрытой территории</span>
+                </label>
+              </div>
+            </li>
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-3" type="techeckboxxt">
+                <label for="golos-3">
+                  <div class="rect"></div>
+                  <span>Я за закрытую территорию, но против охранного пункта</span>
+                </label>
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="golosovanie__item-bottom">
+          <button class="golosovanie__item-btn btn btn--blue">Проголосовать</button>
+          <p class="golosovanie__item-result">Дата завершения голосования 24:00 21.06.2023</p>
+        </div>
+      </form><!-- /golosovanie__item -->
+      <form class="golosovanie__item" action="#">
+        <div class="golosovanie__item-top">
+          <div class="golosovanie__item-title">Новая детская площадка в “ЖК” Первомайский</div>
+          <p class="golosovanie__item-subtitle">Нравится ли вам новая детская площадка установленная в ЖК
+            “Первомайский”?
+            Считаете ли вы что площадка удобна и безопасна для ваших детей? </p>
+
+          <ul class="golosovanie-quest-list">
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-4" type="checkbox">
+                <label for="golos-4">
+                  <div class="rect"></div>
+                  <span>Да, я за закрытую территорию</span>
+                </label>
+              </div>
+
+            </li>
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-5" type="checkbox">
+                <label for="golos-5">
+                  <div class="rect"></div>
+                  <span>Нет, я против закрытой территории</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="golosovanie__item-bottom">
+          <button class="golosovanie__item-btn btn btn--blue">Проголосовать</button>
+          <p class="golosovanie__item-result">Дата завершения голосования 24:00 21.06.2023</p>
+        </div>
+      </form><!-- /golosovanie__item -->
+      <form class="golosovanie__item" action="#">
+        <div class="golosovanie__item-top">
+          <div class="golosovanie__item-title">Замена резинового покрытия на спортивной площадке ЖК “Престиж”</div>
+          <p class="golosovanie__item-subtitle">Необходимо ли произвести замену резинового покрытия на спортивной
+            площадке в ЖК “Престиж” </p>
+
+          <ul class="golosovanie-quest-list">
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-6" type="checkbox">
+                <label for="golos-6">
+                  <div class="rect"></div>
+                  <span>Да, нужно заменить как можно быстрее</span>
+                </label>
+              </div>
+            </li>
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-7" type="checkbox">
+                <label for="golos-7">
+                  <div class="rect"></div>
+                  <span>Нет, менять покрытие пока не нужно</span>
+                </label>
+              </div>
+            </li>
+            <li class="golosovanie-quest-item">
+              <div class="golosovanie-quest-checkbox">
+                <input id="golos-8" type="checkbox">
+                <label for="golos-8">
+                  <div class="rect"></div>
+                  <span>Необходимо сделать ремонт локальных зон</span>
+                </label>
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="golosovanie__item-bottom">
+          <button class="golosovanie__item-btn btn btn--blue">Проголосовать</button>
+          <p class="golosovanie__item-result">Дата завершения голосования 24:00 21.06.2023</p>
+        </div>
+      </form><!-- /golosovanie__item -->
+      <form class="golosovanie__item" action="#">
+        <div class="golosovanie__item-top">
+          <div class="golosovanie__item-title">Открытие магазина “Пятерочка” по ул. Чкалина, д.40</div>
+          <p class="golosovanie__item-subtitle">В нашем ЖК “Высокий стандарт” в феврале открывается магазин “Пятерочка”
+            как вы к этому относитесь? </p>
+
+          <ul class="golosovanie-result-list">
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Отлично! Я рад этому событию, буду пользоваться</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 309px"></div>
+                <div class="result-total__count">124 голоса</div>
+              </div>
+            </li>
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Я против, будет много шума и людей</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 73px"></div>
+                <div class="result-total__count">27 голосов</div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="golosovanie__item-bottom">
+          <p class="golosovanie__item-result">Голосование завершено 24:00 12.03.2023</p>
+        </div>
+      </form><!-- /golosovanie__item -->
+      <form class="golosovanie__item" action="#">
+        <div class="golosovanie__item-top">
+          <div class="golosovanie__item-title">Новогодняя ёлка в ЖК “Высокий стандарт” в этом году?</div>
+          <p class="golosovanie__item-subtitle">В этом году мы установили и украсили новую ёлку в
+            ЖК ”Высокий стандарт”, понравилась ли она вам? </p>
+
+          <ul class="golosovanie-result-list">
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Ёлка замечательная, очень красиво украшена</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 375px"></div>
+                <div class="result-total__count">311 голоса</div>
+              </div>
+            </li>
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Мне не понравилась новогодняя ёлка</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 23px"></div>
+                <div class="result-total__count">2 голосов</div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="golosovanie__item-bottom">
+          <p class="golosovanie__item-result">Голосование завершено 24:00 12.03.2023</p>
+        </div>
+      </form><!-- /golosovanie__item -->
+      <form class="golosovanie__item" action="#">
+        <div class="golosovanie__item-top">
+          <div class="golosovanie__item-title">Новогодняя ёлка</div>
+          <p class="golosovanie__item-subtitle">В этом году мы установили </p>
+
+          <ul class="golosovanie-result-list">
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Сервис удобный с отличным интерфейсом</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 277px"></div>
+                <div class="result-total__count">186 голосов</div>
+              </div>
+            </li>
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Сервис удобный, но интерфейс плохой</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 23px"></div>
+                <div class="result-total__count">2 голосов</div>
+              </div>
+            </li>
+            <li class="golosovanie-result-item result-item">
+              <div class="result-item__name">Мне не понравилась новая версия сервиса ЖЭК</div>
+              <div class="result-item__total result-total d-flex align-items-center">
+                <div class="result-total__line" style="width: 2px"></div>
+                <div class="result-total__count">0 голосов</div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="golosovanie__item-bottom">
+          <p class="golosovanie__item-result">Голосование завершено 24:00 12.03.2023</p>
+        </div>
+      </form><!-- /golosovanie__item -->
+    </div>
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container d-flex justify-content-between">
+    <div class="footer__left">
+      <div class="footer__logos d-flex align-items-center">
+        <a href="#"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
+        <a href="#"><img src="img/authorize/logo_sana.webp" alt="logo"></a>
+      </div>
+      <div class="footer__socials d-flex">
+        <span class="footer__socials-name">Сана в соцсетях:</span>
+        <ul class="footer__socials-list d-flex align-items-center">
+          <li><a href="#" target="_blank"><img src="img/footer/socials-1.svg" alt="logo"></a></li>
+          <li><a href="#" target="_blank"><img src="img/footer/socials-2.svg" alt="logo"></a></li>
+          <li><a href="#" target="_blank"><img src="img/footer/socials-3.svg" alt="logo"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__right">
+      <div class="footer__contacts d-flex align-items-center">
+        <span>Круглосуточная служба поддержки клиентов:</span>
+        <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
+        <button class="footer__contacts-btn btn">Заказать звонок</button>
+      </div>
+      <div class="footer__politics d-flex justify-content-end">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+		<!-- modal -->
+<!-- event -->
+<div class="modal fade modal-event" id="modal-event" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-event__image"><img src="img/events/events-1.jpg" alt="image"></div>
+      <div class="modal-event__bottom">
+        <div class="modal-event__title">Компания "САНА" приняла активное участие в общегородском субботнике</div>
+        <div class="modal-event__content">
+          <p>Онежская набережная — это один из красивейших и поистине волшебных уголков Петрозаводска, его гордость и
+            визитная карточка, место, где любят отдыхать как горожане, так и большинство туристов. Если вы выбрали для
+            своего путешествия республику Карелия, то начать знакомство с этим чудесным краем лучше всего, без сомнения,
+            со столицы – города Петрозаводска — и этого уютного уголка.
+          </p>
+          <p>
+            О том, что Онежская набережная в Петрозаводске – ярчайшая достопримечательность города, я была наслышана
+            задолго до своего путешествия в эти места. Но вот почему – объяснить мне не смог ни один интернет-источник.
+            Все-таки, это один из тех случаев, когда для того, чтобы понять, нужно увидеть все своими глазами…
+          </p>
+          <p>
+            Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего юбилея
+            освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
+            обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
+            туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
+            культурный центр города, потому что здесь «проживает» огромное количество интереснейших памятников, которые
+            величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+            света...
+          </p>
+        </div>
+      </div>
+
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>
