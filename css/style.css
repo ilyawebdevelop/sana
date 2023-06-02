@@ -11317,6 +11317,7 @@ div.events-item__image:hover {
 }
 .header__menu-list a {
   column-gap: 12px;
+  align-items: center;
 }
 
 .header__action {
