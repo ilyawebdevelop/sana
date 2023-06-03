@@ -10989,9 +10989,9 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   h3 {
@@ -11149,6 +11149,36 @@ h4 {
 .header__exit svg {
   width: 39px;
   height: 34px;
+}
+
+.main-table__detail {
+  height: 37px;
+  border: 1px solid #2a2a2a;
+  width: 213px;
+  color: #2a2a2a;
+  margin-left: auto;
+}
+.main-table__detail:hover {
+  color: #0353a1;
+  border-color: #0353a1;
+}
+
+.main-table__payment {
+  width: 345px;
+  font-size: 22px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+}
+
+.main-table__more {
+  column-gap: 13px;
+  font-size: 20px;
+  color: #000000;
+  transition: color 0.2s linear;
+}
+.main-table__more:hover {
+  color: #0353a1;
 }
 
 /* Hamburger Menu */
@@ -11321,6 +11351,30 @@ div.events-item__image:hover {
   background-color: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.nav {
+  column-gap: 15px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #0353a1;
+  background-color: transparent;
+  border: 2px solid #0353a1;
+  border-radius: 22px;
+}
+
+.nav-pills .nav-link {
+  border: 2px solid transparent;
+  border-radius: 22px;
+}
+
+.nav-link {
+  color: #323232;
+  font-size: 18px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .header {
@@ -11506,7 +11560,7 @@ div.events-item__image:hover {
 .authorize__right {
   background-image: linear-gradient(to right, #0353a1 0%, #0374e2 100%);
   position: relative;
-  min-height: auto;
+  min-height: 100vh;
 }
 .authorize__logo {
   position: absolute;
@@ -11986,6 +12040,72 @@ div.events-item__image:hover {
   display: flex;
   justify-content: center;
   background: url("../img/events/new.svg") no-repeat center center/contain;
+}
+
+.main-sect {
+  padding-top: 45px;
+  padding-bottom: 90px;
+}
+.main-sect__row {
+  row-gap: 30px;
+}
+
+.main-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 53px;
+  padding-right: 57px;
+  padding-left: 51px;
+  padding-bottom: 57px;
+  height: 100%;
+}
+.main-item__title {
+  margin-bottom: 28px;
+}
+
+.main-nav-wrapper {
+  column-gap: 39px;
+  margin-bottom: 19px;
+}
+
+.main-nav__name {
+  font-size: 18px;
+}
+
+.main-content {
+  padding-top: 15px;
+  border-top: 1px solid #838383;
+}
+
+.main-table {
+  margin-bottom: 48px;
+}
+
+.main-table thead tr td {
+  font-size: 14px;
+  color: #686868;
+  text-align: center;
+}
+.main-table thead tr td:last-child {
+  text-align: end;
+}
+.main-table thead tr td:first-child {
+  text-align: start;
+}
+.main-table tbody tr:last-child td {
+  padding-bottom: 0;
+}
+.main-table tbody tr td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.main-table tbody tr td:last-child {
+  text-align: end;
+}
+.main-table tbody tr td:first-child {
+  max-width: 225px;
+  text-align: start;
 }
 
 .footer {
