@@ -10879,7 +10879,7 @@ table {
 
 .form-block__title {
   font-size: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   padding-left: 30px;
 }
 
@@ -11021,9 +11021,12 @@ h4 {
   align-items: center;
 }
 
-.animated {
-  -webkit-animation-fill-mode: unset;
-  animation-fill-mode: unset;
+.modal-title {
+  font-size: 23px;
+}
+
+.color-black {
+  color: #000;
 }
 
 .btn {
@@ -11272,10 +11275,7 @@ h4 {
   padding-top: 0;
 }
 .modal-title {
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
+  font-size: 23px;
 }
 
 .modal-event__title {
@@ -11326,7 +11326,7 @@ h4 {
   border: none;
 }
 
-.modal-event .modal-close {
+.modal-close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11351,6 +11351,53 @@ div.events-item__image:hover {
   background-color: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.modal-main .modal-content {
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+}
+
+.modal-main__title {
+  margin-bottom: 42px;
+}
+
+.modal-main .modal-dialog {
+  max-width: 833px;
+}
+
+.modal-main__table-wrapper {
+  margin-top: 50px;
+}
+
+.modal-main__border {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #838383;
+}
+
+.modal-main__table thead tr td {
+  color: #686868;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 9px;
+}
+.modal-main__table thead tr td:first-child {
+  text-align: start;
+}
+.modal-main__table tbody tr td {
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+.modal-main__table tbody tr td:first-child {
+  text-align: start;
+}
+.modal-main__table tbody tr:last-child td {
+  padding-bottom: 0;
 }
 
 .nav {
@@ -11600,6 +11647,23 @@ div.events-item__image:hover {
 
 .authorize-header__logo-sana {
   width: 185px;
+}
+
+.authorize__link {
+  text-decoration: underline;
+}
+
+.authorize__register {
+  margin-top: 25px;
+}
+
+.form-block__text {
+  padding-left: 30px;
+}
+
+.authorize__content-subtitle {
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .golosovanie {
@@ -12105,6 +12169,32 @@ div.events-item__image:hover {
 }
 .main-table tbody tr td:first-child {
   max-width: 225px;
+  text-align: start;
+}
+
+.video-sect {
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+.video-sect .row {
+  row-gap: 29px;
+}
+
+.video-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.video-card__image {
+  width: 100%;
+}
+.video-card__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-card__title {
   text-align: start;
 }
 

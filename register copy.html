@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Авторизация</title>
+	<title>Регистрация</title>
 </head>
 
 <body>
@@ -27,25 +27,28 @@
       </div>
       <div class="authorize__content">
         <form action="#" class="authorize__form authorize-form">
-          <span class="authorize__content-subtitle">Добро пожаловать</span>
-          <h2 class="authorize-form__title">Авторизируйтесь для входа в систему</h2>
+          <h2 class="authorize-form__title">Регистрация в системе</h2>
           <div class="form-block">
-            <div class="form-block__title">Логин</div>
-            <input class="form-input" type="text" placeholder="Введите свой логин">
+            <div class="form-block__title">Придумайте логин</div>
+            <input class="form-input" type="text">
           </div><!-- /form-block -->
           <div class="form-block">
-            <div class="form-block__title">Пароль </div>
-            <input class="form-input" type="password" placeholder="Введите пароль для входа в систему">
+            <div class="form-block__title">Придумайте пароль </div>
+            <input class="form-input" type="password">
           </div><!-- /form-block -->
           <div class="form-block">
-            <div class="form-block__text d-flex gap-1">
-              Забыли пароль? <a class="authorize__link" href="#"> Восстановить</a> 
-            </div>
-           
-
+            <div class="form-block__title">ФИО</div>
+            <input class="form-input" type="text" placeholder="Введите свою Фамилию Имя Отчество">
           </div><!-- /form-block -->
-          <button class="btn authorize-form__btn" type="submit">Войти</button>
-          <a class="authorize__link text-center authorize__register" href="/register">Зарегистрироваться в системе</a>
+          <div class="form-block">
+            <div class="form-block__title">Контактный телефон</div>
+            <input class="form-input" type="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+          </div><!-- /form-block -->
+          <div class="form-block">
+            <div class="form-block__title">E-mail</div>
+            <input class="form-input" type="email" placeholder="E-mail">
+          </div><!-- /form-block -->
+          <button class="btn authorize-form__btn" type="submit">Зарегистрироваться</button>
         </form>
       </div>
     </div>

@@ -11,12 +11,12 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Чат</title>
+	<title>Видеонаблюдение 1</title>
 </head>
 
 <body>
-
-	<div class="wrapper">
+	
+	<div class="wrapper">	
 		<!-- Header -->
 <header class="header" id="header">
   <div class="container d-flex justify-content-between">
@@ -170,195 +170,214 @@
     </div>
   </div>
 </header>
-		<main class="main">
-			<section class="chat" id="chat">
-  <div class="chat-top">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="chat-top__left">
-        <a class="chat-top__link d-flex align-items-center" href="#">
-          <img src="img/chat/chat.png" alt="icon">
-          Последние чаты
-        </a>
-      </div>
-      <div class="chat-top__right">
-        <form action="#" class="chat-sort d-flex align-items-center">
-          <span class="chat-sort__name">Фильтровать сообщения:</span>
-          <div class="chat-sort__select-wrapper">
-            <select name="chat-select" id="chat-select">
-              <option value="Дата" selected>Дата</option>
-              <option value="Имя">Имя</option>
-            </select>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="chat-content">
-    <div class="container">
-      <div class="chat-wrapper">
-        <div class="chat-left">
-          <ul class="chat-list">
+		<main class="main">		
+			<section class="video-rezident video-sect">
+  <div class="container">
+    <div class="row">
 
-            <li class="chat-item">
-              <div class="chat-item__top d-flex justify-content-between">
-                <div class="chat-item__person d-flex">
-                  <div class="chat-item__person-logo"><img src="img/header/face.webp" alt="person"></div>
-                  <div class="chat-item__person-content">
-                    <div class="chat-item__person-name">Толмачева Екатерина</div>
-                    <div class="chat-item__person-work">менеджер клиентской службы</div>
-                  </div>
-                </div>
-                <div class="chat-item__date">Сегодня, 11:32</div>
-              </div>
-              <p class="chat-item__content">Здравствуйте, Ольга. Мы с вами, к сожалению не договорились о дате и времени
-                встречи по поводу </p>
-            </li><!-- /chat-item -->
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” - Камера 1 (название камеры)
+            </button>
 
-            <li class="chat-item active">
-              <div class="chat-item__top d-flex justify-content-between">
-                <div class="chat-item__person d-flex">
-                  <div class="chat-item__person-logo"><img src="img/header/face.webp" alt="person"></div>
-                  <div class="chat-item__person-content">
-                    <div class="chat-item__person-name">Прибытков Евгений</div>
-                    <div class="chat-item__person-work">главный инженер</div>
-                  </div>
-                </div>
-                <div class="chat-item__date">10 Мая</div>
-              </div>
-              <p class="chat-item__content">Ольга, ваш запрос на замену ручки двери холла 15 этажа одобрен и скоро
-                поступит в работу, ожидайте</p>
-            </li><!-- /chat-item -->
-
-            <li class="chat-item">
-              <div class="chat-item__top d-flex justify-content-between">
-                <div class="chat-item__person d-flex">
-                  <div class="chat-item__person-logo"><img src="img/header/face.webp" alt="person"></div>
-                  <div class="chat-item__person-content">
-                    <div class="chat-item__person-name">Большунов Андрей</div>
-                    <div class="chat-item__person-work">менеджер по интернет-сетям</div>
-                  </div>
-                </div>
-                <div class="chat-item__date chat-item__date_old">8 Мая</div>
-              </div>
-              <p class="chat-item__content">Ваш вопрос мне понятен, я хотел бы взять небольшое время для его решения,
-                мне нужно согласовать</p>
-            </li><!-- /chat-item -->
-
-            <li class="chat-item">
-              <div class="chat-item__top d-flex justify-content-between">
-                <div class="chat-item__person d-flex">
-                  <div class="chat-item__person-logo"><img src="img/header/face.webp" alt="person"></div>
-                  <div class="chat-item__person-content">
-                    <div class="chat-item__person-name">Бойко Юрий</div>
-                    <div class="chat-item__person-work">менеджер клиентской службы</div>
-                  </div>
-                </div>
-                <div class="chat-item__date chat-item__date_old">2 Мая</div>
-              </div>
-              <p class="chat-item__content">Ольга, ваш запрос на замену ручки двери холла 15 этажа одобрен и скоро
-                поступит в работу, ожидайте</p>
-            </li><!-- /chat-item -->
-
-          </ul>
-        </div><!-- /chat-left -->
-        <div class="chat-center">
-          <div class="chat-main">
-            <ul class="chat-main__list">
-
-              <li class="chat-main__item d-flex align-items-end personal">
-                <img src="img/header/face.webp" alt="person" class="chat-main__person">
-                <div class="chat-main__item-content">
-                  <p class="chat-main__item-text">Здравствуйте, Ольга. Мне передали заявку, оставленную вами 27 апреля
-                    2023 года.</p>
-                  <span class="chat-main__item-date d-block">7 Мая 2022, 12:32</span>
-                </div>
-              </li><!-- /chat-main__item personal -->
-
-              <li class="chat-main__item d-flex align-items-end justify-content-end client">
-                <div class="chat-main__item-content">
-                  <p class="chat-main__item-text">Здравствуйте, Ольга. Мне передали заявку, оставленную вами 27 апреля
-                    2023 года.</p>
-                  <span class="chat-main__item-date text-end d-block">7 Мая 2022, 12:34</span>
-                </div>
-                <img src="img/header/face.webp" alt="person" class="chat-main__person">
-              </li><!-- /chat-main__item client -->
-
-              <li class="chat-main__item d-flex align-items-end personal">
-                <img src="img/header/face.webp" alt="person" class="chat-main__person">
-                <div class="chat-main__item-content">
-                  <p class="chat-main__item-text">Ваш вопрос, мне понятен, я хотел бы взять небольшое время для его
-                    решения, мне необходимо согласовать ряд вопросов, для реализации вашего запроса. В ближайшие
-                    несколько дней, я с вами свяжусь.</p>
-                  <span class="chat-main__item-date d-block">8 Мая 2022, 09:18</span>
-                </div>
-              </li><!-- /chat-main__item personal -->
-
-              <li class="chat-main__item d-flex align-items-end justify-content-end client">
-                <div class="chat-main__item-content">
-                  <p class="chat-main__item-text">Андрей, спасибо. Жду обратной связи!</p>
-                  <span class="chat-main__item-date text-end d-block">8 Мая 2022, 09:48</span>
-                </div>
-                <img src="img/header/face.webp" alt="person" class="chat-main__person">
-              </li><!-- /chat-main__item client -->
-
-              <li class="chat-main__item d-flex align-items-end justify-content-end client">
-                <div class="chat-main__item-content">
-                  <p class="chat-main__item-text">Хорошего дня</p>
-                  <span class="chat-main__item-date text-end d-block">8 Мая 2022, 09:48</span>
-                </div>
-                <img src="img/header/face.webp" alt="person" class="chat-main__person">
-              </li><!-- /chat-main__item client -->
-
-            </ul>
-          </div><!-- /chat-main -->
-          <form class="chat-message" action="#">
-            <div class="chat-textarea-wrapper">
-              <textarea class="chat-message__textarea" name="chat-textarea" id="chat-textarea" cols="30" rows="10"
-                placeholder="Ваше сообщение"></textarea>
-              <div class="input-file-wrapper">
-                <input id="chat-message-file" type="file">
-                <label class="chat-loadfile" for="chat-message-file"><span><img src="img/chat/loadfile.png"
-                      alt="icon"></span></label>
-                <button class="d-flex chat-message__btn align-items-center" type="submit">
-                  <img src="img/chat/send.png" alt="icon">
-                  Отправить
-                </button>
-              </div>
-            </div>
-            <div class="filename-wrapper">
-              Выбран файл: <span class="chat-file-name filename"></span>
-            </div>
-
-
-          </form><!-- /chat-message -->
-        </div><!-- /chat-center -->
-        <div class="chat-right">
-          <div class="chat-person">
-            <div class="chat-person__image active">
-              <img src="img/header/face.webp" alt="person">
+            <div class="events-hide">
+              <p>
+                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
+                юбилея
+                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
+                обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
+                туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
+                культурный центр города, потому что здесь «проживает» огромное количество интереснейших памятников,
+                которые
+                величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...<br><br>
+                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
+                юбилея
+                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
+                обновлялась.
+              </p>
             </div>
           </div>
-          <div class="chat-person__title">
-            Большунов Андрей
-          </div>
-          <div class="chat-person__work">менеджер по интернет-сетям</div>
-          <p class="chat-person__descr">
-            Чтобы понять, что делает менеджер интернет-магазина, разберем простую аналогию. Все мы ходим в магазины, где
-            встречаемся с консультантами. Они консультируют нас, помогают подобрать необходимый товар, рассказывают об
-            акциях и специальных предложениях. Их цель — повысить прибыль и увеличить продажи, так как это скажется на
-            уровне их собственного заработка (чем выше продажи, тем больше прибавка к зарплате). Менеджеры
-            интернет-магазина выполняют аналогичные функции: ищут новых клиентов, обслуживают их, отвечают на вопросы.
-          </p>
-          <div class="chat-person__contacts person-contacts">
-            <div class="person-contacts__name">Телефон</div>
-            <a class="person-contacts__text" href="tel:+79884453478">+7 988 445 34 78</a>
-          </div>
-          <div class="chat-person__contacts person-contacts">
-            <div class="person-contacts__name">Отвественный по адресам</div>
-            <div class="person-contacts__text">ЖК “Высокий стандарт” ул. Чапаева, д.50</div>
-          </div>
-        </div><!-- /chat-right -->
+        </div>
       </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” -
+              Камера 2 (название камеры)
+            </button>
+
+            <div class="events-hide">
+              <p>
+                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
+                юбилея
+                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
+                обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
+                туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
+                культурный центр города, потому что здесь «проживает» огромное количество интереснейших памятников,
+                которые
+                величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт”              
+            </button>
+
+            <div class="events-hide">
+              <p>
+                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
+                юбилея
+                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
+                обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
+                туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и             
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” -
+              Камера 4 (название камеры)
+            </button>
+
+            <div class="events-hide">
+              <p>               
+                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” -
+              Камера 5 (название камеры)
+            </button>
+
+            <div class="events-hide">
+              <p>               
+                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” -
+              Камера 6 (название камеры)
+            </button>
+
+            <div class="events-hide">
+              <p>               
+                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” -
+              Камера 7 (название камеры)
+            </button>
+
+            <div class="events-hide">
+              <p>               
+                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="video-card events-item">
+          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
+            data-target="#modal-event">
+            <img src="img/video/video-1.jpg" alt="image">
+          </button>
+          <div class="video-card__content events-item__content">
+            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
+              data-target="#modal-event">
+              ЖК “Высокий стандарт” -
+              Камера 8 (название камеры)
+            </button>
+
+            <div class="events-hide">
+              <p>               
+                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
+                света...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -497,11 +516,15 @@
   </div>
 </div>
 	</div>
-
+	
 	<script src="js/app.min.js"></script>
 
 
-
+	
 </body>
 
 </html>
+
+
+
+
