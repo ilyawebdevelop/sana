@@ -10883,6 +10883,23 @@ table {
   padding-left: 30px;
 }
 
+.sect-m {
+  padding-top: 45px;
+  padding-bottom: 90px;
+}
+
+.info-sect {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 52px;
+  padding-bottom: 150px;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+.info-sect p {
+  margin-bottom: 30px;
+}
+
 .form-input {
   height: 58px;
   border-radius: 10px;
@@ -12196,6 +12213,64 @@ div.events-item__image:hover {
 
 .video-card__title {
   text-align: start;
+}
+
+.info-sect__title {
+  margin-bottom: 42px;
+}
+
+.uk-table-wrapper {
+  border-top: 1px solid #838383;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.uk-table {
+  width: 440px;
+}
+.uk-table thead tr td {
+  padding-bottom: 15px;
+  padding-top: 12px;
+  color: #686868;
+  font-size: 14px;
+}
+.uk-table tbody tr td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+.uk-contacts {
+  display: flex;
+  column-gap: 70px;
+}
+.uk-contacts__item {
+  column-gap: 15px;
+}
+.uk-contacts__item > img {
+  width: 67px;
+  min-width: 67px;
+  height: 67px;
+}
+.uk-contacts__item:nth-child(1) {
+  width: 368px;
+}
+.uk-contacts__item:nth-child(2) {
+  width: 330px;
+}
+.uk-contacts__item:nth-child(3) {
+  width: 390px;
+}
+.uk-contacts__name {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.uk-contacts__text {
+  color: #383838;
+  font-size: 18px;
 }
 
 .footer {
