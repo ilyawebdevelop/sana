@@ -512,18 +512,141 @@
             </tr>
           </tbody>
         </table>
-
-
-
-
       </div>
-
-
       <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
           src="img/icons/close-modal.svg" alt="close"></button>
     </div>
   </div>
 </div>
+
+<!-- modal-poverka -->
+<div class="modal fade modal-poverka" id="modal-poverka" tabindex="-1" aria-labelledby="exampleModalLabel_2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Заявка на поверку прибора учета</div>
+      <div class="d-flex justify-content-between color-black">
+        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
+      </div>
+
+      <form action="#" class="modal-form">
+        <div class="modal-form__content">
+          <span class="color-black mb-4 d-block">Заполните поля для формирования заявки</span>
+          <div class="modal-form__grid">
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Электроэнергия">
+            </div>
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Номер прибора">
+            </div>
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Желаемая дата поверки">
+            </div>
+            <div class="modal-form__col">
+             <button class="btn--blue btn modal-form__btn">Отправить заявку</button>
+            </div>
+          </div>
+        </div>
+      
+      </form>
+   
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-new -->
+<div class="modal fade modal-poverka" id="modal-add" tabindex="-1" aria-labelledby="exampleModalLabel_3"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Добавить новый прибор учета</div>
+      <div class="d-flex justify-content-between color-black">
+        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
+      </div>
+
+      <form action="#" class="modal-form">
+        <div class="modal-form__content">
+          <span class="color-black mb-4 d-block">Внесите данные по прибору учета</span>
+          <div class="modal-form__grid">
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Назначение прибора">
+            </div>
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Номер прибора">
+            </div>
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Дата поверки">
+            </div>
+            <div class="modal-form__col">
+             <button class="btn--blue btn modal-form__btn">Добавить</button>
+            </div>
+          </div>
+        </div>
+      
+      </form>
+   
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-take -->
+<div class="modal fade modal-poverka" id="modal-take" tabindex="-1" aria-labelledby="exampleModalLabel_3"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Передача показаний приборов учета</div>
+      <div class="d-flex justify-content-between color-black">
+        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
+      </div>
+
+      <form action="#" class="modal-form">
+        <div class="modal-form__content">
+          <span class="color-black mb-4 d-block">Внесите показания счетчиков за текущий период</span>
+          <div class="modal-form__grid">
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Электроэнергия">
+            </div>
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Горячая вода">
+            </div>
+            <div class="modal-form__col">
+              <input class="form-input" type="text" placeholder="Холодная вода">
+            </div>
+            <div class="modal-form__col">
+             <button class="btn--blue btn modal-form__btn">Передать показания</button>
+            </div>
+          </div>
+        </div>
+      
+      </form>
+
+      <div class="modal-info">
+        <div class="modal-title modal-poverka__title">Последние показания </div>
+        <div class="modal-info__item d-flex mb-3">
+          <span>Счетчик электроэнергии: </span>
+          <span class="fw-medium">56 836 Квт </span>
+        </div>
+        <div class="modal-info__item d-flex mb-3">
+          <span>Счетчик ГВС: </span>
+          <span class="fw-medium">68 Куб.м. </span>
+        </div>
+        <div class="modal-info__item d-flex">
+          <span>Счетчик ХВС:  </span>
+          <span class="fw-medium">104 Куб.м.
+          </span>
+        </div>
+      </div>
+   
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
 	</div>
 
 	<script src="js/app.min.js"></script>

@@ -11,12 +11,12 @@
 
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Видеонаблюдение 2</title>
+	<title>Счетчики</title>
 </head>
 
 <body>
-	
-	<div class="wrapper">	
+
+	<div class="wrapper">
 		<!-- Header -->
 <header class="header" id="header">
   <div class="container d-flex justify-content-between">
@@ -170,147 +170,169 @@
     </div>
   </div>
 </header>
-		<main class="main">		
-			<section class="video-rezident video-sect">
-  <div class="container">
-    <div class="row">
+		<main class="main">
+			<section class="schetchiki-sect main-sect">
+    <div class="container">
+        <div class="row main-sect__row">
+            <div class="col-lg-6">
+                <div class="main-item">
+                    <h3 class="main-item__title">Петрозаводск, ул. Чкалова, д.40, кв.44</h3>
 
-      <div class="col-lg-4">
-        <div class="video-card events-item">
-          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
-            data-target="#modal-event">
-            <img src="img/events/events-1.jpg" alt="image">
-          </button>
-          <div class="video-card__content events-item__content">
-            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
-              data-target="#modal-event">
-              Видеонаблюдение
-              в ЖК “Высокий стандарт”
-            </button>
+                    <div class="main-content">
+                        <table class="main-table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>Номер счетчика: </td>
+                                    <td>Дата поверки: </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="main-table__item">
+                                    <td>Счетчик электроэнергии</td>
+                                    <td>18043992</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                                <tr class="main-table__item">
+                                    <td>Счетчик ГВС</td>
+                                    <td>18043992</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                                <tr class="main-table__item">
+                                    <td>Счетчик ХВС</td>
+                                    <td>18045678</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                                <tr class="main-table__item">
+                                    <td>Подземная парковка</td>
+                                    <td>18045678</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-            <div class="events-hide">
-              <p>
-                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
-                юбилея
-                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
-                обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
-                туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
-                культурный центр города, потому что здесь «проживает» огромное количество интереснейших памятников,
-                которые
-                величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
-                света...<br><br>
-                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
-                юбилея
-                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
-                обновлялась.
-              </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="main-table__payment btn--blue btn" data-toggle="modal"
+                                data-target="#modal-take">Передать показания</button>
+                            <button class="btn--transparent shetchiki__btn d-flex align-items-center"
+                                data-toggle="modal" data-target="#modal-add">
+                                Добавить прибор учета
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div><!-- /main-item -->
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="col-lg-6">
+                <div class="main-item">
+                    <h3 class="main-item__title">Петрозаводск, ул. Чкалова, д.40, кв.44</h3>
 
-      <div class="col-lg-4">
-        <div class="video-card events-item">
-          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
-            data-target="#modal-event">
-            <img src="img/events/events-1.jpg" alt="image">
-          </button>
-          <div class="video-card__content events-item__content">
-            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
-              data-target="#modal-event">
-              Видеонаблюдение в ЖК “Престиж”
-            </button>
+                    <div class="main-content">
+                        <table class="main-table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>Номер счетчика: </td>
+                                    <td>Дата поверки: </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="main-table__item">
+                                    <td>Счетчик электроэнергии</td>
+                                    <td>18043992</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
 
-            <div class="events-hide">
-              <p>
-                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
-                юбилея
-                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
-                обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
-                туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
-                культурный центр города, потому что здесь «проживает» огромное количество интереснейших памятников,
-                которые
-                величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
-                света...
-              </p>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="main-table__payment btn--blue btn" data-toggle="modal"
+                                data-target="#modal-take">Передать показания</button>
+                            <button class="btn--transparent shetchiki__btn d-flex align-items-center"
+                                data-toggle="modal" data-target="#modal-add">
+                                Добавить прибор учета
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div><!-- /main-item -->
             </div>
-          </div>
-        </div>
-      </div>
+            <div class="col-lg-6">
+                <div class="main-item">
+                    <h3 class="main-item__title">Петрозаводск, ул. Чапаева, д.50, помещение №14</h3>
 
-      <div class="col-lg-4">
-        <div class="video-card events-item">
-          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
-            data-target="#modal-event">
-            <img src="img/events/events-1.jpg" alt="image">
-          </button>
-          <div class="video-card__content events-item__content">
-            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
-              data-target="#modal-event">
-              Видеонаблюдение в ЖК “Первомайский”
-            </button>
+                    <div class="main-content">
+                        <table class="main-table">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>Номер счетчика: </td>
+                                    <td>Дата поверки: </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="main-table__item">
+                                    <td>Счетчик электроэнергии</td>
+                                    <td>18043992</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                                <tr class="main-table__item">
+                                    <td>Счетчик ГВС</td>
+                                    <td>18043992</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                                <tr class="main-table__item">
+                                    <td>Счетчик ХВС</td>
+                                    <td>18045678</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                                <tr class="main-table__item">
+                                    <td>Подземная парковка</td>
+                                    <td>18045678</td>
+                                    <td>18.02.2021 г.</td>
+                                    <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-poverka">Заказать поверку</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-            <div class="events-hide">
-              <p>
-                Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего
-                юбилея
-                освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
-                обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
-                туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
-              </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="main-table__payment btn--blue btn" data-toggle="modal"
+                                data-target="#modal-take">Передать показания</button>
+                            <button class="btn--transparent shetchiki__btn d-flex align-items-center"
+                                data-toggle="modal" data-target="#modal-add">
+                                Добавить прибор учета
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div><!-- /main-item -->
             </div>
-          </div>
         </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="video-card events-item">
-          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
-            data-target="#modal-event">
-            <img src="img/events/events-1.jpg" alt="image">
-          </button>
-          <div class="video-card__content events-item__content">
-            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
-              data-target="#modal-event">
-              ЖК “Высокий стандарт” -
-              Камера 4 (название камеры)
-            </button>
-
-            <div class="events-hide">
-              <p>
-                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
-                света...
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="video-card events-item">
-          <button class="video-card__image events-item__image events-item__btn-popup" data-toggle="modal"
-            data-target="#modal-event">
-            <img src="img/events/events-1.jpg" alt="image">
-          </button>
-          <div class="video-card__content events-item__content">
-            <button class="video-card__title events-item__title events-item__btn-popup" data-toggle="modal"
-              data-target="#modal-event">
-              ЖК “Высокий стандарт” -
-              Камера 5 (название камеры)
-            </button>
-
-            <div class="events-hide">
-              <p>
-                Величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
-                света...
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
 </section>
 		</main>
 		<!-- Footer -->
@@ -570,15 +592,11 @@
 </div>
 
 	</div>
-	
+
 	<script src="js/app.min.js"></script>
 
 
-	
+
 </body>
 
 </html>
-
-
-
-
