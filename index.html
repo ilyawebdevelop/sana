@@ -1,780 +1,139 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html>
+
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.min.css">
+	<title>Sana — Страницы</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-	<title>Главная</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<style media="screen">
+		body{
+			background: #fff;
+			padding: 0 0 50px;
+			font-family: sans-serif;
+			font-size: 16px;
+			color: #333;
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		h1, h2, h3, h4, h5, h6, p, ul, ol {
+			margin: 0 0 15px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+
+		.container {
+			max-width: 1170px;
+			padding: 0 15px;
+			margin: 0 auto;
+		}
+
+		.title {
+			padding: 16px 0 1px;
+			margin-bottom: 40px;
+			background: #e3e3f1;
+			border-bottom: 1px solid #eaeaea;
+		}
+
+		.boxes {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px -40px;
+		}
+
+		.box {
+			flex: 1 0 0;
+			min-width: 30%;
+			padding: 0 15px 40px;
+		}
+		.box ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.box ul li {
+			margin-bottom: 15px;
+		}
+		.box ul li:last-child {
+			margin-bottom: 0;
+		}
+		.box ul a {
+			display: inline-block;
+			text-decoration: underline;
+			color: #000;
+		}
+		.box ul a:hover {
+			text-decoration: none;
+		}
+		.box ul a:visited {
+			color: #681DA8;
+		}
+
+		@media only screen and (max-width : 767px) {
+			.box {
+				min-width: 50%;
+			}
+		}
+		@media only screen and (max-width : 575px) {
+			.box {
+				min-width: 100%;
+			}
+		}
+	</style>
+
+
 </head>
 
 <body>
-	
-	<div class="wrapper">
-		<!-- Header -->
-<header class="header" id="header">
-  <div class="container d-flex justify-content-between">
-    <div class="header__left d-flex align-items-center">
 
-      <div class="menu-wrapper">
-        <button class="header__menu"><img src="img/header/menu_icon.svg" alt="menu"></button>
-        <div class="container-menu">
-
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-1"></use>
-                  </svg>                
-                  <span>Квитанции и оплата</span>
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center active" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-2"></use>
-                  </svg>
-                  <span>Заявки и обращения</span>
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-3"></use>
-                  </svg>
-                  <span>Приборы учета</span>                  
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-4"></use>
-                  </svg>
-                  <span>Голосование</span>                  
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-5"></use>
-                  </svg>
-                  <span>Чат</span>                  
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-6"></use>
-                  </svg>
-                  <span>Сведения об УК</span>                  
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-7"></use>
-                  </svg>
-                  <span>Услуги</span>                  
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-8"></use>
-                  </svg>
-                  <span>Видеонаблюдение</span>                  
-                </a>
-              </li>
-              <li class="d-flex align-items-center">
-                <a class="d-flex align-items-center" href="#">
-                  <svg>
-                    <use xlink:href="img/icons/icons.svg#menu-event-9"></use>
-                  </svg>
-                  <span>События и сообщения</span>                 
-                </a>
-              </li>
-            </ul>
-          </nav>
-          123
-
-
-        </div>
-      </div>
-
-      <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
-    </div>
-    <div class="header__center d-flex align-items-center">
-      <div class="header__menu">
-        <ul class="header__menu-list">
-          <li>
-            <a class="d-flex" href="#">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#menu-1"></use>
-              </svg>
-              <span>Квитанции и оплата</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#menu-2"></use>
-              </svg>
-              <span>Заявки</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex active" href="#">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#menu-3"></use>
-              </svg>
-              <span>Приборы учета</span>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex" href="#">
-              <svg>
-                <use xlink:href="img/icons/icons.svg#menu-4"></use>
-              </svg>
-              <span>Голосование</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="header__right d-flex align-items-center">
-      <div class="header__action d-flex align-items-center">
-        <button class="header__action-btn header__action_1 active"> <svg>
-            <use xlink:href="img/icons/icons.svg#action-1"></use>
-          </svg></button>
-        <button class="header__action-btn header__action_2 active"><svg>
-            <use xlink:href="img/icons/icons.svg#action-2"></use>
-          </svg></button>
-      </div>
-      <div class="header__person d-flex align-items-center">
-        <img src="img/header/face.webp" alt="face" class="header__person-img">
-        <div class="header__person-content d-flex flex-column">
-          <span class="header__person-name">Перова О.Н.</span>
-          <span class="header__person-address">ул. Чкалова, д.40, кв.44</span>
-        </div>
-      </div>
-      <button class="header__exit"><svg>
-          <use xlink:href="img/icons/icons.svg#exit"></use>
-        </svg></button>
-    </div>
-  </div>
-</header>
-		<main class="main">		
-			<section class="main-sect" id="main-sect">
-  <div class="container">
-    <div class="row main-sect__row">
-      <div class="col-lg-6">
-        <div class="main-item">
-          <h3 class="main-item__title">Квитанции и оплата</h3>
-          <div class="main-nav-wrapper d-flex align-items-center">
-            <span class="main-nav__name">История платежей:</span>
-            <ul class="nav nav-pills main-nav" id="payment-tab" role="tablist">
-              <li class="nav-item main-nav__item" role="presentation">
-                <button class="nav-link main-nav-link active" id="payment-btn_1" data-toggle="pill"
-                  data-target="#payment-content_1" type="button" role="tab" aria-controls="payment-content_1"
-                  aria-selected="true">
-                  Коммунальные платежи
-                </button>
-              </li>
-              <li class="nav-item main-nav__item" role="presentation">
-                <button class="nav-link main-nav-link" id="payment-btn_2" data-toggle="pill"
-                  data-target="#payment-content_2" type="button" role="tab" aria-controls="payment-content_2"
-                  aria-selected="false">
-                  Ипотечные платежи
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content main-content" id="payment-tabContent">
-            <div class="tab-pane main-nav-tab fade show active" id="payment-content_1" role="tabpanel"
-              aria-labelledby="payment-btn_1">
-              <table class="main-table">
-                <thead>
-                  <tr>
-                    <td></td>
-                    <td>Дата оплаты: </td>
-                    <td>Сумма оплаты: </td>
-                    <td></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="main-table__item">
-                    <td>Апрель 2023 г.</td>
-                    <td>03.05.2023 г.</td>
-                    <td>28 950 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Март 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Февраль 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Январь 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="main-table__payment btn--blue btn">Оплатить</button>
-                <button class="main-table__more d-flex align-items-center">
-                  Смотреть больше
-                  <img src="img/events/btnmore.png" alt="icon">
-                </button>              
-              </div>
-
-            </div><!-- /tab-pane -->
-            <div class="tab-pane main-nav-tab fade" id="payment-content_2" role="tabpanel"
-              aria-labelledby="payment-btn_2">
-              <table class="main-table">
-                <thead>
-                  <tr>
-                    <td></td>
-                    <td>Дата оплаты: </td>
-                    <td>Сумма оплаты: </td>
-                    <td></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="main-table__item">
-                    <td>Апрель 2023 г.</td>
-                    <td>03.05.2023 г.</td>
-                    <td>28 950 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Март 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Февраль 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Январь 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="main-table__payment btn--blue btn">Внести платеж</button>
-                <button class="main-table__more d-flex align-items-center">
-                  Смотреть больше
-                  <img src="img/events/btnmore.png" alt="icon">
-                </button>              
-              </div>
-            </div><!-- /tab-pane -->
-
-          </div>
-        </div><!-- /main-item -->
-      </div>
-      <div class="col-lg-6">
-
-        <div class="main-item">
-          <h3 class="main-item__title">Заявки и обращения</h3>
-          <div class="main-nav-wrapper d-flex align-items-center">
-            <span class="main-nav__name">История:</span>
-            <ul class="nav nav-pills main-nav" id="orders-tab" role="tablist">
-              <li class="nav-item main-nav__item" role="presentation">
-                <button class="nav-link main-nav-link active" id="orders-btn_1" data-toggle="pill"
-                  data-target="#orders-content_1" type="button" role="tab" aria-controls="orders-content_1"
-                  aria-selected="true">
-                  Новые заявки
-                </button>
-              </li>
-              <li class="nav-item main-nav__item" role="presentation">
-                <button class="nav-link main-nav-link" id="orders-btn_2" data-toggle="pill"
-                  data-target="#orders-content_2" type="button" role="tab" aria-controls="orders-content_2"
-                  aria-selected="false">
-                  Завершенные заявки
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content main-content" id="orders-tabContent">
-            <div class="tab-pane main-nav-tab fade show active" id="orders-content_1" role="tabpanel"
-              aria-labelledby="orders-btn_1">
-              <table class="main-table">
-                <thead>
-                  <tr>
-                    <td></td>
-                    <td>Дата обращения:  </td>
-                    <td>Cтатус:  </td>
-                    <td></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="main-table__item">
-                    <td>Ремонт окна</td>
-                    <td>03.05.2023 г.</td>
-                    <td>Выполнено</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>                 
-                  <tr class="main-table__item">
-                    <td>Замена канализации</td>
-                    <td>04.05.2023 г.</td>
-                    <td>Отменено</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Ремонт камеры наблюдения</td>
-                    <td>04.05.2023 г.</td>
-                    <td>Выполнено</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="main-table__payment btn--blue btn">Создать заявку</button>
-                <button class="main-table__more d-flex align-items-center">
-                  Смотреть больше
-                  <img src="img/events/btnmore.png" alt="icon">
-                </button>              
-              </div>
-
-            </div><!-- /tab-pane -->
-            <div class="tab-pane main-nav-tab fade" id="orders-content_2" role="tabpanel"
-              aria-labelledby="orders-btn_2">
-              <table class="main-table">
-                <thead>
-                  <tr>
-                    <td></td>
-                    <td>Дата обращения:  </td>
-                    <td>Cтатус:  </td>
-                    <td></td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="main-table__item">
-                    <td>Ремонт окна</td>
-                    <td>03.05.2023 г.</td>
-                    <td>Выполнено</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>
-                  <tr class="main-table__item">
-                    <td>Замена ручки двери</td>
-                    <td>04.05.2023 г.</td>
-                    <td>Отменено</td>
-                    <td><button class="main-table__detail btn" data-toggle="modal"
-                      data-target="#modal-main">Детали</button></td>
-                  </tr>           
-                </tbody>
-              </table>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="main-table__payment btn--blue btn">Создать заявку</button>
-                <button class="main-table__more d-flex align-items-center">
-                  Смотреть больше
-                  <img src="img/events/btnmore.png" alt="icon">
-                </button>              
-              </div>
-            </div><!-- /tab-pane -->
-
-          </div>
-        </div><!-- /main-item -->
-
-      </div>
-      <div class="col-lg-6">
-        <div class="main-item">
-          <h3 class="main-item__title">Видеонаблюдение</h3>
-   
-          <div class="main-content">
-            <table class="main-table">
-              <thead>
-                <tr>
-                  <td></td>                 
-                  <td>Адрес: </td>
-                  <td></td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="main-table__item">
-                  <td>ЖК «Высокий стандарт»</td>
-                  <td>ул. Чапаева, д.50.</td>                
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Перейти</button></td>
-                </tr>
-                <tr class="main-table__item">
-                  <td>ЖК «Высокий стандарт»</td>
-                  <td>ул. Чкалова, д.40</td>                
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Перейти</button></td>
-                </tr>
-                <tr class="main-table__item">
-                  <td>Подземная парковка</td>
-                  <td>ул. Чкалова, д.40</td>                
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Перейти</button></td>
-                </tr>
-                <tr class="main-table__item">
-                  <td>Подземная парковка</td>
-                  <td>ул. Чкалова, д.40</td>               
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Перейти</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-       
-        </div><!-- /main-item -->
-      </div>
-      <div class="col-lg-6">
-
-        <div class="main-item">
-          <h3 class="main-item__title">Имущество</h3>   
-          <div class="main-content">
-            <table class="main-table">
-              <thead>
-                <tr>
-                  <td></td>                 
-                  <td>Площадь: </td>
-                  <td></td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="main-table__item">
-                  <td>ул. Чкалова, д.40, кв. 44</td>
-                  <td>120 кв.м.</td>                
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Детали</button></td>
-                </tr>
-                <tr class="main-table__item">
-                  <td>ул. Чкалова, д.40, Парк.место №33</td>
-                  <td>18 кв.м.</td>                
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Детали</button></td>
-                </tr>
-                <tr class="main-table__item">
-                  <td>ул. Чапаева, д.50, Помещение №12</td>
-                  <td>42,5 кв.м.</td>                
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Детали</button></td>
-                </tr>
-                <tr class="main-table__item">
-                  <td>ул. Чапаева, д.50, Помещение №14</td>
-                  <td>31,74 кв.м.</td>               
-                  <td><button class="main-table__detail btn" data-toggle="modal"
-                    data-target="#modal-main">Детали</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-       
-        </div><!-- /main-item -->
-        
-      </div>
-    </div>
-  </div>
-</section>
-		</main>
-		<!-- Footer -->
-<footer class="footer" id="footer">
-  <div class="container d-flex justify-content-between">
-    <div class="footer__left">
-      <div class="footer__logos d-flex align-items-center">
-        <a href="#"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
-        <a href="#"><img src="img/authorize/logo_sana.webp" alt="logo"></a>
-      </div>
-      <div class="footer__socials d-flex">
-        <span class="footer__socials-name">Сана в соцсетях:</span>
-        <ul class="footer__socials-list d-flex align-items-center">
-          <li>
-            <a href="#" target="_blank">
-              <img src="img/footer/socials-1.svg" alt="logo">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="img/footer/socials-2.svg" alt="logo">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="img/footer/socials-3.svg" alt="logo">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__right">
-      <div class="footer__contacts d-flex align-items-center">
-        <span>Круглосуточная служба поддержки клиентов:</span>
-        <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
-        <button class="footer__contacts-btn btn">Заказать звонок</button>
-      </div>
-      <div class="footer__politics d-flex justify-content-end">
-        <a href="#">Политика конфиденциальности</a>
-        <a href="#">Публичная оферта</a>
-      </div>
-    </div>
-  </div>
-</footer>
-		<!-- modal -->
-<!-- event -->
-<div class="modal fade modal-event" id="modal-event" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-event__image"><img src="img/events/events-1.jpg" alt="image"></div>
-      <div class="modal-event__bottom">
-        <div class="modal-event__title">Компания "САНА" приняла активное участие в общегородском субботнике</div>
-        <div class="modal-event__content">
-          <p>Онежская набережная — это один из красивейших и поистине волшебных уголков Петрозаводска, его гордость и
-            визитная карточка, место, где любят отдыхать как горожане, так и большинство туристов. Если вы выбрали для
-            своего путешествия республику Карелия, то начать знакомство с этим чудесным краем лучше всего, без сомнения,
-            со столицы – города Петрозаводска — и этого уютного уголка.
-          </p>
-          <p>
-            О том, что Онежская набережная в Петрозаводске – ярчайшая достопримечательность города, я была наслышана
-            задолго до своего путешествия в эти места. Но вот почему – объяснить мне не смог ни один интернет-источник.
-            Все-таки, это один из тех случаев, когда для того, чтобы понять, нужно увидеть все своими глазами…
-          </p>
-          <p>
-            Открытие набережной Онежского озера в Петрозаводске состоялось в июне 1994 года в честь 50-летнего юбилея
-            освобождения города в Великой Отечественной войне. Однако еще многие годы набережная достраивалась и
-            обновлялась. Сегодня Онежская набережная Петрозаводска, фото которой обязательно встретишь в любом
-            туристическом буклете, – это около полутора километров берега, вымощенного карельским гранитом. Это и
-            культурный центр города, потому что здесь «проживает» огромное количество интереснейших памятников, которые
-            величественный Петрозаводск получил в подарок от городов-побратимов, можно сказать, практически со всего
-            света...
-          </p>
-        </div>
-      </div>
-
-      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
-          src="img/icons/close-modal.svg" alt="close"></button>
-    </div>
-  </div>
-</div>
-
-<!-- main modal -->
-<div class="modal fade modal-main" id="modal-main" tabindex="-1" aria-labelledby="exampleModalLabel_1"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-title modal-main__title">Ваше имущество</div>
-      <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
-        <span>Площадь помещения: 120 кв.м.</span>
-      </div>
-      <div class="modal-main__table-wrapper">
-        <div class="modal-main__border">
-          <div class="modal-main__table-name color-black">Информация о собственниках и прописанных</div>
-        </div>
-
-        <table class="modal-main__table">
-          <thead>
-            <tr>
-              <td>ФИО</td>
-              <td>Документ удост.личн.</td>
-              <td>Статус: </td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Перова Ольга Николаевна</td>
-              <td>Паспорт: 2007 875616</td>
-              <td>Собственник</td>
-            </tr>
-            <tr>
-              <td>Перов Анатолий Вениаминович</td>
-              <td>Паспорт: 2001 887723</td>
-              <td>Собственник</td>
-            </tr>
-            <tr>
-              <td>Перов Матвей Анатольевич</td>
-              <td>Свид.о рожд: 7783219912</td>
-              <td>Прописан</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
-          src="img/icons/close-modal.svg" alt="close"></button>
-    </div>
-  </div>
-</div>
-
-<!-- modal-poverka -->
-<div class="modal fade modal-poverka" id="modal-poverka" tabindex="-1" aria-labelledby="exampleModalLabel_2"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-title modal-poverka__title">Заявка на поверку прибора учета</div>
-      <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
-      </div>
-
-      <form action="#" class="modal-form">
-        <div class="modal-form__content">
-          <span class="color-black mb-4 d-block">Заполните поля для формирования заявки</span>
-          <div class="modal-form__grid">
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Электроэнергия">
-            </div>
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Номер прибора">
-            </div>
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Желаемая дата поверки">
-            </div>
-            <div class="modal-form__col">
-             <button class="btn--blue btn modal-form__btn">Отправить заявку</button>
-            </div>
-          </div>
-        </div>
-      
-      </form>
-   
-      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
-          src="img/icons/close-modal.svg" alt="close"></button>
-    </div>
-  </div>
-</div>
-
-<!-- modal-new -->
-<div class="modal fade modal-poverka" id="modal-add" tabindex="-1" aria-labelledby="exampleModalLabel_3"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-title modal-poverka__title">Добавить новый прибор учета</div>
-      <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
-      </div>
-
-      <form action="#" class="modal-form">
-        <div class="modal-form__content">
-          <span class="color-black mb-4 d-block">Внесите данные по прибору учета</span>
-          <div class="modal-form__grid">
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Назначение прибора">
-            </div>
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Номер прибора">
-            </div>
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Дата поверки">
-            </div>
-            <div class="modal-form__col">
-             <button class="btn--blue btn modal-form__btn">Добавить</button>
-            </div>
-          </div>
-        </div>
-      
-      </form>
-   
-      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
-          src="img/icons/close-modal.svg" alt="close"></button>
-    </div>
-  </div>
-</div>
-
-<!-- modal-take -->
-<div class="modal fade modal-poverka" id="modal-take" tabindex="-1" aria-labelledby="exampleModalLabel_3"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-title modal-poverka__title">Передача показаний приборов учета</div>
-      <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
-      </div>
-
-      <form action="#" class="modal-form">
-        <div class="modal-form__content">
-          <span class="color-black mb-4 d-block">Внесите показания счетчиков за текущий период</span>
-          <div class="modal-form__grid">
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Электроэнергия">
-            </div>
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Горячая вода">
-            </div>
-            <div class="modal-form__col">
-              <input class="form-input" type="text" placeholder="Холодная вода">
-            </div>
-            <div class="modal-form__col">
-             <button class="btn--blue btn modal-form__btn">Передать показания</button>
-            </div>
-          </div>
-        </div>
-      
-      </form>
-
-      <div class="modal-info">
-        <div class="modal-title modal-poverka__title">Последние показания </div>
-        <div class="modal-info__item d-flex mb-3">
-          <span>Счетчик электроэнергии: </span>
-          <span class="fw-medium">56 836 Квт </span>
-        </div>
-        <div class="modal-info__item d-flex mb-3">
-          <span>Счетчик ГВС: </span>
-          <span class="fw-medium">68 Куб.м. </span>
-        </div>
-        <div class="modal-info__item d-flex">
-          <span>Счетчик ХВС:  </span>
-          <span class="fw-medium">104 Куб.м.
-          </span>
-        </div>
-      </div>
-   
-      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
-          src="img/icons/close-modal.svg" alt="close"></button>
-    </div>
-  </div>
-</div>
-
+	<div class="title">
+		<div class="container">
+			<h2>Sana</h2>
+		</div>
 	</div>
-	
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
-	<script src="js/app.min.js"></script>
 
+	<div class="container">
+		<div class="boxes">
 
-	
+			<div class="box">
+				<ul>
+					<li><a href="home.html">Главная</a></li>					
+					<li><a href="chat.html">Чат</a></li>
+					<li><a href="events_and_messages.html">События</a></li>
+					<li><a href="golosovanie.html">Голосования</a></li>
+					<li><a href="schetchiki.html">Счетчики</a></li>
+					<li><a href="info_uk.html">Информация</a></li>
+					<li><a href="services.html">Услуги</a></li>											
+					<!-- <br>
+					<li><a href="popups.html">Модальные окна</a></li> -->
+				</ul>
+			</div>
+			<div class="box">
+				<!-- <h3>Личный кабинет</h3> -->
+				<ul>
+					<li><a href="register.html">Регистрация</a></li>
+					<li><a href="authorize.html">Авторизация</a></li>
+					<li><a href="cabinet.html">Личный кабинет</a></li>
+					<li><a href="videonabludenie_1.html">Видеонаблюдение 1</a></li>
+					<li><a href="videonabludenie_2.html">Видеонаблюдение 2</a></li>
+					<li><a href="order.html">Заказ</a></li>		
+					<!-- <br>
+					<li><a href="popups.html">Модальные окна</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
 </body>
 
 </html>
-
-
-
-

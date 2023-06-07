@@ -12346,9 +12346,12 @@ h4 {
 .main-table__detail {
   height: 37px;
   border: 1px solid #2a2a2a;
-  width: 213px;
+  width: fit-content;
+  min-width: 196px;
   color: #2a2a2a;
   margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .main-table__detail:hover {
   background-color: #184aa3;
@@ -12421,6 +12424,53 @@ h4 {
 .modal-form__btn {
   width: 100%;
   height: 58px;
+}
+
+.cabinet-item__btn {
+  font-size: 22px;
+  width: 345px;
+  height: 52px;
+}
+
+.cabinet__item-main.active {
+  pointer-events: none;
+  background-color: #184aa3;
+  color: #fff;
+}
+
+.personal-new-file-btn {
+  width: 250px;
+  border: 2px solid #184aa3;
+  border-radius: 29px;
+  height: 58px;
+  font-size: 18px;
+}
+
+.personal-form__row {
+  margin-bottom: 32px;
+}
+.personal-form__row .form-wrapper {
+  width: 100%;
+}
+.personal-form__row .form-input {
+  width: 100%;
+}
+.personal-form__row .form-input_sm {
+  width: 300px;
+}
+
+.personal-form__btn {
+  width: 360px;
+  margin-top: 90px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.personal-change-file-btn {
+  height: 44px;
+  font-size: 18px;
+  border-color: #0353a1;
+  color: #0353a1;
 }
 
 /* Hamburger Menu */
@@ -12646,9 +12696,9 @@ div.events-item__image:hover {
 .modal-form::after {
   content: "";
   position: absolute;
-  width: 1000px;
+  width: 830px;
   height: 100%;
-  left: -100px;
+  left: -40px;
   top: 0;
   background-color: #f5f6f7;
 }
@@ -12656,10 +12706,6 @@ div.events-item__image:hover {
 .modal-form__content {
   position: relative;
   z-index: 1;
-}
-
-.modal-poverka .modal-content {
-  overflow: hidden;
 }
 
 .modal-form__grid {
@@ -13676,6 +13722,90 @@ div.events-item__image:hover {
 
 .order-item__date {
   font-size: 18px;
+}
+
+.cabinet {
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+.cabinet__row {
+  row-gap: 30px;
+}
+.cabinet-item {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding-top: 55px;
+  padding-left: 50px;
+  padding-right: 55px;
+  padding-bottom: 55px;
+}
+.cabinet-item_content {
+  display: grid;
+  grid-template-rows: 50px auto;
+}
+.cabinet-item h3 {
+  margin-bottom: 42px;
+}
+.cabinet-item__person {
+  column-gap: 31px;
+}
+.cabinet-item__person span {
+  font-size: 22px;
+}
+.cabinet-item__contacts {
+  margin-bottom: 100px;
+}
+.cabinet-item__contacts span {
+  margin-top: 44px;
+  display: block;
+  font-size: 18px;
+}
+.cabinet .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.personal-form__row {
+  display: flex;
+  align-items: center;
+  column-gap: 11px;
+}
+.personal-form__row > span {
+  width: 158px;
+  min-width: 158px;
+}
+
+.personal-form__row_new {
+  display: none;
+}
+.personal-form__row_new.active {
+  display: block;
+}
+
+.personal-form__image-wrapper {
+  column-gap: 50px;
+  margin-bottom: 40px;
+}
+
+#modal-personal-change .personal-form__btn {
+  margin-top: 50px;
+}
+
+#personal-new-file {
+  display: none;
+}
+
+#personal-change-file {
+  display: none;
+}
+
+.personal-form__image img {
+  width: 211px;
+  height: 211px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .footer {

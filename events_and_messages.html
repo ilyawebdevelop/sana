@@ -516,7 +516,7 @@
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Заявка на поверку прибора учета</div>
       <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
+        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
       <form action="#" class="modal-form">
@@ -533,13 +533,13 @@
               <input class="form-input" type="text" placeholder="Желаемая дата поверки">
             </div>
             <div class="modal-form__col">
-             <button class="btn--blue btn modal-form__btn">Отправить заявку</button>
+              <button class="btn--blue btn modal-form__btn">Отправить заявку</button>
             </div>
           </div>
         </div>
-      
+
       </form>
-   
+
       <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
           src="img/icons/close-modal.svg" alt="close"></button>
     </div>
@@ -553,7 +553,7 @@
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Добавить новый прибор учета</div>
       <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
+        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
       <form action="#" class="modal-form">
@@ -570,13 +570,13 @@
               <input class="form-input" type="text" placeholder="Дата поверки">
             </div>
             <div class="modal-form__col">
-             <button class="btn--blue btn modal-form__btn">Добавить</button>
+              <button class="btn--blue btn modal-form__btn">Добавить</button>
             </div>
           </div>
         </div>
-      
+
       </form>
-   
+
       <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
           src="img/icons/close-modal.svg" alt="close"></button>
     </div>
@@ -590,7 +590,7 @@
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Передача показаний приборов учета</div>
       <div class="d-flex justify-content-between color-black">
-        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>       
+        <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
       <form action="#" class="modal-form">
@@ -607,11 +607,11 @@
               <input class="form-input" type="text" placeholder="Холодная вода">
             </div>
             <div class="modal-form__col">
-             <button class="btn--blue btn modal-form__btn">Передать показания</button>
+              <button class="btn--blue btn modal-form__btn">Передать показания</button>
             </div>
           </div>
         </div>
-      
+
       </form>
 
       <div class="modal-info">
@@ -625,18 +625,104 @@
           <span class="fw-medium">68 Куб.м. </span>
         </div>
         <div class="modal-info__item d-flex">
-          <span>Счетчик ХВС:  </span>
+          <span>Счетчик ХВС: </span>
           <span class="fw-medium">104 Куб.м.
           </span>
         </div>
       </div>
-   
+
       <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
           src="img/icons/close-modal.svg" alt="close"></button>
     </div>
   </div>
 </div>
 
+<!-- modal-personal-new -->
+<div class="modal fade modal-poverka modal-personal-modal" id="modal-personal-new" tabindex="-1"
+  aria-labelledby="exampleModalLabel_4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Добавить новое имущество</div>
+      <form class="personal-form" action="#">
+        <div class="personal-form__row">
+          <span>Адрес имущества</span>
+          <div class="form-wrapper">
+            <input class="form-input" type="text" placeholder="Перова Ольга Николаевна">
+          </div>
+        </div><!-- /personal-form__row -->
+        <div class="personal-form__row">
+          <span>Площадь имущества</span>
+          <div class="form-wrapper">
+            <input class="form-input" type="text" placeholder="84,4 кв.м.">
+          </div>
+        </div><!-- /personal-form__row -->
+        <div class="personal-form__row">
+          <span>Свидетельство о регистрации</span>
+          <div class="form-wrapper">
+            <input class="form-input form-input_sm" type="text" placeholder="Номер свидетельства">
+          </div>
+          <div class="personal-new-file">
+            <input id="personal-new-file" type="file">
+            <label class="personal-new-file-btn btn" for="personal-new-file">Добавить скан</label>
+          </div>
+        </div><!-- /personal-form__row -->
+
+        <div class="personal-form__row personal-form__row_new">
+          <span>Загружен файл: </span>
+          <span class="personal-new-added"></span>
+        </div><!-- /personal-form__row -->
+
+        <button class="btn--blue btn modal-form__btn personal-form__btn">Добавить</button>
+      </form>
+
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-personal-change -->
+<div class="modal fade modal-poverka" id="modal-personal-change" tabindex="-1" aria-labelledby="exampleModalLabel_4"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Изменение личных данных</div>
+
+      <form action="#" class="personal-form">
+        <div class="d-flex align-items-center personal-form__image-wrapper">
+          <div class="personal-form__image"><img class="photo-item_1" src="img/personal/photo.png" alt="image"></div>
+          <div class="personal-change-file-wrapper">
+            <input id="personal-change-file" type="file">
+            <label class="personal-change-file-btn btn btn--transparent" for="personal-change-file">Добавить новое фото</label>
+          </div>
+        </div>
+        <div class="personal-form__row">
+          <span>Фамилия Имя Отчество</span>
+          <div class="form-wrapper">
+            <input class="form-input" type="text" placeholder="Перова Ольга Николаевна">
+          </div>
+        </div><!-- /personal-form__row -->
+        <div class="personal-form__row">
+          <span>Контактный телефон</span>
+          <div class="form-wrapper">
+            <input class="form-input" type="tel" placeholder="+7 (922) 450 32 67">
+          </div>
+        </div><!-- /personal-form__row -->
+        <div class="personal-form__row">
+          <span>E-mail</span>
+          <div class="form-wrapper">
+            <input class="form-input" type="email" placeholder="perova_olga@gmail.com">
+          </div>
+        </div><!-- /personal-form__row -->
+
+        <button class="btn--blue btn modal-form__btn personal-form__btn">Сохранить изменения</button>
+      </form>
+
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
 	</div>
 
 	<script src="js/app.min.js"></script>
