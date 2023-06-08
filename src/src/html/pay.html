@@ -1,0 +1,171 @@
+<section class="payment" id="payment">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="payment-item">
+                    <h3 class="payment-item__title">Коммунальные платежи</h3>
+                    <div class="d-flex align-items-center payment-item__change">
+                        <span>Адрес: ул. Чкалова, д.40, кв.44</span>
+                        <button class="btn-sm">Изменить</button>
+                    </div>
+
+                    <div class="main-nav-wrapper d-flex align-items-center">
+                        <span class="main-nav__name">История платежей:</span>
+                        <ul class="nav nav-pills main-nav" id="payment-tab" role="tablist">
+                            <li class="nav-item main-nav__item" role="presentation">
+                                <button class="nav-link main-nav-link active" id="payment-btn_1" data-toggle="pill"
+                                    data-target="#payment-content_1" type="button" role="tab"
+                                    aria-controls="payment-content_1" aria-selected="true">
+                                    2023 год
+                                </button>
+                            </li>
+                            <li class="nav-item main-nav__item" role="presentation">
+                                <button class="nav-link main-nav-link" id="payment-btn_2" data-toggle="pill"
+                                    data-target="#payment-content_2" type="button" role="tab"
+                                    aria-controls="payment-content_2" aria-selected="false">
+                                    2022 год
+                                </button>
+                            </li>
+                            <li class="nav-item main-nav__item" role="presentation">
+                                <button class="nav-link main-nav-link" id="payment-btn_3" data-toggle="pill"
+                                    data-target="#payment-content_3" type="button" role="tab"
+                                    aria-controls="payment-content_3" aria-selected="false">
+                                    2022 год
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content main-content" id="payment-tabContent">
+                        <div class="tab-pane main-nav-tab fade show active" id="payment-content_1" role="tabpanel"
+                            aria-labelledby="payment-btn_1">
+                            <table class="main-table">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>Дата оплаты: </td>
+                                        <td>Сумма оплаты: </td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="main-table__item">
+                                        <td>Апрель 2023 г.</td>
+                                        <td></td>
+                                        <td>28 950 руб.</td>
+                                        <td>
+                                            <button class="waiting" data-toggle="modal"
+                                            data-target="#modal-not-payed"> Ждет оплаты</button>                                           
+                                        </td>
+                                    </tr>
+                                    <tr class="main-table__item">
+                                        <td>Март 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                                data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                    <tr class="main-table__item">
+                                        <td>Февраль 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                    <tr class="main-table__item">
+                                        <td>Январь 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>                         
+
+                        </div><!-- /tab-pane -->
+                        <div class="tab-pane main-nav-tab fade" id="payment-content_2" role="tabpanel"
+                            aria-labelledby="payment-btn_2">
+                            <table class="main-table">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>Дата оплаты: </td>
+                                        <td>Сумма оплаты: </td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="main-table__item">
+                                        <td>Апрель 2023 г.</td>
+                                        <td>03.05.2023 г.</td>
+                                        <td>28 950 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                    <tr class="main-table__item">
+                                        <td>Март 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>                              
+                                    <tr class="main-table__item">
+                                        <td>Январь 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                      
+                        </div><!-- /tab-pane -->
+                        <div class="tab-pane main-nav-tab fade" id="payment-content_3" role="tabpanel"
+                            aria-labelledby="payment-btn_3">
+                            <table class="main-table">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <td>Дата оплаты: </td>
+                                        <td>Сумма оплаты: </td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="main-table__item">
+                                        <td>Апрель 2023 г.</td>
+                                        <td>03.05.2023 г.</td>
+                                        <td>28 950 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                    <tr class="main-table__item">
+                                        <td>Февраль 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                    <tr class="main-table__item">
+                                        <td>Январь 2023 г.</td>
+                                        <td>04.05.2023 г.</td>
+                                        <td>2850 руб.</td>
+                                        <td><button class="main-table__detail btn" data-toggle="modal"
+                                            data-target="#modal-payed">Детали</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /tab-pane -->
+
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="payment-item__btn btn--blue btn">Оплатить</button>                  
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6"></div>
+        </div>
+    </div>
+</section>

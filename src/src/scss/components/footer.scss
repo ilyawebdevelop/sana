@@ -1,0 +1,92 @@
+// Footer
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #000;
+
+  &__logos {
+    column-gap: 35px;
+  }
+}
+
+.footer__logos a img {
+  max-width: 187px;
+}
+
+.footer__socials-list {
+  column-gap: 30px;
+  li {
+    a {
+      svg {
+        width: 28px;
+        fill: #000;
+        height: 23px;
+      }
+    }
+  }
+}
+
+.footer__socials {
+  margin-top: 45px;
+  column-gap: 15px;
+}
+
+.footer__contacts>span {
+  max-width: 262px;
+  margin-right: 38px;
+  display: block;
+  text-align: end;
+  font-size: 18px;
+}
+
+.footer__phone {
+  margin-right: 49px;
+  color: #000000;
+  font-size: 27px;
+  line-height: 30px;
+  padding-left: 50px;
+  background: url('@img/footer/phone.svg') no-repeat left center / 31px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: color .2s linear;
+  &:hover {
+    color: #0353a1;
+  }
+}
+.footer__politics {
+  margin-top: 50px;
+  font-size: 16px;
+  a {
+    color: #686868;
+    position: relative;
+    transition: color .2s linear;
+    &:hover {
+      color: #000;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: #686868;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 2px;
+    }
+    &:nth-child(1){
+      margin-right: 8px;
+      &::before {
+        content: '|';
+        position: absolute;      
+        top: 0;
+        right: -10px;
+        // background-color: #686868;
+        // width: 1px;
+        // height: 100%;
+        // right: -10px;
+      }
+    }
+    &:nth-child(2){
+      margin-left: 8px;
+    }
+  }
+}

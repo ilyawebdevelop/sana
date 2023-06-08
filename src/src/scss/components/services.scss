@@ -1,0 +1,35 @@
+.services {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    .row {
+        row-gap: 30px;
+    }
+}
+.services-card__descr {
+    font-size: 14px;
+    color: #000;
+}
+.services-card__title {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+.services-form{
+    color: #838383;
+    margin-top: 25px;
+ 
+}
+.services-form__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 15px;
+}
+.services-form__input {
+    width: 100%;
+    border: 1px solid #838383;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+}

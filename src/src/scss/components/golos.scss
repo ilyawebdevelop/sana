@@ -1,0 +1,134 @@
+.golosovanie {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 57px;
+    padding-left: 49px;
+    padding-bottom: 55px;
+    padding-right: 49px;
+
+    &-title {
+      font-size: 23px;
+      color: #323232;
+      margin-bottom: 39px;
+    }
+
+    &-subtitle {
+      color: #323232;
+    }
+  }
+}
+
+.golosovanie__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.golosovanie__item-result {
+  font-size: 18px;
+  color: #323232;
+  margin-top: 57px;
+  text-align: center;
+}
+
+.golosovanie-quest-item {
+  display: flex;
+  align-items: center;
+
+  &>span {
+    color: #4e4e4e;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.golosovanie-quest-checkbox {
+  margin-right: 15px;
+
+  input {
+    display: none;
+
+    &:checked {
+      &+label {
+        .rect {
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    cursor: pointer;
+
+    .rect {
+      width: 37px;
+      height: 37px;
+      border: 1px solid #737373;
+      border-radius: 10px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        background-color: #184aa3;
+        border-radius: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: none;
+      }
+    }
+
+  }
+}
+
+.golosovanie__item-subtitle {
+  margin-bottom: 35px;
+  color: #323232;
+}
+
+.result-item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__name {
+    color: #4e4e4e;
+    margin-bottom: 22px;
+  }
+}
+
+.result-total {
+  column-gap: 12px;
+  &__line {
+    height: 23px;
+    background-color: #184aa3;
+    border-radius: 5px;
+  }
+  &__count {
+    color: #4e4e4e;
+  }
+}

@@ -12242,6 +12242,24 @@ h4 {
   background-color: #184aa3;
   color: #fff;
 }
+.btn-sm {
+  color: #000;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-right: 22px;
+  padding-left: 22px;
+  border: 1px solid #3c3c3c;
+  border-radius: 15px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+  font-size: 16px;
+}
+.btn-sm:hover {
+  background-color: #184aa3;
+  color: #fff;
+}
 
 .authorize-form__btn {
   border-radius: 29.5px;
@@ -12471,6 +12489,11 @@ h4 {
   font-size: 18px;
   border-color: #0353a1;
   color: #0353a1;
+}
+
+.payment-item__btn {
+  width: 100%;
+  height: 51px;
 }
 
 /* Hamburger Menu */
@@ -13495,6 +13518,11 @@ div.events-item__image:hover {
   padding-bottom: 15px;
   text-align: center;
 }
+.main-table tbody tr td .waiting {
+  width: 196px;
+  margin-left: auto;
+  text-align: center;
+}
 .main-table tbody tr td:last-child {
   text-align: end;
 }
@@ -13806,6 +13834,26 @@ div.events-item__image:hover {
   height: 211px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.payment {
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+.payment-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 55px;
+  padding-left: 50px;
+  padding-right: 58px;
+  padding-bottom: 58px;
+}
+.payment-item__title {
+  margin-bottom: 35px;
+}
+.payment-item__change {
+  column-gap: 20px;
+  margin-bottom: 40px;
 }
 
 .footer {

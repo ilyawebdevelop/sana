@@ -1,0 +1,22 @@
+.nav {
+  column-gap: 15px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #0353a1;
+  background-color: transparent;
+  border: 2px solid #0353a1;
+  border-radius: 22px;
+}
+
+.nav-pills .nav-link {
+  border: 2px solid transparent;
+  border-radius: 22px;
+}
+
+.nav-link {
+  color: $main-color;
+  font-size: 18px;
+  padding-right: 25px;
+  padding-left: 25px;
+}

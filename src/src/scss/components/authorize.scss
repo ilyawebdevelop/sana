@@ -1,0 +1,80 @@
+.authorize {
+  background-color: #fff;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__left {
+    padding-top: 40px;
+    max-width: 530px;
+    margin-left: auto;
+    width: 530px;
+    margin-right: 84px;
+    padding-bottom: 40px;
+  }
+
+  &__right {
+    background-image: linear-gradient(to right, #0353a1 0%, #0374e2 100%);
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &__logo {
+    position: absolute; 
+    left: 0;
+    right: 0; 
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);    
+
+    img {
+      width: 377px;
+      margin-left: auto;
+    margin-right: auto;
+    }
+  }
+
+  &__houses {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-form {
+    &__title {    
+      color: #323232;    
+      font-size: 26px;
+      font-weight: 500;     
+      line-height: 40px; 
+      margin-bottom: 46px;
+    }
+  }
+  &-header {
+    margin-bottom: 79px;
+  }
+}
+.authorize-header__logo-sana {
+  width: 185px;
+}
+.authorize__link {
+  text-decoration: underline;
+}
+.authorize__register {
+  margin-top: 25px;
+}
+.form-block__text {
+  padding-left: 30px;
+}
+.authorize__content-subtitle {
+  font-weight: 500;
+  font-size: 18px;
+}

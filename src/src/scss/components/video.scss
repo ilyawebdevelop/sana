@@ -1,0 +1,22 @@
+.video-sect {
+  padding-top: 45px;
+  padding-bottom: 80px;
+  .row {
+    row-gap: 29px;
+  }
+}
+.video-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.video-card__image {
+  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.video-card__title {
+  text-align: start;
+}

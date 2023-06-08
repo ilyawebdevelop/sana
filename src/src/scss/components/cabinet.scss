@@ -1,0 +1,97 @@
+.cabinet {
+    padding-top: 45px;
+    padding-bottom: 80px;
+
+    &__row {
+        row-gap: 30px;
+    }
+
+    &-item {
+        height: 100%;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding-top: 55px;
+        padding-left: 50px;
+        padding-right: 55px;
+        padding-bottom: 55px;
+
+        &_content {
+            display: grid;
+            grid-template-rows: 50px auto;
+        }
+
+        h3 {
+            margin-bottom: 42px;
+        }
+
+        &__person {
+            column-gap: 31px;
+
+            span {
+                font-size: 22px;
+            }
+        }
+
+        &__contacts {
+            margin-bottom: 100px;
+
+            span {
+                margin-top: 44px;
+                display: block;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.personal-form__row {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+
+    &>span {
+        width: 158px;
+        min-width: 158px;
+    }
+}
+
+.personal-form__row_new {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.personal-form__image-wrapper {
+    column-gap: 50px;
+    margin-bottom: 40px;
+}
+
+#modal-personal-change {
+    .personal-form__btn {
+        margin-top: 50px;
+    }
+}
+
+#personal-new-file {
+    display: none;
+}
+
+#personal-change-file {
+    display: none;
+}
+.personal-form__image {
+    img {
+        width: 211px;
+        height: 211px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

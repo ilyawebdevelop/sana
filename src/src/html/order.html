@@ -1,0 +1,157 @@
+<section class="order" id="order">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="order-item">
+                    <form class="order-form" action="#">
+                        <h3>Отправить новую заявку</h3>
+                        <select name="order-select" id="order-select_1" class="select-form order-select">
+                            <option value="ул. Чапаева, д.50 помещение 14">ул. Чапаева, д.50 помещение 14</option>
+                            <option value="ул. Чкалова, д.40, кв.44">ул. Чкалова, д.40, кв.44</option>
+                            <option value="ул. Чапаева, д.50 помещение 12">ул. Чапаева, д.50 помещение 12</option>
+                        </select>
+                        <div class="order-item__subtitle">Выберите тему заявки </div>
+                        <select name="order-select_topic" id="order-select_topic" class="select-form">
+                            <option value="Сантехника">Сантехника</option>
+                            <option value="Электрика">Электрика</option>
+                            <option value="Благоустройство">Благоустройство</option>
+                        </select>
+                        <div class="order-textarea-wrapper chat-textarea-wrapper">
+                            <textarea class="order-textarea chat-message__textarea" name="chat-textarea"
+                                id="chat-textarea" cols="30" rows="10" placeholder="Комментарий заявки"></textarea>
+                            <div class="input-file-wrapper">
+                                <input id="chat-message-file" type="file">
+                                <label class="chat-loadfile" for="chat-message-file"><span><img
+                                            src="@img/chat/loadfile.png" alt="icon"></span></label>
+                            </div>
+                        </div>
+                        <div class="filename-wrapper">
+                            Выбран файл: <span class="chat-file-name filename"></span>
+                        </div>
+                        <div class="btn btn--blue order-form__btn">
+                            Создать заявку
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="order-item">
+                    <h3>Замена ручки двери в холле 10 этажа</h3>
+                    <p class="order-item__descr">
+                        Добрый день, на нашем этаже в лифтовом холле, сломана ручка двери. Прошу заменить!
+                    </p>
+                    <span class="color-black order-item__address">Адрес: ул. Чкалова, д.40, кв.44</span>
+
+                    <div class="order-item__images gallery-list">
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">                                          
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-2.jpg">
+                            <img src="@img/order/order-2.jpg" alt="gallery-image">                       
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-3.jpg">
+                            <img src="@img/order/order-3.jpg" alt="gallery-image">                         
+                        </a>
+                    </div>
+                    <div class="order-item__status-btn status-procees btn mx-auto">Заявка принята, обрабатывается</div>
+                    <span class="order-item__date text-center d-block">Дата отправки заявки 10:23 15.06.2023</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="order-item">
+                    <h3>Ремонт камеры наблюдения
+                        в подъезде 1</h3>
+                    <p class="order-item__descr">
+                        Подъезд №1, камера видеонаблюдения направленная на лифт, изображение в полосках. 
+                    </p>
+                    <span class="color-black order-item__address">Адрес: ул. Чкалова, д.40, кв.44</span>
+
+                    <div class="order-item__images gallery-list">
+                        <a class="gallery__img" href="@img/order/order-3.jpg">
+                            <img src="@img/order/order-3.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-2.jpg">
+                            <img src="@img/order/order-2.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">
+                        </a>
+                    </div>
+                    <div class="order-item__status-btn status-working btn mx-auto">Заявка одобрена, в работе</div>
+                    <span class="order-item__date text-center d-block">Дата отправки заявки 17:44 05.04.2023</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="order-item">
+                    <h3>Замена ручки двери в холле 10 этажа</h3>
+                    <p class="order-item__descr">
+                        Добрый день, на нашем этаже в лифтовом холле, сломана ручка двери. Прошу заменить!
+                    </p>
+                    <span class="color-black order-item__address">Адрес: ул. Чкалова, д.40, кв.44</span>
+
+                    <div class="order-item__images gallery-list">
+                        <a class="gallery__img" href="@img/order/order-3.jpg">
+                            <img src="@img/order/order-3.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-2.jpg">
+                            <img src="@img/order/order-2.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">
+                        </a>
+                    </div>
+                    <div class="order-item__status-btn status-access btn mx-auto">Заявка выполнена</div>
+                    <span class="order-item__date text-center d-block">Дата отправки заявки 10:23 15.06.2023</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="order-item">
+                    <h3>Ремонт камеры наблюдения
+                        в подъезде 1</h3>
+                    <p class="order-item__descr">
+                        Подъезд №1, камера видеонаблюдения направленная на лифт, изображение в полосках. 
+                    </p>
+                    <span class="color-black order-item__address">Адрес: ул. Чкалова, д.40, кв.44</span>
+
+                    <div class="order-item__images gallery-list">
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-2.jpg">
+                            <img src="@img/order/order-2.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">
+                        </a>
+                    </div>
+                    <div class="order-item__status-btn status-access btn mx-auto">Заявка выполнена</div>
+                    <span class="order-item__date text-center d-block">Дата отправки заявки 17:44 05.04.2023</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="order-item">
+                    <h3>Ремонт камеры наблюдения
+                        в подъезде 1</h3>
+                    <p class="order-item__descr">
+                        Подъезд №1, камера видеонаблюдения направленная на лифт, изображение в полосках. 
+                    </p>
+                    <span class="color-black order-item__address">Адрес: ул. Чкалова, д.40, кв.44</span>
+
+                    <div class="order-item__images gallery-list">
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-2.jpg">
+                            <img src="@img/order/order-2.jpg" alt="gallery-image">
+                        </a>
+                        <a class="gallery__img" href="@img/order/order-1.jpg">
+                            <img src="@img/order/order-1.jpg" alt="gallery-image">
+                        </a>
+                    </div>
+                    <div class="order-item__status-btn status-denied btn mx-auto">Заявка отклонена</div>
+                    <span class="order-item__date text-center d-block">Дата отправки заявки 17:44 05.04.2023</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

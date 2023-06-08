@@ -1,0 +1,85 @@
+.order {
+    padding-top: 45px;
+    padding-bottom: 80px;
+    &-item {
+        padding-top: 52px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        height: 100%;
+        h3 {
+            margin-bottom: 40px;
+            max-width: 440px;
+        }
+    }
+    .row {
+        row-gap: 30px;
+    }
+}
+.order-select {
+    margin-bottom: 35px;
+}
+.order-item__subtitle {
+    margin-bottom: 18px;
+}
+.order-textarea-wrapper {
+    margin-top: 20px;
+}
+.order-textarea {
+    padding-left: 20px;
+    height: 160px;
+}
+.order-item__descr {
+    margin-bottom: 55px;
+    min-height: 80px;
+}
+.order-item__address {
+    margin-bottom: 30px;
+}
+.order-item__images {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 11px;
+    margin-top: 32px;
+    .gallery__img {
+        position: relative;
+        grid-column: 4 span;
+        &:hover:after {
+           transform: translateY(-8px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 21px;
+            height: 21px;
+            background: url('@img/icons/zoom.svg') no-repeat center center / 21px;
+            transition: transform .2s linear;
+        }
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+        .gal-zoom {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: auto;
+            width: fit-content;
+        }
+    }
+}
+.order-item__date {
+    font-size: 18px;
+}

@@ -1,0 +1,48 @@
+// стили для модального окна
+// @import "../../node_modules/graph-modal/dist/graph-modal.min";
+// стили для табов
+// @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
+
+// стили для библиотеки aos
+// @import "./aos";
+
+// стили для свайпера
+@import "../../node_modules/swiper/swiper-bundle.min";
+
+// @import "../../node_modules/simplebar/dist/simplebar.min";
+
+// bootstrap v5.0.2
+@import "./bootstrap.min";
+@import "./lightgallery";
+
+// Базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'specifications';
+
+// Подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/modal";
+@import "./components/tabs";
+@import "./components/header";
+@import "./components/authorize";
+@import "./components/golos";
+@import "./components/chat";
+@import "./components/events";
+@import "./components/main";
+@import "./components/video";
+@import "./components/info_uk";
+@import "./components/services";
+@import "./components/order";
+@import "./components/schetchiki";
+@import "./components/cabinet";
+@import "./components/pay";
+
+
+@import "./components/footer";
+
+
+
