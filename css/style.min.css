@@ -13847,6 +13847,7 @@ div.events-item__image:hover {
   padding-left: 50px;
   padding-right: 58px;
   padding-bottom: 58px;
+  height: 100%;
 }
 .payment-item__title {
   margin-bottom: 35px;
