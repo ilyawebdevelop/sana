@@ -98,16 +98,20 @@ div.events-item__image {
   padding-bottom: 80px;
   border-radius: 10px;
 }
+
 .modal-main__title {
   margin-bottom: 42px;
 }
+
 .modal-main__table-wrapper {
   margin-top: 50px;
 }
+
 .modal-main__border {
   padding-bottom: 22px;
   border-bottom: 1px solid #838383;
 }
+
 .modal-main__table {
   thead {
     tr {
@@ -116,24 +120,27 @@ div.events-item__image {
         font-size: 14px;
         text-align: center;
         padding-top: 9px;
-        &:first-child {
-          text-align: start;
-        }       
-      }
-    }
-  }
-  tbody {
-    tr {
-      td {
-        font-size: 18px;      
-        padding-top: 18px;
-        padding-bottom: 18px;  
-        text-align: center;
+
         &:first-child {
           text-align: start;
         }
       }
-     
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        font-size: 18px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        text-align: center;
+
+        &:first-child {
+          text-align: start;
+        }
+      }
+
       &:last-child {
         td {
           padding-bottom: 0;
@@ -142,9 +149,11 @@ div.events-item__image {
     }
   }
 }
+
 .modal-poverka__title {
   margin-bottom: 50px;
 }
+
 .modal-form {
   background-color: #f5f6f7;
   padding-top: 28px;
@@ -163,30 +172,139 @@ div.events-item__image {
   background-color: #f5f6f7;
 
 }
-.modal-form__content{
+
+.modal-form__content {
   position: relative;
   z-index: 1;
 }
+
 .modal-poverka .modal-content {
   // overflow: hidden;
 }
+
 .modal-form__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
   row-gap: 25px;
 }
+
 .modal-form__col {
   grid-column: 6 span;
 }
+
 .modal-form .form-input {
   width: 100%;
 }
+
 .modal-info {
   padding-top: 50px;
 }
+
 .modal-info__item {
-  span:nth-child(1){
+  span:nth-child(1) {
     min-width: 230px;
+  }
+}
+
+#modal-ipoteka-dogovor .modal-dialog {
+  max-width: 744px;
+}
+
+.modal-dogovor__row {
+  display: grid;
+  grid-template-columns: 300px 235px;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.modal-dogovor__col {
+  // width: 50%;
+}
+
+.dogovor-slider {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.dogovor-slide__head {
+  color: #fff;
+  background-color: #184aa3;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 23px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.dogovor-slide__content {
+  padding-left: 21px;
+}
+
+.dogovor-slide__row {
+  margin-bottom: 20px;
+}
+
+.dogovor-slide__col {
+  color: #000;
+
+  &:nth-child(1) {
+    max-width: 225px;
+  }
+}
+
+.dogovor-slide__col_green {
+  color: #53b418;
+}
+
+.dogovor-navigation {
+  
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+  position: relative; 
+
+  .nav-arrow {
+    width: 85px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    background-color: #184aa3;
+    transition: background-color .2s linear;
+    &:hover {
+      background-color: #0a3177;
+    }
+
+    &-prev {
+      justify-content: flex-end;
+      padding-right: 17px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    &-next {
+      justify-content: flex-start;
+      padding-left: 17px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    &.swiper-button-disabled {     
+      pointer-events: none;
+    }
+  }
+  .nav-between {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
   }
 }

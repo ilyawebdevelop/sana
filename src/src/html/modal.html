@@ -268,7 +268,8 @@
           <div class="personal-form__image"><img class="photo-item_1" src="@img/personal/photo.png" alt="image"></div>
           <div class="personal-change-file-wrapper">
             <input id="personal-change-file" type="file">
-            <label class="personal-change-file-btn btn btn--transparent" for="personal-change-file">Добавить новое фото</label>
+            <label class="personal-change-file-btn btn btn--transparent" for="personal-change-file">Добавить новое
+              фото</label>
           </div>
         </div>
         <div class="personal-form__row">
@@ -299,13 +300,13 @@
   </div>
 </div>
 
-<!-- modal-not-payed -->
+<!-- modal-not-kvitancii-payed -->
 <div class="modal fade modal-poverka" id="modal-not-payed" tabindex="-1" aria-labelledby="exampleModalLabel_5"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция на оплату коммунальных платежей за Май 2023 г.</div>
-   
+
 
       <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
           src="@img/icons/close-modal.svg" alt="close"></button>
@@ -319,7 +320,261 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция об оплате коммунальных платежей за Апрель 2023 г.</div>
-   
+
+
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="@img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-ipoteka-dogovor -->
+<div class="modal fade modal-poverka modal-dogovor" id="modal-ipoteka-dogovor" tabindex="-1"
+  aria-labelledby="exampleModalLabel_7" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Ипотечный договор</div>
+
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Покупатель:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          Перова Ольга Николаевна
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Договор:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          9960357
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Дата окончания:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          01 октября 2023 года
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Льготная ставка:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          17,5%
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Базовая ставка:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          23,5%
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Платеж:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          66 500 рублей
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Задолженность в т.ч. просроченная:
+        </div>
+        <div class="modal-dogovor__col fw-medium">
+          66 500 рублей
+        </div>
+      </div><!-- /modal-dogovor__row -->
+      <div class="modal-dogovor__row">
+        <div class="modal-dogovor__col">
+          Сумма для досрочного погашения:
+        </div>
+        <div class="modal-dogovor__col fw-bold">
+          921 934 рубля
+        </div>
+      </div><!-- /modal-dogovor__row -->
+
+      <div class="swiper dogovor-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide dogovor-slide">
+
+            <div class="dogovor-slide__item">
+              <div class="dogovor-slide__head d-flex justify-content-between">
+                <span>Апрель 2023 год / 17,5%</span>
+                <span></span>
+              </div>
+              <div class="dogovor-slide__content">
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Плановый платеж</div>
+                  <div class="dogovor-slide__col">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Оплата процентов</div>
+                  <div class="dogovor-slide__col">13 252 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+              </div><!-- /dogovor-slide__content -->
+            </div><!-- /dogovor-slide__item -->
+
+            <div class="dogovor-slide__item">
+              <div class="dogovor-slide__head d-flex justify-content-between">
+                <span>Март 2023 год / 17,5%</span>
+                <span>Оплачено 866 500 руб.</span>
+              </div>
+              <div class="dogovor-slide__content">
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Плановый платеж</div>
+                  <div class="dogovor-slide__col">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 27.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 27.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">400 000 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 29.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Оплата процентов</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">25 516 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+              </div><!-- /dogovor-slide__content -->
+            </div><!-- /dogovor-slide__item -->
+
+            <div class="dogovor-slide__item">
+              <div class="dogovor-slide__head d-flex justify-content-between">
+                <span>Февраль 2023 год / 17,5%</span>
+                <span>Оплачено 566 500 руб.</span>
+              </div>
+              <div class="dogovor-slide__content">
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Плановый платеж</div>
+                  <div class="dogovor-slide__col">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 27.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 27.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">400 000 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 29.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Оплата процентов</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">25 516 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+              </div><!-- /dogovor-slide__content -->
+            </div><!-- /dogovor-slide__item -->
+
+          </div><!-- /dogovor-slide -->
+          <div class="swiper-slide dogovor-slide">
+
+            <div class="dogovor-slide__item">
+              <div class="dogovor-slide__head d-flex justify-content-between">
+                <span>Апрель 2023 год / 17,5%</span>
+                <span></span>
+              </div>
+              <div class="dogovor-slide__content">
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Плановый платеж</div>
+                  <div class="dogovor-slide__col">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Оплата процентов</div>
+                  <div class="dogovor-slide__col">13 252 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+              </div><!-- /dogovor-slide__content -->
+            </div><!-- /dogovor-slide__item -->
+
+            <div class="dogovor-slide__item">
+              <div class="dogovor-slide__head d-flex justify-content-between">
+                <span>Март 2023 год / 17,5%</span>
+                <span>Оплачено 866 500 руб.</span>
+              </div>
+              <div class="dogovor-slide__content">
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Плановый платеж</div>
+                  <div class="dogovor-slide__col">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Внесен платеж 27.03.2023</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->       
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Оплата процентов</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">25 516 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+              </div><!-- /dogovor-slide__content -->
+            </div><!-- /dogovor-slide__item -->
+
+            <div class="dogovor-slide__item">
+              <div class="dogovor-slide__head d-flex justify-content-between">
+                <span>Февраль 2023 год / 17,5%</span>
+                <span>Оплачено 566 500 руб.</span>
+              </div>
+              <div class="dogovor-slide__content">
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Плановый платеж</div>
+                  <div class="dogovor-slide__col">66 500 руб.</div>
+                </div><!-- /dogovor-slide__row -->              
+                <div class="dogovor-slide__row d-flex justify-content-between">
+                  <div class="dogovor-slide__col">Оплата процентов</div>
+                  <div class="dogovor-slide__col dogovor-slide__col_green">25 516 руб.</div>
+                </div><!-- /dogovor-slide__row -->
+              </div><!-- /dogovor-slide__content -->
+            </div><!-- /dogovor-slide__item -->
+
+          </div><!-- /dogovor-slide -->
+
+        </div>
+        <div class="dogovor-navigation">
+          <div class="nav-arrow nav-arrow-prev"><img src="@img/icons/prev.svg" alt="icon"></div>
+          <div class="nav-arrow nav-arrow-next"><img src="@img/icons/next.svg" alt="icon"></div>
+          <div class="nav-between"></div>
+        </div>
+      </div>
+
+
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="@img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-not-ipoteka-payed -->
+<div class="modal fade modal-poverka" id="modal-not-payed-ipoteka" tabindex="-1" aria-labelledby="exampleModalLabel_8"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Ипотечный платеж за Май 2023 г.</div>
+
+
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
+          src="@img/icons/close-modal.svg" alt="close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- modal-payed-ipoteka -->
+<div class="modal fade modal-poverka" id="modal-payed-ipoteka" tabindex="-1" aria-labelledby="exampleModalLabel_9"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title modal-poverka__title">Ипотечный платеж за Апрель 2023 г.</div>
+
 
       <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><img
           src="@img/icons/close-modal.svg" alt="close"></button>

@@ -127,3 +127,15 @@ function uploadFile(file, formImage, formUrlImage) {
   };
   reader.readAsDataURL(file);
 }
+
+// Инициализация слайдера dogovor-slider
+const dogovorSlider = document.querySelector('.dogovor-slider');
+var mySwiperDogovor = new Swiper(dogovorSlider, {
+  slidesPerView: 1,
+  spaceBetween: 10,   
+  speed: 600, 
+  navigation: {   
+    prevEl: '.dogovor-slider .nav-arrow-prev',
+    nextEl: '.dogovor-slider .nav-arrow-next',
+  },
+});

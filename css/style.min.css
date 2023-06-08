@@ -12062,6 +12062,10 @@ table {
   font-weight: 500;
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+
 .section-title {
   padding-top: 26px;
   padding-bottom: 26px;
@@ -12752,6 +12756,99 @@ div.events-item__image:hover {
 
 .modal-info__item span:nth-child(1) {
   min-width: 230px;
+}
+
+#modal-ipoteka-dogovor .modal-dialog {
+  max-width: 744px;
+}
+
+.modal-dogovor__row {
+  display: grid;
+  grid-template-columns: 300px 235px;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dogovor-slider {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.dogovor-slide__head {
+  color: #fff;
+  background-color: #184aa3;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 23px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.dogovor-slide__content {
+  padding-left: 21px;
+}
+
+.dogovor-slide__row {
+  margin-bottom: 20px;
+}
+
+.dogovor-slide__col {
+  color: #000;
+}
+.dogovor-slide__col:nth-child(1) {
+  max-width: 225px;
+}
+
+.dogovor-slide__col_green {
+  color: #53b418;
+}
+
+.dogovor-navigation {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+.dogovor-navigation .nav-arrow {
+  width: 85px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  background-color: #184aa3;
+  transition: background-color 0.2s linear;
+}
+.dogovor-navigation .nav-arrow:hover {
+  background-color: #0a3177;
+}
+.dogovor-navigation .nav-arrow-prev {
+  justify-content: flex-end;
+  padding-right: 17px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.dogovor-navigation .nav-arrow-next {
+  justify-content: flex-start;
+  padding-left: 17px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dogovor-navigation .nav-arrow.swiper-button-disabled {
+  pointer-events: none;
+}
+.dogovor-navigation .nav-between {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
 }
 
 .nav {
