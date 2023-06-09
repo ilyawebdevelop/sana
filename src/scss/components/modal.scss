@@ -260,13 +260,13 @@ div.events-item__image {
 }
 
 .dogovor-navigation {
-  
+
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   display: flex;
-  position: relative; 
+  position: relative;
 
   .nav-arrow {
     width: 85px;
@@ -275,6 +275,7 @@ div.events-item__image {
     cursor: pointer;
     background-color: #184aa3;
     transition: background-color .2s linear;
+
     &:hover {
       background-color: #0a3177;
     }
@@ -292,10 +293,12 @@ div.events-item__image {
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
     }
-    &.swiper-button-disabled {     
+
+    &.swiper-button-disabled {
       pointer-events: none;
     }
   }
+
   .nav-between {
     position: absolute;
     left: 0;
@@ -306,5 +309,124 @@ div.events-item__image {
     top: 50%;
     transform: translateY(-50%);
     background-color: #fff;
+  }
+}
+
+#modal-not-payed .modal-dialog {
+  max-width: 1330px;
+}
+#modal-payed .modal-dialog {
+  max-width: 1330px;
+}
+#modal-not-payed-ipoteka .modal-dialog {
+  max-width: 1330px;
+}
+#modal-payed-ipoteka .modal-dialog {
+  max-width: 1330px;
+}
+
+
+.modal-form__col_4 {
+  grid-column: 3 span;
+}
+
+#modal-not-payed .modal-form__grid {
+  column-gap: 25px;
+}
+
+#modal-not-payed .modal-form::after {
+  width: 1326px;
+}
+
+
+.modal-payment__table {
+  padding-top: 30px;
+
+  table {
+    thead {
+      tr {
+        td {
+          padding-top: 15px;
+          padding-bottom: 20px;
+          font-size: 12px;
+          color: #686868;
+          text-align: center;
+          border-top: 1px solid #838383;
+          border-bottom: 1px solid #838383;
+
+          &:first-child {
+            text-align: start;
+            max-width: 100px;
+          }
+          &:not(:last-child){
+            border-right: 1px solid #838383;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          padding-bottom: 19px;
+          font-size: 14px;
+          vertical-align: baseline;
+
+          &:first-child {
+            text-align: start;
+          }
+          &:not(:last-child){
+            border-right: 1px solid #838383;
+          }
+        }
+        &.new-row {
+          td {
+            padding-top: 30px!important;
+          }
+        }
+        &.new-row_second {
+          td {
+            padding-top: 10px!important;
+          }
+        }
+        &:last-child {
+          td {
+            padding-bottom: 19px;
+            padding-top: 19px;
+            border-bottom: 1px solid #838383;
+            border-top: 1px solid #838383;
+            font-size: 18px;
+
+            &:not(:last-child) {
+              border-right: 1px solid #838383;
+            }
+          }
+        }
+
+        &:first-child {
+          td {
+            padding-top: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+.print-wrapper {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.modal-ipoteka-table {
+  table {
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            padding-bottom: 120px;
+          }
+        }
+      }
+    }
   }
 }
