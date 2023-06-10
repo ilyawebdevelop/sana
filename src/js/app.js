@@ -3,6 +3,7 @@ import "./modules/jquery-3.6.1.min.js";
 import "./modules/bootstrap.bundle.min.js";
 
 import './components.js';
+import AirDatepicker from 'air-datepicker';
 
 flsFunctions.isWebp();
 
@@ -139,3 +140,24 @@ var mySwiperDogovor = new Swiper(dogovorSlider, {
     nextEl: '.dogovor-slider .nav-arrow-next',
   },
 });
+
+
+
+let servicesInputDate = document.querySelectorAll('.services-form__calendar');
+servicesInputDate.forEach(el => {
+  new AirDatepicker(el, { 
+    multipleDates: false,
+    timepicker: true,  
+  })
+});
+
+let schetchikiInputDate = document.querySelectorAll('.form-input-date');
+schetchikiInputDate.forEach(el => {
+  new AirDatepicker(el, { 
+    multipleDates: false,
+    inline: false
+  })
+});
+
+// 
+
