@@ -55,7 +55,16 @@ $('#chat-message-file').on('change', function (event, files, label) {
   var file_name = this.value.replace(/\\/g, '/').replace(/.*\//, '')
   $('.filename').text(file_name);
   $('.filename-wrapper').addClass('active');
+  $("#chat-message-file")[0].value = "";
 });
+
+let chatMessageInputFile = document.querySelector('#chat-message-file');
+let removeBtn = document.querySelector('.filename-delete');
+let fileNameWrapper = document.querySelector('.filename-wrapper');
+removeBtn?.addEventListener('click', function () {
+  chatMessageInputFile.value = '';
+  fileNameWrapper.classList.remove('active');
+}, false);
 
 // LightGallery
 var galleryItems = document.getElementsByClassName('gallery-list');
@@ -86,15 +95,6 @@ $('#personal-new-file').on('change', function (event, files, label) {
   $('.personal-new-added').text(file_name);
   $('.personal-form__row_new').addClass('active');
 });
-
-// file-uploading styling personal modal change field
-// $('#personal-change-file').on('change', function (event, files, label) {
-//   var file_name = this.value.replace(/\\/g, '/').replace(/.*\//, '')
-//   $('.personal-new-added').text(file_name);
-//   $('.personal-form__row_new').addClass('active');
-// });
-
-
 
 const formImage_1 = document.getElementById('personal-change-file');
 const formUrlImage_1 = document.querySelector('.photo-item_1');
@@ -141,8 +141,7 @@ var mySwiperDogovor = new Swiper(dogovorSlider, {
   },
 });
 
-
-
+// Air datepicker date+time
 let servicesInputDate = document.querySelectorAll('.services-form__calendar');
 servicesInputDate.forEach(el => {
   new AirDatepicker(el, { 
@@ -151,6 +150,7 @@ servicesInputDate.forEach(el => {
   })
 });
 
+// Air datepicker date
 let schetchikiInputDate = document.querySelectorAll('.form-input-date');
 schetchikiInputDate.forEach(el => {
   new AirDatepicker(el, { 
@@ -158,6 +158,4 @@ schetchikiInputDate.forEach(el => {
     inline: false
   })
 });
-
-// 
 

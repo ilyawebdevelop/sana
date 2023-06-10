@@ -279,7 +279,9 @@
 .filename-wrapper {
   display: none;
   &.active {
-    display: block;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
   }
 }
 #chat-message-file {
@@ -287,4 +289,9 @@
 }
 .chat-textarea-wrapper {
   position: relative;
+}
+.filename-delete {
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
 }

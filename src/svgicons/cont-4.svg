@@ -1,0 +1,13 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5c5c5c;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <rect id="Border" class="cls-1" x="0.5" y="0.5" width="67" height="67" rx="10" ry="10"/>
+  <image id="Email_icon" data-name="Email icon" x="21.5" y="18.5" width="26" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAABe0lEQVRIibXVwVHDMBAF0A9DA3DxnkUJSQm4hKQEKCEugbRACaGEUIJTApz3lhJgNrMLGtmSV7H5M5k4ku1nyYr2pmkaVCYA+LJLmNl19e2gpZxPAD2AbwBPxTNnQIKcADwA2AI41mBeyJCt/n43jIhcmAdKEUsVNgXlkGqsBE0hlzCzC8tBLqQGG4OqEC+WQlchGWyTg2YhI9ghxgxaBClhstf1unddO12DNosiBwCPMqJ73UrC4Mz5edY7BJu6D90sF8OI6KiHl53eoDf9LIIZwsyttd1F/Z1+C7aOa04UmeaNLpzToDeDpNAUttLScNZRy7l7DzIG5TBDOp3ioP0wrITkoBTb6hI1BIrLQ/REBCuAOaQEGRZ0JC8RYvnF5JiZ14M7RBnbVC1Bn7QbQVIsENFu0OuA7B3s0xeehpkN25WwMciNWDxYCq1qES8WQ7aEqxEPZqtOput1DhJjRBQv/UukTEgtEkhW1iwkif01JK3Vo/8oEX8B2h+LF6nMmHYGMQAAAABJRU5ErkJggg=="/>
+</svg>
