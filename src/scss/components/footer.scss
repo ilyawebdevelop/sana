@@ -3,9 +3,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
   color: #000;
+  @media(max-width: 991px){
+    padding-bottom: 100px;
+  }
 
   &__logos {
     column-gap: 35px;
+  }
+  &__contacts {
+    align-items: center;
+    @media(max-width: 1340px){
+      flex-direction: column;
+      row-gap: 35px;
+      align-items: flex-end;
+    }
   }
 }
 
@@ -29,6 +40,9 @@
 .footer__socials {
   margin-top: 45px;
   column-gap: 15px;
+  @media(max-width: 991px){
+    margin-top: 100px;
+  }
 }
 
 .footer__contacts>span {
@@ -37,6 +51,9 @@
   display: block;
   text-align: end;
   font-size: 18px;
+  @media(max-width: 1340px){
+    margin-right: 0;
+  }
 }
 
 .footer__phone {
@@ -49,6 +66,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
   transition: color .2s linear;
+  @media(max-width: 1340px){
+    margin-right: 0;
+  }
   &:hover {
     color: #0353a1;
   }

@@ -108,7 +108,7 @@
 
       <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
     </div>
-    <div class="header__center d-flex align-items-center">
+    <div class="header__center align-items-center">
       <div class="header__menu">
         <ul class="header__menu-list">
           <li>
@@ -171,189 +171,232 @@
 		<main class="main">
 			<section class="services" id="services">
     <div class="container">
-        <div class="row">
 
-            <div class="col-lg-4">
-                <div class="services-card events-item">
-                    <div class="events-item__image d-flex align-items-center justify-content-center">
-                        <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
-                    </div>
-                    <div class="events-item__content">
-                        <div class="services-card__title">Услуги электрика</div>
-                        <p class="services-card__descr">
-                            (при заказе услуги выберите нужную из списка)
-                        </p>
-                        <form class="services-card__form services-form" action="#">
-                            <div class="services-form__row">
-                                <div class="services-form__select-wrapper">
-                                    <select class="select-form" name="services-form" id="services-form_1">
-                                        <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
-                                            давления воды(ГВС) - 1200 руб</option>
-                                        <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
-                                            давления воды(ХВС) - 1200 руб</option>
-                                        <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
-                                            замена канализационного сифона - 1500 руб</option>
-                                        <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
-                                            канализационного стояка - 2500 руб</option>
-                                        <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
-                                        </option>
-                                        <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
-                                            1500 руб</option>
-                                        <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
-                                            3000 руб</option>
-                                        <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
-                                            душевой колонки - от 1500 руб</option>
-                                        <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
-                                            батарей отопления - от 1500 руб</option>
-                                    </select>
-                                </div>
-                            </div><!-- /services-form__row -->
-                            <div class="services-form__row services-form__group">
-                                <input class="services-form__input services-form__calendar" type="text" placeholder="Укажите дату и время">
-                                <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+        <div class="services-grid">
+
+            <div class="services-card events-item">
+                <div class="events-item__image d-flex align-items-center justify-content-center">
+                    <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
+                </div>
+                <div class="events-item__content">
+                    <div class="services-card__title">Услуги электрика</div>
+                    <p class="services-card__descr">
+                        (при заказе услуги выберите нужную из списка)
+                    </p>
+                    <form class="services-card__form services-form" action="#">
+                        <div class="services-form__row">
+                            <div class="services-form__select-wrapper">
+                                <select class="select-form" name="services-form" id="services-form_1">
+                                    <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
+                                        давления воды(ГВС) - 1200 руб</option>
+                                    <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
+                                        давления воды(ХВС) - 1200 руб</option>
+                                    <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
+                                        замена канализационного сифона - 1500 руб</option>
+                                    <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
+                                        канализационного стояка - 2500 руб</option>
+                                    <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
+                                    </option>
+                                    <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
+                                        1500 руб</option>
+                                    <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
+                                        3000 руб</option>
+                                    <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
+                                        душевой колонки - от 1500 руб</option>
+                                    <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
+                                        батарей отопления - от 1500 руб</option>
+                                </select>
                             </div>
+                        </div><!-- /services-form__row -->
+                        <div class="services-form__row services-form__group">
+                            <input class="services-form__input services-form__calendar" type="text"
+                                placeholder="Укажите дату и время">
+                            <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+                        </div>
 
-                        </form>
-                    </div>
-                </div><!-- /events-item -->
-            </div>
+                    </form>
+                </div>
+            </div><!-- /events-item -->
 
-            <div class="col-lg-4">
-                <div class="services-card events-item">
-                    <div class="events-item__image d-flex align-items-center justify-content-center">
-                        <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
-                    </div>
-                    <div class="events-item__content">
-                        <div class="services-card__title">Сантехнические услуги</div>
-                        <p class="services-card__descr">
-                            (при заказе услуги выберите нужную из списка)
-                        </p>
-                        <form class="services-card__form services-form" action="#">
-                            <div class="services-form__row">
-                                <div class="services-form__select-wrapper">
-                                    <select class="select-form" name="services-form" id="services-form_1">
-                                        <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
-                                            давления воды(ГВС) - 1200 руб</option>
-                                        <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
-                                            давления воды(ХВС) - 1200 руб</option>
-                                        <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
-                                            замена канализационного сифона - 1500 руб</option>
-                                        <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
-                                            канализационного стояка - 2500 руб</option>
-                                        <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
-                                        </option>
-                                        <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
-                                            1500 руб</option>
-                                        <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
-                                            3000 руб</option>
-                                        <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
-                                            душевой колонки - от 1500 руб</option>
-                                        <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
-                                            батарей отопления - от 1500 руб</option>
-                                    </select>
-                                </div>
-                            </div><!-- /services-form__row -->
-                            <div class="services-form__row services-form__group">
-                                <input class="services-form__input services-form__calendar" type="text" placeholder="Укажите дату и время">
-                                <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+            <div class="services-card events-item">
+                <div class="events-item__image d-flex align-items-center justify-content-center">
+                    <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
+                </div>
+                <div class="events-item__content">
+                    <div class="services-card__title">Сантехнические услуги</div>
+                    <p class="services-card__descr">
+                        (при заказе услуги выберите нужную из списка)
+                    </p>
+                    <form class="services-card__form services-form" action="#">
+                        <div class="services-form__row">
+                            <div class="services-form__select-wrapper">
+                                <select class="select-form" name="services-form" id="services-form_1">
+                                    <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
+                                        давления воды(ГВС) - 1200 руб</option>
+                                    <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
+                                        давления воды(ХВС) - 1200 руб</option>
+                                    <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
+                                        замена канализационного сифона - 1500 руб</option>
+                                    <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
+                                        канализационного стояка - 2500 руб</option>
+                                    <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
+                                    </option>
+                                    <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
+                                        1500 руб</option>
+                                    <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
+                                        3000 руб</option>
+                                    <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
+                                        душевой колонки - от 1500 руб</option>
+                                    <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
+                                        батарей отопления - от 1500 руб</option>
+                                </select>
                             </div>
+                        </div><!-- /services-form__row -->
+                        <div class="services-form__row services-form__group">
+                            <input class="services-form__input services-form__calendar" type="text"
+                                placeholder="Укажите дату и время">
+                            <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+                        </div>
 
-                        </form>
-                    </div>
-                </div><!-- /events-item -->
-            </div>
-          
-            <div class="col-lg-4">
-                <div class="services-card events-item">
-                    <div class="events-item__image d-flex align-items-center justify-content-center">
-                        <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
-                    </div>
-                    <div class="events-item__content">
-                        <div class="services-card__title">Малярные работы</div>
-                        <p class="services-card__descr">
-                            (при заказе услуги выберите нужную из списка)
-                        </p>
-                        <form class="services-card__form services-form" action="#">
-                            <div class="services-form__row">
-                                <div class="services-form__select-wrapper">
-                                    <select class="select-form" name="services-form" id="services-form_1">
-                                        <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
-                                            давления воды(ГВС) - 1200 руб</option>
-                                        <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
-                                            давления воды(ХВС) - 1200 руб</option>
-                                        <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
-                                            замена канализационного сифона - 1500 руб</option>
-                                        <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
-                                            канализационного стояка - 2500 руб</option>
-                                        <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
-                                        </option>
-                                        <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
-                                            1500 руб</option>
-                                        <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
-                                            3000 руб</option>
-                                        <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
-                                            душевой колонки - от 1500 руб</option>
-                                        <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
-                                            батарей отопления - от 1500 руб</option>
-                                    </select>
-                                </div>
-                            </div><!-- /services-form__row -->
-                            <div class="services-form__row services-form__group">
-                                <input class="services-form__input services-form__calendar" type="text" placeholder="Укажите дату и время">
-                                <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+                    </form>
+                </div>
+            </div><!-- /events-item -->
+
+            <div class="services-card events-item">
+                <div class="events-item__image d-flex align-items-center justify-content-center">
+                    <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
+                </div>
+                <div class="events-item__content">
+                    <div class="services-card__title">Малярные работы</div>
+                    <p class="services-card__descr">
+                        (при заказе услуги выберите нужную из списка)
+                    </p>
+                    <form class="services-card__form services-form" action="#">
+                        <div class="services-form__row">
+                            <div class="services-form__select-wrapper">
+                                <select class="select-form" name="services-form" id="services-form_1">
+                                    <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
+                                        давления воды(ГВС) - 1200 руб</option>
+                                    <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
+                                        давления воды(ХВС) - 1200 руб</option>
+                                    <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
+                                        замена канализационного сифона - 1500 руб</option>
+                                    <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
+                                        канализационного стояка - 2500 руб</option>
+                                    <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
+                                    </option>
+                                    <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
+                                        1500 руб</option>
+                                    <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
+                                        3000 руб</option>
+                                    <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
+                                        душевой колонки - от 1500 руб</option>
+                                    <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
+                                        батарей отопления - от 1500 руб</option>
+                                </select>
                             </div>
+                        </div><!-- /services-form__row -->
+                        <div class="services-form__row services-form__group">
+                            <input class="services-form__input services-form__calendar" type="text"
+                                placeholder="Укажите дату и время">
+                            <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+                        </div>
 
-                        </form>
-                    </div>
-                </div><!-- /events-item -->
-            </div>
+                    </form>
+                </div>
+            </div><!-- /events-item -->
 
-            <div class="col-lg-4">
-                <div class="services-card events-item">
-                    <div class="events-item__image d-flex align-items-center justify-content-center">
-                        <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
-                    </div>
-                    <div class="events-item__content">
-                        <div class="services-card__title">Столярные работы</div>
-                        <p class="services-card__descr">
-                            (при заказе услуги выберите нужную из списка)
-                        </p>
-                        <form class="services-card__form services-form" action="#">
-                            <div class="services-form__row">
-                                <div class="services-form__select-wrapper">
-                                    <select class="select-form" name="services-form" id="services-form_1">
-                                        <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
-                                            давления воды(ГВС) - 1200 руб</option>
-                                        <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
-                                            давления воды(ХВС) - 1200 руб</option>
-                                        <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
-                                            замена канализационного сифона - 1500 руб</option>
-                                        <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
-                                            канализационного стояка - 2500 руб</option>
-                                        <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
-                                        </option>
-                                        <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
-                                            1500 руб</option>
-                                        <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
-                                            3000 руб</option>
-                                        <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
-                                            душевой колонки - от 1500 руб</option>
-                                        <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
-                                            батарей отопления - от 1500 руб</option>
-                                    </select>
-                                </div>
-                            </div><!-- /services-form__row -->
-                            <div class="services-form__row services-form__group">
-                                <input class="services-form__input services-form__calendar" type="text" placeholder="Укажите дату и время">
-                                <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+            <div class="services-card events-item">
+                <div class="events-item__image d-flex align-items-center justify-content-center">
+                    <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
+                </div>
+                <div class="events-item__content">
+                    <div class="services-card__title">Столярные работы</div>
+                    <p class="services-card__descr">
+                        (при заказе услуги выберите нужную из списка)
+                    </p>
+                    <form class="services-card__form services-form" action="#">
+                        <div class="services-form__row">
+                            <div class="services-form__select-wrapper">
+                                <select class="select-form" name="services-form" id="services-form_1">
+                                    <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
+                                        давления воды(ГВС) - 1200 руб</option>
+                                    <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
+                                        давления воды(ХВС) - 1200 руб</option>
+                                    <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
+                                        замена канализационного сифона - 1500 руб</option>
+                                    <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
+                                        канализационного стояка - 2500 руб</option>
+                                    <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
+                                    </option>
+                                    <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
+                                        1500 руб</option>
+                                    <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
+                                        3000 руб</option>
+                                    <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
+                                        душевой колонки - от 1500 руб</option>
+                                    <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
+                                        батарей отопления - от 1500 руб</option>
+                                </select>
                             </div>
+                        </div><!-- /services-form__row -->
+                        <div class="services-form__row services-form__group">
+                            <input class="services-form__input services-form__calendar" type="text"
+                                placeholder="Укажите дату и время">
+                            <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+                        </div>
 
-                        </form>
-                    </div>
-                </div><!-- /events-item -->
-            </div>
+                    </form>
+                </div>
+            </div><!-- /events-item -->
+
+            <div class="services-card events-item">
+                <div class="events-item__image d-flex align-items-center justify-content-center">
+                    <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
+                </div>
+                <div class="events-item__content">
+                    <div class="services-card__title">Столярные работы</div>
+                    <p class="services-card__descr">
+                        (при заказе услуги выберите нужную из списка)
+                    </p>
+                    <form class="services-card__form services-form" action="#">
+                        <div class="services-form__row">
+                            <div class="services-form__select-wrapper">
+                                <select class="select-form" name="services-form" id="services-form_1">
+                                    <option value="Замена редуктора давления воды(ГВС) - 1200 руб">Замена редуктора
+                                        давления воды(ГВС) - 1200 руб</option>
+                                    <option value="Замена редуктора давления воды(ХВС) - 1200 руб">Замена редуктора
+                                        давления воды(ХВС) - 1200 руб</option>
+                                    <option value="Ремонт / замена канализационного сифона - 1500 руб">Ремонт /
+                                        замена канализационного сифона - 1500 руб</option>
+                                    <option value="Ремонт замена канализационного стояка - 2500 руб">Ремонт замена
+                                        канализационного стояка - 2500 руб</option>
+                                    <option value="Ремонт инсталяции - от 1000 руб">Ремонт инсталяции - от 1000 руб
+                                    </option>
+                                    <option value="Ремонт / замена смесителя - 1500 руб">Ремонт / замена смесителя -
+                                        1500 руб</option>
+                                    <option value="Ремонт / замена унитаза - 3000 руб">Ремонт / замена унитаза -
+                                        3000 руб</option>
+                                    <option value="Ремонт / замена душевой колонки - от 1500 руб">Ремонт / замена
+                                        душевой колонки - от 1500 руб</option>
+                                    <option value="Ремонт / замена батарей отопления - от 1500 руб">Ремонт / замена
+                                        батарей отопления - от 1500 руб</option>
+                                </select>
+                            </div>
+                        </div><!-- /services-form__row -->
+                        <div class="services-form__row services-form__group">
+                            <input class="services-form__input services-form__calendar" type="text"
+                                placeholder="Укажите дату и время">
+                            <button class="services-form__btn btn btn--blue">Заказать услугу</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div><!-- /events-item -->
 
         </div>
+
+
     </div>
 </section>
 		</main>
@@ -387,15 +430,21 @@
       </div>
     </div>
     <div class="footer__right">
-      <div class="footer__contacts d-flex align-items-center">
+      <div class="footer__contacts d-flex">
         <span>Круглосуточная служба поддержки клиентов:</span>
         <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
         <button class="footer__contacts-btn btn">Заказать звонок</button>
       </div>
-      <div class="footer__politics d-flex justify-content-end">
+      <div class="footer__politics d-none d-lg-flex justify-content-end">
         <a href="#">Политика конфиденциальности</a>
         <a href="#">Публичная оферта</a>
       </div>
+    </div>
+  </div>
+  <div class="container footer-politics-container">
+    <div class="footer__politics d-flex d-lg-none justify-content-center">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Публичная оферта</a>
     </div>
   </div>
 </footer>
@@ -443,7 +492,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-main__title">Ваше имущество</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
         <span>Площадь помещения: 120 кв.м.</span>
       </div>
@@ -491,7 +540,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Заявка на поверку прибора учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -528,7 +577,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Добавить новый прибор учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -565,7 +614,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Передача показаний приборов учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -707,7 +756,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция на оплату коммунальных платежей за Май 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -884,7 +933,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция об оплате коммунальных платежей за Апрель 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
         <span>Площадь помещения: 120 кв.м.</span>
       </div>
@@ -1269,7 +1318,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Ипотечный платеж за Май 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -1342,7 +1391,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Ипотечный платеж за Апрель 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 

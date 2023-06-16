@@ -5,6 +5,19 @@
         row-gap: 30px;
     }
 }
+.services-card {
+    grid-column: 4 span;
+    @media(max-width: 1630px){
+        grid-column: 6 span;
+    }
+    @media(max-width: 1199px){
+        grid-column: 12 span;
+    }
+    @media(max-width: 991px){
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
 .services-card__descr {
     font-size: 14px;
     color: #000;
@@ -24,6 +37,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     margin-top: 15px;
+    @media(max-width: 1700px){
+        column-gap: 10px;
+    }
 }
 .services-form__input {
     width: 100%;
@@ -32,4 +48,10 @@
     padding-left: 20px;
     padding-right: 20px;
     height: 40px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
 }

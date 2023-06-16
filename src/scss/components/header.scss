@@ -13,7 +13,11 @@
   }
 
   &__center {
+    display: flex;
     column-gap: 30px;
+    @media(max-width: 1506px){
+      display: none;
+    }
   }
 }
 
@@ -107,6 +111,11 @@
   opacity: 0;
   visibility: hidden;
   transition: all .2s linear;
+  @media(max-width: 991px){
+    width: 100%;
+    left: 0;
+    top: 121px;
+  }
 
   &.active {
     visibility: visible;
@@ -135,6 +144,9 @@
     background-color: #fff;
     width: 90px;
     height: 100%;
+    @media(max-width: 991px){
+     display: none; 
+    }
   }
 
   li {
@@ -147,6 +159,9 @@
       padding-bottom: 22px;
       padding-top: 22px;
       position: relative;
+      @media(max-width: 991px){
+        justify-content: center;
+      }
       &:hover {
         color: #0353a1;
       }
@@ -168,6 +183,9 @@
           height: 100%;
           background-color: #0353a1;
           z-index: 0;
+          @media(max-width: 991px){          
+            width: 100%;
+          }
         }
       }
       span {
@@ -187,6 +205,9 @@
         width: 436px;
         height: 2px;
         background-color: #e8edf0;
+        @media(max-width: 991px){
+          width: 100%;
+        }
       }
     }
   }

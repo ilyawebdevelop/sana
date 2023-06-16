@@ -121,6 +121,9 @@
   border-color: #585858;
   color: #000;
   font-size: 18px;
+  @media(max-width: 991px){
+   width: 298px; 
+  }
   &:hover {
     color: #0353a1;
     border-color: #0353a1;
@@ -182,6 +185,9 @@
   margin-left: auto;
   padding-left: 16px;
   padding-right: 16px;
+  @media(max-width: 1400px){
+    min-width: 160px;
+  }
   &:hover {  
     background-color: #184aa3;
     color: #fff;

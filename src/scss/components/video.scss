@@ -8,6 +8,13 @@
 .video-card {
   background-color: #ffffff;
   border-radius: 10px;
+  &_wide {
+    @media(max-width: 991px){
+      padding-right: 95px;
+      padding-left: 95px;
+      background-color: transparent;
+    }
+  }
 }
 .video-card__image {
   width: 100%;
@@ -15,7 +22,12 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    @media(max-width: 991px){
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
   }
+
 }
 .video-card__title {
   text-align: start;

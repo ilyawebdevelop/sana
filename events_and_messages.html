@@ -108,7 +108,7 @@
 
       <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
     </div>
-    <div class="header__center d-flex align-items-center">
+    <div class="header__center align-items-center">
       <div class="header__menu">
         <ul class="header__menu-list">
           <li>
@@ -173,8 +173,8 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-4">
-        <div class="events-item">
+      <div class="col-lg-6 col-xl-4">
+        <div class="events-item events-item_wide">
           <a class="events-item__image d-flex align-items-center justify-content-center events-item__btn-popup" href="#"
             data-toggle="modal" data-target="#modal-event">
             <img class="events-item__image_full" src="img/events/events-1.jpg" alt="image">
@@ -208,8 +208,8 @@
         </div><!-- /events-item -->
       </div>
 
-      <div class="col-lg-4">
-        <div class="events-item">
+      <div class="col-lg-6 col-xl-4">
+        <div class="events-item events-item_wide">
           <div class="events-item__image d-flex align-items-center justify-content-center">
             <img class="events-item__image_icon" src="img/events/events-2.png" alt="image">
             <div class="events-item__new">Новое</div>
@@ -224,8 +224,8 @@
         </div><!-- /events-item -->
       </div>
 
-      <div class="col-lg-4">
-        <div class="events-item">
+      <div class="col-lg-6 col-xl-4">
+        <div class="events-item events-item_wide">
           <div class="events-item__image d-flex align-items-center justify-content-center events-item__btn-popup">
             <img class="events-item__image_icon" src="img/events/events-3.png" alt="image">
             <div class="events-item__new">Новое</div>
@@ -243,8 +243,8 @@
         </div><!-- /events-item -->
       </div>
 
-      <div class="col-lg-4">
-        <div class="events-item">
+      <div class="col-lg-6 col-xl-4">
+        <div class="events-item events-item_wide">
           <a class="events-item__image d-flex align-items-center justify-content-center events-item__btn-popup" href="#"
             data-toggle="modal" data-target="#modal-event">
             <img class="events-item__image_full" src="img/events/events-4.png" alt="image">
@@ -283,8 +283,8 @@
         </div><!-- /events-item -->
       </div>
 
-      <div class="col-lg-4">
-        <div class="events-item">
+      <div class="col-lg-6 col-xl-4">
+        <div class="events-item events-item_wide">
           <a class="events-item__image d-flex align-items-center justify-content-center events-item__btn-popup" href="#"
             data-toggle="modal" data-target="#modal-event">
             <img class="events-item__image_full" src="img/events/events-5.png" alt="image">
@@ -329,8 +329,8 @@
         </div><!-- /events-item -->
       </div>
 
-      <div class="col-lg-4">
-        <div class="events-item">
+      <div class="col-lg-6 col-xl-4">
+        <div class="events-item events-item_wide">
           <a class="events-item__image d-flex align-items-center justify-content-center events-item__btn-popup" href="#"
             data-toggle="modal" data-target="#modal-event">
             <img class="events-item__image_full" src="img/events/events-6.png" alt="image">
@@ -376,6 +376,11 @@
       </div>
 
     </div>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn--blue d-block d-lg-none justify-content-center mx-auto mt-5">Показать еще</button>
+      </div>
+    </div>
   </div>
 </section>
 		</main>
@@ -409,15 +414,21 @@
       </div>
     </div>
     <div class="footer__right">
-      <div class="footer__contacts d-flex align-items-center">
+      <div class="footer__contacts d-flex">
         <span>Круглосуточная служба поддержки клиентов:</span>
         <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
         <button class="footer__contacts-btn btn">Заказать звонок</button>
       </div>
-      <div class="footer__politics d-flex justify-content-end">
+      <div class="footer__politics d-none d-lg-flex justify-content-end">
         <a href="#">Политика конфиденциальности</a>
         <a href="#">Публичная оферта</a>
       </div>
+    </div>
+  </div>
+  <div class="container footer-politics-container">
+    <div class="footer__politics d-flex d-lg-none justify-content-center">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Публичная оферта</a>
     </div>
   </div>
 </footer>
@@ -465,7 +476,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-main__title">Ваше имущество</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
         <span>Площадь помещения: 120 кв.м.</span>
       </div>
@@ -513,7 +524,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Заявка на поверку прибора учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -550,7 +561,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Добавить новый прибор учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -587,7 +598,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Передача показаний приборов учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -729,7 +740,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция на оплату коммунальных платежей за Май 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -906,7 +917,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция об оплате коммунальных платежей за Апрель 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
         <span>Площадь помещения: 120 кв.м.</span>
       </div>
@@ -1291,7 +1302,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Ипотечный платеж за Май 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -1364,7 +1375,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Ипотечный платеж за Апрель 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 

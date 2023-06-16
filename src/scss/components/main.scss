@@ -15,19 +15,37 @@
   padding-left: 51px;
   padding-bottom: 57px;
   height: 100%;
+  @media(max-width: 1775px){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
   &__title {
     margin-bottom: 28px;
+    @media(max-width: 991px){
+      font-size: 23px;
+    }
   }
 }
 
 .main-nav-wrapper {
   column-gap: 39px;
   margin-bottom: 19px;
+  @media(max-width: 1800px){
+    column-gap: 20px;
+  }
+  @media(max-width: 991px){
+    .main-nav-wrapper {
+      column-gap: 16px;
+    }
+  }
 }
 
 .main-nav__name {
   font-size: 18px;
+  @media(max-width: 991px){
+    font-size: 16px;
+  }
 }
 
 .main-content {
@@ -72,6 +90,8 @@
         padding-top: 15px;
         padding-bottom: 15px;
         text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
         .waiting {
           width: 196px;
           margin-left: auto;
@@ -84,6 +104,9 @@
         &:first-child {
           max-width: 225px;
           text-align: start;
+          @media(max-width: 1199px){
+            max-width: 180px;
+          }
         }
       }
     }

@@ -108,7 +108,7 @@
 
       <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
     </div>
-    <div class="header__center d-flex align-items-center">
+    <div class="header__center align-items-center">
       <div class="header__menu">
         <ul class="header__menu-list">
           <li>
@@ -172,7 +172,8 @@
 			<section class="main-sect" id="main-sect">
   <div class="container">
     <div class="row main-sect__row">
-      <div class="col-lg-6">
+
+      <div class="col-xl-6">
         <div class="main-item">
           <h3 class="main-item__title">Квитанции и оплата</h3>
           <div class="main-nav-wrapper d-flex align-items-center">
@@ -302,7 +303,8 @@
           </div>
         </div><!-- /main-item -->
       </div>
-      <div class="col-lg-6">
+
+      <div class="col-xl-6">
 
         <div class="main-item">
           <h3 class="main-item__title">Заявки и обращения</h3>
@@ -413,7 +415,7 @@
         </div><!-- /main-item -->
 
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="main-item">
           <h3 class="main-item__title">Видеонаблюдение</h3>
    
@@ -457,7 +459,7 @@
        
         </div><!-- /main-item -->
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-6">
 
         <div class="main-item">
           <h3 class="main-item__title">Имущество</h3>   
@@ -536,15 +538,21 @@
       </div>
     </div>
     <div class="footer__right">
-      <div class="footer__contacts d-flex align-items-center">
+      <div class="footer__contacts d-flex">
         <span>Круглосуточная служба поддержки клиентов:</span>
         <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
         <button class="footer__contacts-btn btn">Заказать звонок</button>
       </div>
-      <div class="footer__politics d-flex justify-content-end">
+      <div class="footer__politics d-none d-lg-flex justify-content-end">
         <a href="#">Политика конфиденциальности</a>
         <a href="#">Публичная оферта</a>
       </div>
+    </div>
+  </div>
+  <div class="container footer-politics-container">
+    <div class="footer__politics d-flex d-lg-none justify-content-center">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Публичная оферта</a>
     </div>
   </div>
 </footer>
@@ -592,7 +600,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-main__title">Ваше имущество</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
         <span>Площадь помещения: 120 кв.м.</span>
       </div>
@@ -640,7 +648,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Заявка на поверку прибора учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -677,7 +685,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Добавить новый прибор учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -714,7 +722,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Передача показаний приборов учета</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -856,7 +864,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция на оплату коммунальных платежей за Май 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -1033,7 +1041,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Квитанция об оплате коммунальных платежей за Апрель 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
         <span>Площадь помещения: 120 кв.м.</span>
       </div>
@@ -1418,7 +1426,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Ипотечный платеж за Май 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
@@ -1491,7 +1499,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-title modal-poverka__title">Ипотечный платеж за Апрель 2023 г.</div>
-      <div class="d-flex justify-content-between color-black">
+      <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 justify-content-between color-black">
         <span>Адрес: г. Петрозаводск, ул. Чкалова, д.40, кв.44 </span>
       </div>
 
