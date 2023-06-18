@@ -10,7 +10,6 @@
  *
  * Released on: June 1, 2022
  */
-@import "./simplebar.css";
 @font-face {
   font-family: swiper-icons;
   src: url("data:application/font-woff;charset=utf-8;base64, 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");
@@ -12833,6 +12832,11 @@ table {
   padding-left: 27px;
   font-size: 16px;
 }
+@media (max-width: 1199px) {
+  .form-input {
+    padding-left: 24px;
+  }
+}
 .form-input::placeholder {
   color: #b0b0b0;
   font-size: 16px;
@@ -13318,6 +13322,11 @@ h4 {
 .modal__print-btn {
   height: 38px;
 }
+@media (max-width: 991px) {
+  .modal__print-btn {
+    min-width: 348px;
+  }
+}
 
 .modal-payment-btn {
   height: 52px;
@@ -13358,6 +13367,7 @@ h4 {
   .ipoteka-change-btn {
     padding-right: 11px;
     padding-left: 11px;
+    width: 172px;
   }
 }
 .ipoteka-change-btn:hover {
@@ -13629,6 +13639,11 @@ div.events-item__image:hover {
   top: 0;
   background-color: #f5f6f7;
 }
+@media (max-width: 991px) {
+  .modal-form::after {
+    left: -31px;
+  }
+}
 
 .modal-form__content {
   position: relative;
@@ -13763,18 +13778,17 @@ div.events-item__image:hover {
   max-width: 1330px;
 }
 
-@media (max-width: 991px) {
-  #modal-not-payed-ipoteka .modal-content {
-    padding-right: 0;
-  }
-}
-
 #modal-payed-ipoteka .modal-dialog {
   max-width: 1330px;
 }
 
 .modal-form__col_4 {
   grid-column: 3 span;
+}
+@media (max-width: 1199px) {
+  .modal-form__col_4 {
+    grid-column: 6 span;
+  }
 }
 
 #modal-not-payed .modal-form__grid {
@@ -13784,6 +13798,16 @@ div.events-item__image:hover {
 #modal-not-payed .modal-form::after {
   width: 1326px;
 }
+@media (max-width: 1350px) {
+  #modal-not-payed .modal-form::after {
+    width: calc(100% + 75px);
+  }
+}
+@media (max-width: 991px) {
+  #modal-not-payed .modal-form::after {
+    width: calc(100% + 62px);
+  }
+}
 
 .modal-payment__table {
   margin-top: 35px;
@@ -13791,6 +13815,15 @@ div.events-item__image:hover {
 @media (max-width: 991px) {
   .modal-payment__table {
     padding-bottom: 40px;
+    overflow: scroll;
+    right: -30px;
+    margin-left: -30px;
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  .modal-payment__table table {
+    width: 1000px;
   }
 }
 .modal-payment__table table thead tr td {
@@ -13861,11 +13894,6 @@ div.events-item__image:hover {
 }
 
 @media (max-width: 991px) {
-  .modal-ipoteka-table {
-    overflow: scroll;
-  }
-}
-@media (max-width: 991px) {
   .modal-ipoteka-table table {
     width: 1000px;
   }
@@ -13889,9 +13917,28 @@ div.events-item__image:hover {
   }
 }
 
-.simplebar-scrollbar {
-  background-color: #000;
-  height: 20px;
+/* полоса прокрутки (скроллбар) */
+.modal-payment__table::-webkit-scrollbar {
+  width: 4px;
+  /* ширина для вертикального скролла */
+  height: 30px;
+  /* высота для горизонтального скролла */
+  background: #e5e5e5;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+
+/* ползунок скроллбара */
+.modal-payment__table::-webkit-scrollbar-thumb {
+  background: #184aa3;
+  border-radius: 15px;
+  transition: nackground-color 0.2s linear;
+  height: 30px;
+}
+
+.scroll-action-text {
+  font-size: 13px;
+  color: #4b4b4b;
 }
 
 .nav {

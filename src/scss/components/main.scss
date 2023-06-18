@@ -95,7 +95,10 @@
         .waiting {
           width: 196px;
           margin-left: auto;
-          text-align: center;          
+          text-align: center;    
+          @media(max-width: 1400px){
+            width: 160px;
+          }      
         }
         &:last-child {
           text-align: end;

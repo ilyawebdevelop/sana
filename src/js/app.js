@@ -12,6 +12,8 @@ import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumb
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
 
 
+
+
 // get courses info to modal popup
 let eventsBtnCalledPopup = document.querySelectorAll('.events-item__btn-popup');
 let modalHeading = document.querySelector('.modal-event__title');
@@ -158,4 +160,6 @@ schetchikiInputDate.forEach(el => {
     inline: false
   })
 });
+
+
 

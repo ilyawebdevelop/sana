@@ -1,7 +1,16 @@
 .payment {   
     padding-top: 45px;
     padding-bottom: 80px;
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 24px;
+        @media(max-width: 1475px){
+            row-gap: 30px;
+        }
+    }
     &-item {
+        grid-column: 6 span;
         background-color: #fff;
         border-radius: 10px;
         padding-top: 55px;
@@ -9,6 +18,9 @@
         padding-right: 58px;
         padding-bottom: 58px;
         height: 100%;
+        @media(max-width: 1475px){
+            grid-column: 12 span;
+        }
         &__title {
             margin-bottom: 35px;
         }

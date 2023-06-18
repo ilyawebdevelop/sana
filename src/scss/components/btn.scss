@@ -329,6 +329,9 @@
 }
 .modal__print-btn {
   height: 38px;
+  @media(max-width: 991px){
+    min-width: 348px;
+  }
 }
 .modal-payment-btn{
   height: 52px;
@@ -362,6 +365,11 @@
   line-height: 17px;
   margin-top: 27px;
   transition: background-color .2s linear, color .2s linear;
+  @media(max-width: 991px){
+    padding-right: 11px;
+    padding-left: 11px;
+    width: 172px;
+  }
   &:hover {
     background-color: #184aa3;
     color: #fff;
