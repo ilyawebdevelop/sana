@@ -13785,6 +13785,9 @@ div.events-item__image:hover {
   width: 1326px;
 }
 
+.modal-payment__table {
+  margin-top: 35px;
+}
 @media (max-width: 991px) {
   .modal-payment__table {
     padding-bottom: 40px;
