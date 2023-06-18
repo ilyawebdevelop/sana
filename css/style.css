@@ -13886,6 +13886,11 @@ div.events-item__image:hover {
   }
 }
 
+.simplebar-scrollbar {
+  background-color: #000;
+  height: 20px;
+}
+
 .nav {
   column-gap: 15px;
 }
