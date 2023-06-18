@@ -13353,6 +13353,12 @@ h4 {
   margin-top: 27px;
   transition: background-color 0.2s linear, color 0.2s linear;
 }
+@media (max-width: 991px) {
+  .ipoteka-change-btn {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}
 .ipoteka-change-btn:hover {
   background-color: #184aa3;
   color: #fff;
@@ -13756,6 +13762,12 @@ div.events-item__image:hover {
   max-width: 1330px;
 }
 
+@media (max-width: 991px) {
+  #modal-not-payed-ipoteka .modal-content {
+    padding-right: 0;
+  }
+}
+
 #modal-payed-ipoteka .modal-dialog {
   max-width: 1330px;
 }
@@ -13772,8 +13784,10 @@ div.events-item__image:hover {
   width: 1326px;
 }
 
-.modal-payment__table {
-  padding-top: 30px;
+@media (max-width: 991px) {
+  .modal-payment__table {
+    padding-bottom: 40px;
+  }
 }
 .modal-payment__table table thead tr td {
   padding-top: 15px;
@@ -13783,10 +13797,17 @@ div.events-item__image:hover {
   text-align: center;
   border-top: 1px solid #838383;
   border-bottom: 1px solid #838383;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .modal-payment__table table thead tr td:first-child {
   text-align: start;
   max-width: 100px;
+}
+@media (max-width: 991px) {
+  .modal-payment__table table thead tr td:first-child {
+    width: 400px;
+  }
 }
 .modal-payment__table table thead tr td:not(:last-child) {
   border-right: 1px solid #838383;
@@ -13796,9 +13817,16 @@ div.events-item__image:hover {
   padding-bottom: 19px;
   font-size: 14px;
   vertical-align: baseline;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .modal-payment__table table tbody tr td:first-child {
   text-align: start;
+}
+@media (max-width: 991px) {
+  .modal-payment__table table tbody tr td:first-child {
+    width: 400px;
+  }
 }
 .modal-payment__table table tbody tr td:not(:last-child) {
   border-right: 1px solid #838383;
@@ -13828,6 +13856,16 @@ div.events-item__image:hover {
   margin-bottom: 50px;
 }
 
+@media (max-width: 991px) {
+  .modal-ipoteka-table {
+    overflow: scroll;
+  }
+}
+@media (max-width: 991px) {
+  .modal-ipoteka-table table {
+    width: 1000px;
+  }
+}
 .modal-ipoteka-table table tbody tr:first-child td {
   padding-bottom: 120px;
 }
@@ -13845,6 +13883,28 @@ div.events-item__image:hover {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+/* полоса прокрутки (скроллбар) */
+.modal-payment__table::-webkit-scrollbar {
+  width: 4px;
+  /* ширина для вертикального скролла */
+  height: 30px;
+  /* высота для горизонтального скролла */
+  background: #e5e5e5;
+  border-radius: 15px;
+}
+
+/* ползунок скроллбара */
+.modal-payment__table::-webkit-scrollbar-thumb {
+  background: #184aa3;
+  border-radius: 15px;
+  transition: nackground-color 0.2s linear;
+  height: 30px;
+}
+
+.cart-toggle__top::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
 }
 
 .nav {
@@ -14757,6 +14817,11 @@ div.events-item__image:hover {
   margin-left: auto;
   text-align: center;
 }
+@media (max-width: 1400px) {
+  .main-table tbody tr td .waiting {
+    width: 160px;
+  }
+}
 .main-table tbody tr td:last-child {
   text-align: end;
 }
@@ -15124,7 +15189,18 @@ div.events-item__image:hover {
   padding-top: 45px;
   padding-bottom: 80px;
 }
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+}
+@media (max-width: 1475px) {
+  .payment-grid {
+    row-gap: 30px;
+  }
+}
 .payment-item {
+  grid-column: 6 span;
   background-color: #fff;
   border-radius: 10px;
   padding-top: 55px;
@@ -15132,6 +15208,11 @@ div.events-item__image:hover {
   padding-right: 58px;
   padding-bottom: 58px;
   height: 100%;
+}
+@media (max-width: 1475px) {
+  .payment-item {
+    grid-column: 12 span;
+  }
 }
 .payment-item__title {
   margin-bottom: 35px;
