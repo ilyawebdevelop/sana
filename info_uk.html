@@ -19,11 +19,14 @@
 	<div class="wrapper">
 		<!-- Header -->
 <header class="header" id="header">
-  <div class="container d-flex justify-content-between">
-    <div class="header__left d-flex align-items-center">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <div class="header__left d-flex justify-content-between justify-content-md-start align-items-center">
 
       <div class="menu-wrapper">
-        <button class="header__menu"><img src="img/header/menu_icon.svg" alt="menu"></button>
+        <button class="header__menu">
+          <img src="img/header/menu_icon.svg" alt="menu">
+          <img src="img/icons/close_icon.svg" alt="icon" class="header__menu-close">
+        </button>
         <div class="container-menu">
 
           <nav class="header__nav">
@@ -104,12 +107,22 @@
           </nav>
 
         </div>
-      </div>
+      </div><!-- /menu-wrapper -->
 
       <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
+
+      <div class="header__action d-flex d-md-none align-items-center">
+        <button class="header__action-btn header__action_1 active"> <svg>
+            <use xlink:href="img/icons/icons.svg#action-1"></use>
+          </svg></button>
+        <button class="header__action-btn header__action_2 active"><svg>
+            <use xlink:href="img/icons/icons.svg#action-2"></use>
+          </svg></button>
+      </div>
+
     </div>
     <div class="header__center align-items-center">
-      <div class="header__menu">
+      <div class="header__menu-nav">
         <ul class="header__menu-list">
           <li>
             <a class="d-flex" href="#">
@@ -146,8 +159,8 @@
         </ul>
       </div>
     </div>
-    <div class="header__right d-flex align-items-center">
-      <div class="header__action d-flex align-items-center">
+    <div class="header__right d-flex justify-content-between justify-content-md-start align-items-center">
+      <div class="header__action d-none d-md-flex align-items-center">
         <button class="header__action-btn header__action_1 active"> <svg>
             <use xlink:href="img/icons/icons.svg#action-1"></use>
           </svg></button>
@@ -305,13 +318,13 @@
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
-  <div class="container d-flex justify-content-between">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
     <div class="footer__left">
-      <div class="footer__logos d-flex align-items-center">
+      <div class="footer__logos d-flex justify-content-center justify-content-md-start align-items-center">
         <a href="#"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
         <a href="#"><img src="img/authorize/logo_sana.webp" alt="logo"></a>
       </div>
-      <div class="footer__socials d-flex">
+      <div class="footer__socials d-none d-md-flex">
         <span class="footer__socials-name">Сана в соцсетях:</span>
         <ul class="footer__socials-list d-flex align-items-center">
           <li>
@@ -337,6 +350,26 @@
         <span>Круглосуточная служба поддержки клиентов:</span>
         <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
         <button class="footer__contacts-btn btn">Заказать звонок</button>
+        <div class="footer__socials d-flex d-md-none">
+          <span class="footer__socials-name">Сана в соцсетях:</span>
+          <ul class="footer__socials-list d-flex align-items-center">
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/footer/socials-1.svg" alt="logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/footer/socials-2.svg" alt="logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/footer/socials-3.svg" alt="logo">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__politics d-none d-lg-flex justify-content-end">
         <a href="#">Политика конфиденциальности</a>
@@ -407,26 +440,55 @@
         <table class="modal-main__table">
           <thead>
             <tr>
-              <td>ФИО</td>
+              <td>                
+                ФИО
+              </td>
               <td>Документ удост.личн.</td>
               <td>Статус: </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Перова Ольга Николаевна</td>
-              <td>Паспорт: 2007 875616</td>
-              <td>Собственник</td>
+              <td>
+                <span class="d-inline-block d-md-none">ФИО</span><br>
+                Перова Ольга Николаевна
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Документ удост.личн.</span><br>
+                Паспорт: 2007 875616
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Статус: </span><br>
+                Собственник
+              </td>
             </tr>
             <tr>
-              <td>Перов Анатолий Вениаминович</td>
-              <td>Паспорт: 2001 887723</td>
-              <td>Собственник</td>
+              <td>
+                <span class="d-inline-block d-md-none">ФИО</span><br>
+                Перов Анатолий Вениаминович
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Документ удост.личн.</span><br>
+                Паспорт: 2001 887723
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Статус: </span><br>
+                Собственник
+              </td>
             </tr>
             <tr>
-              <td>Перов Матвей Анатольевич</td>
-              <td>Свид.о рожд: 7783219912</td>
-              <td>Прописан</td>
+              <td>
+                <span class="d-inline-block d-md-none">ФИО</span><br>
+                Перов Матвей Анатольевич
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Документ удост.личн.</span><br>
+                Свид.о рожд: 7783219912
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Статус: </span><br>
+                Прописан
+              </td>
             </tr>
           </tbody>
         </table>
@@ -820,7 +882,7 @@
       <p class="d-block d-lg-none mt-3 scroll-action-text">*Сдвиньте ползунок, нажимая на пространство справа или слева от него, чтобы посмотреть
         квитанцию целиком</p>
 
-      <div class="d-flex justify-content-between align-items-center print-wrapper gap-2">
+      <div class="d-flex justify-content-between align-items-center print-wrapper gap-5 gap-md-2 flex-column flex-md-row">
         <span class="color-black">Дата показания счетчиков: 20.04.2023 г.</span>
         <button class="btn-sm modal__print-btn">Распечатать квитанцию для оплаты</button>
       </div>
@@ -981,7 +1043,7 @@
       <p class="d-block d-lg-none mt-3 scroll-action-text">*Сдвиньте ползунок, нажимая на пространство справа или слева от него, чтобы посмотреть
         квитанцию целиком</p>
 
-      <div class="d-flex justify-content-between align-items-center print-wrapper gap-2">
+      <div class="d-flex justify-content-between align-items-center print-wrapper gap-5 gap-md-2 flex-column flex-md-row">
         <span class="color-black">Дата показания счетчиков: 20.04.2023 г.</span>
         <button class="btn-sm modal__print-btn">Распечатать квитанцию</button>
       </div>

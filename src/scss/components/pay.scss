@@ -1,6 +1,12 @@
 .payment {   
     padding-top: 45px;
     padding-bottom: 80px;
+    .container {
+        @media(max-width: 575px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
     &-grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -21,12 +27,23 @@
         @media(max-width: 1475px){
             grid-column: 12 span;
         }
+        @media(max-width: 767px){
+           padding-left: 20px;
+           padding-right: 20px;
+           border-radius: 0;
+        }
         &__title {
             margin-bottom: 35px;
+            @media(max-width: 767px){
+                text-align: center;
+            }
         }
         &__change {
             column-gap: 20px;
             margin-bottom: 40px;
+            @media(max-width: 767px){
+                justify-content: center;
+            }
         }
     }
 }

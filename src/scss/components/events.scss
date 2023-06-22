@@ -17,6 +17,9 @@
     font-size: 21px;
     line-height: 28px;
   }
+  @media(max-width: 575px){
+    font-size: 20px;
+  }
 }
 
 .events-item__content {
@@ -43,6 +46,10 @@
       padding-right: 95px;
       padding-left: 95px;
       background-color: transparent;
+    }
+    @media(max-width: 767px){
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   &__image {
@@ -87,4 +94,12 @@
   display: flex;  
   justify-content: center;
   background: url('@img/events/new.svg') no-repeat center center / contain;
+  @media(max-width: 767px){
+    left: 29px;
+  }
+}
+.events-item__image_icon {
+  @media(max-width: 767px){
+    width: 100px;
+  }
 }

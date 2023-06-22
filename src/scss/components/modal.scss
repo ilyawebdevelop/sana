@@ -24,6 +24,12 @@
   color: #000000;
   padding-top: 30px;
   background-color: #fff;
+
+  @media(max-width: 767px) {
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 20px;
+  }
 }
 
 .modal-event__content {
@@ -34,6 +40,12 @@
   border-bottom-right-radius: 10px;
   overflow: hidden;
 
+  @media(max-width: 575px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
   p {
     margin-bottom: 25px;
   }
@@ -42,11 +54,16 @@
 .modal-dialog {
   max-width: 833px;
   border-radius: 10px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 65px;
     padding-bottom: 65px;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 85px;
   }
 }
 
@@ -59,6 +76,10 @@
     width: 100%;
     height: 478px;
     object-fit: cover;
+
+    @media(max-width: 767px) {
+      height: 320px;
+    }
   }
 }
 
@@ -66,7 +87,8 @@
   position: relative;
   background-color: transparent;
   border: none;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -85,7 +107,8 @@
   right: -79px;
   top: 0;
   position: absolute;
-  @media(max-width: 1000px){
+
+  @media(max-width: 1000px) {
     top: -76px;
     right: 0;
   }
@@ -113,9 +136,11 @@ div.events-item__image {
   padding-right: 40px;
   padding-bottom: 80px;
   border-radius: 10px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-left: 31px;
     padding-right: 31px;
+    padding-bottom: 50px;
   }
 }
 
@@ -125,6 +150,10 @@ div.events-item__image {
 
 .modal-main__table-wrapper {
   margin-top: 50px;
+
+  @media(max-width: 767px) {
+    margin-top: 15px;
+  }
 }
 
 .modal-main__border {
@@ -134,6 +163,10 @@ div.events-item__image {
 
 .modal-main__table {
   thead {
+    @media(max-width: 767px) {
+      display: none;
+    }
+
     tr {
       td {
         color: #686868;
@@ -149,7 +182,18 @@ div.events-item__image {
   }
 
   tbody {
+    @media(max-width: 767px) {
+      display: block;
+    }
+
     tr {
+      @media(max-width: 767px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
       td {
         font-size: 18px;
         padding-top: 18px;
@@ -157,8 +201,21 @@ div.events-item__image {
         text-align: center;
         padding-right: 4px;
         padding-left: 4px;
-        @media(max-width: 991px){
+
+        span {
+          color: #686868;
+          font-size: 14px;
+        }
+
+        @media(max-width: 991px) {
           font-size: 16px;
+        }
+
+        @media(max-width: 767px) {
+          grid-column: 12 span;
+          text-align: start;
+          padding-top: 7px;
+          padding-bottom: 7px;
         }
 
         &:first-child {
@@ -177,6 +234,11 @@ div.events-item__image {
 
 .modal-poverka__title {
   margin-bottom: 50px;
+
+  @media(max-width: 575px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .modal-form {
@@ -195,7 +257,8 @@ div.events-item__image {
   left: -40px;
   top: 0;
   background-color: #f5f6f7;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     left: -31px;
   }
 
@@ -237,6 +300,20 @@ div.events-item__image {
 
 #modal-ipoteka-dogovor .modal-dialog {
   max-width: 744px;
+
+  @media(max-width: 575px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#modal-ipoteka-dogovor {
+  .modal-content {
+    @media(max-width: 575px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 .modal-dogovor__row {
@@ -244,10 +321,22 @@ div.events-item__image {
   grid-template-columns: 300px 235px;
   justify-content: space-between;
   margin-bottom: 18px;
+
+  @media(max-width: 767px) {
+    grid-template-columns: 192px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .modal-dogovor__col {
+
   // width: 50%;
+  &:nth-child(2) {
+    @media(max-width: 575px) {
+      text-align: end;
+    }
+  }
 }
 
 .dogovor-slider {
@@ -265,6 +354,10 @@ div.events-item__image {
   padding-left: 23px;
   font-size: 18px;
   margin-bottom: 20px;
+
+  @media(max-width: 575px) {
+    flex-direction: column;
+  }
 }
 
 .dogovor-slide__content {
@@ -342,30 +435,70 @@ div.events-item__image {
 
 #modal-not-payed .modal-dialog {
   max-width: 1330px;
+  @media(max-width: 575px){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#modal-payed {
+  .modal-poverka__title {
+    @media(max-width: 575px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 #modal-payed .modal-dialog {
   max-width: 1330px;
+  @media(max-width: 575px){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal-content {
+    @media(max-width: 575px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 }
+
 #modal-not-payed-ipoteka .modal-dialog {
   max-width: 1330px;
+
+  @media(max-width: 575px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
+
 #modal-not-payed {
-  // .modal-content {
-  //   @media(max-width: 991px){
-  //     padding-right: 0;
-  //   }
-  // }
+  .modal-content {
+    @media(max-width: 575px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+  .modal-poverka__title {
+    @media(max-width: 575px){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
+
 #modal-not-payed-ipoteka {
-  // .modal-content {
-  //   @media(max-width: 991px){
-  //     padding-right: 0;
-  //   }
-  // }
+  .modal-content {
+    @media(max-width: 575px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 }
+
 #modal-payed-ipoteka .modal-dialog {
   max-width: 1330px;
 }
+
 #modal-payed-ipoteka {
   // .modal-content {
   //   @media(max-width: 991px){
@@ -377,8 +510,12 @@ div.events-item__image {
 
 .modal-form__col_4 {
   grid-column: 3 span;
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     grid-column: 6 span;
+  }
+  @media(max-width: 767px){
+    grid-column: 12 span;
   }
 }
 
@@ -388,11 +525,17 @@ div.events-item__image {
 
 #modal-not-payed .modal-form::after {
   width: 1326px;
-  @media(max-width: 1350px){
+
+  @media(max-width: 1350px) {
     width: calc(100% + 75px);
   }
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     width: calc(100% + 62px);
+  }
+  @media(max-width: 575px){
+    width: calc(100% + 39px);
+    left: -20px;
   }
 }
 
@@ -400,20 +543,21 @@ div.events-item__image {
 .modal-payment__table {
   margin-top: 35px;
 
-  
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-bottom: 40px;
     overflow: scroll;
     right: -30px;
     margin-left: -30px;
     position: relative;
-  }  
+  }
 
 
   table {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       width: 1000px;
     }
+
     thead {
       tr {
         td {
@@ -426,15 +570,21 @@ div.events-item__image {
           border-bottom: 1px solid #838383;
           padding-right: 4px;
           padding-left: 4px;
+          @media(max-width: 575px){
+            padding-top: 7px;
+            padding-bottom: 7px;
+          }
 
           &:first-child {
             text-align: start;
             max-width: 100px;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
               width: 400px;
             }
           }
-          &:not(:last-child){
+
+          &:not(:last-child) {
             border-right: 1px solid #838383;
           }
         }
@@ -453,24 +603,29 @@ div.events-item__image {
 
           &:first-child {
             text-align: start;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
               width: 400px;
             }
           }
-          &:not(:last-child){
+
+          &:not(:last-child) {
             border-right: 1px solid #838383;
           }
         }
+
         &.new-row {
           td {
-            padding-top: 30px!important;
+            padding-top: 30px !important;
           }
         }
+
         &.new-row_second {
           td {
-            padding-top: 10px!important;
+            padding-top: 10px !important;
           }
         }
+
         &:last-child {
           td {
             padding-bottom: 19px;
@@ -494,16 +649,19 @@ div.events-item__image {
     }
   }
 }
+
 .print-wrapper {
   margin-top: 45px;
   margin-bottom: 50px;
 }
+
 .modal-ipoteka-table {
- 
+
   table {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       width: 1000px;
     }
+
     tbody {
       tr {
         &:first-child {
@@ -515,14 +673,17 @@ div.events-item__image {
     }
   }
 }
+
 .air-datepicker {
-  z-index: 1070!important;
+  z-index: 1070 !important;
 }
+
 .air-datepicker-global-container {
-  z-index: 1070!important;
+  z-index: 1070 !important;
 }
+
 .modal-event .modal-dialog {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -536,7 +697,7 @@ div.events-item__image {
   /* высота для горизонтального скролла */
   background: #e5e5e5;
   border-radius: 15px;
- margin-right: 30px;
+  margin-right: 30px;
 }
 
 
@@ -551,4 +712,12 @@ div.events-item__image {
 .scroll-action-text {
   font-size: 13px;
   color: #4b4b4b;
+  line-height: 15px;
+}
+
+.modal-main .modal-dialog {
+  @media(max-width: 575px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

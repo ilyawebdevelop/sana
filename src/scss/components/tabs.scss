@@ -1,5 +1,6 @@
 .nav {
   column-gap: 15px;
+  flex-wrap: nowrap;
   @media(max-width: 1660px){
     column-gap: 4px;
   }
@@ -10,11 +11,17 @@
   background-color: transparent;
   border: 2px solid #0353a1;
   border-radius: 22px;
+  @media(max-width: 575px){
+    border-radius: 33px;
+  }
 }
 
 .nav-pills .nav-link {
   border: 2px solid transparent;
   border-radius: 22px;
+  @media(max-width: 575px){
+    line-height: 19px;
+  }
 }
 
 .nav-link {
@@ -24,5 +31,12 @@
   padding-left: 25px;
   @media(max-width: 1660px){
     font-size: 16px;
+  }
+
+}
+.payment-item .nav-link {
+  @media(max-width: 575px){
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

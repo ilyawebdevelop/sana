@@ -19,11 +19,14 @@
 	<div class="wrapper">
 		<!-- Header -->
 <header class="header" id="header">
-  <div class="container d-flex justify-content-between">
-    <div class="header__left d-flex align-items-center">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <div class="header__left d-flex justify-content-between justify-content-md-start align-items-center">
 
       <div class="menu-wrapper">
-        <button class="header__menu"><img src="img/header/menu_icon.svg" alt="menu"></button>
+        <button class="header__menu">
+          <img src="img/header/menu_icon.svg" alt="menu">
+          <img src="img/icons/close_icon.svg" alt="icon" class="header__menu-close">
+        </button>
         <div class="container-menu">
 
           <nav class="header__nav">
@@ -104,12 +107,22 @@
           </nav>
 
         </div>
-      </div>
+      </div><!-- /menu-wrapper -->
 
       <a class="header__logo" href="/"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
+
+      <div class="header__action d-flex d-md-none align-items-center">
+        <button class="header__action-btn header__action_1 active"> <svg>
+            <use xlink:href="img/icons/icons.svg#action-1"></use>
+          </svg></button>
+        <button class="header__action-btn header__action_2 active"><svg>
+            <use xlink:href="img/icons/icons.svg#action-2"></use>
+          </svg></button>
+      </div>
+
     </div>
     <div class="header__center align-items-center">
-      <div class="header__menu">
+      <div class="header__menu-nav">
         <ul class="header__menu-list">
           <li>
             <a class="d-flex" href="#">
@@ -146,8 +159,8 @@
         </ul>
       </div>
     </div>
-    <div class="header__right d-flex align-items-center">
-      <div class="header__action d-flex align-items-center">
+    <div class="header__right d-flex justify-content-between justify-content-md-start align-items-center">
+      <div class="header__action d-none d-md-flex align-items-center">
         <button class="header__action-btn header__action_1 active"> <svg>
             <use xlink:href="img/icons/icons.svg#action-1"></use>
           </svg></button>
@@ -176,7 +189,7 @@
       <div class="col-xl-6">
         <div class="main-item">
           <h3 class="main-item__title">Квитанции и оплата</h3>
-          <div class="main-nav-wrapper d-flex align-items-center">
+          <div class="main-nav-wrapper d-flex flex-column flex-md-row align-items-center">
             <span class="main-nav__name">История платежей:</span>
             <ul class="nav nav-pills main-nav" id="payment-tab" role="tablist">
               <li class="nav-item main-nav__item" role="presentation">
@@ -210,36 +223,60 @@
                 <tbody>
                   <tr class="main-table__item">
                     <td>Апрель 2023 г.</td>
-                    <td>03.05.2023 г.</td>
-                    <td>28 950 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      03.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      28 950 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Март 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      2850 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Февраль 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      2850 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Январь 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      2850 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                 </tbody>
               </table>
 
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between flex-column flex-sm-row align-items-center gap-5 gap-sm-0">
                 <button class="main-table__payment btn--blue btn">Оплатить</button>
                 <button class="main-table__more d-flex align-items-center">
                   Смотреть больше
@@ -262,36 +299,60 @@
                 <tbody>
                   <tr class="main-table__item">
                     <td>Апрель 2023 г.</td>
-                    <td>03.05.2023 г.</td>
-                    <td>28 950 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      01.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      48 950 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Март 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      2850 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Февраль 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      2850 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Январь 2023 г.</td>
-                    <td>04.05.2023 г.</td>
-                    <td>2850 руб.</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата оплаты: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Сумма оплаты:  </span><br>
+                      2850 руб.
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                 </tbody>
               </table>
 
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between flex-column flex-sm-row align-items-center gap-5 gap-sm-0">
                 <button class="main-table__payment btn--blue btn">Внести платеж</button>
                 <button class="main-table__more d-flex align-items-center">
                   Смотреть больше
@@ -308,7 +369,7 @@
 
         <div class="main-item">
           <h3 class="main-item__title">Заявки и обращения</h3>
-          <div class="main-nav-wrapper d-flex align-items-center">
+          <div class="main-nav-wrapper d-flex flex-column flex-md-row align-items-center">
             <span class="main-nav__name">История:</span>
             <ul class="nav nav-pills main-nav" id="orders-tab" role="tablist">
               <li class="nav-item main-nav__item" role="presentation">
@@ -342,29 +403,47 @@
                 <tbody>
                   <tr class="main-table__item">
                     <td>Ремонт окна</td>
-                    <td>03.05.2023 г.</td>
-                    <td>Выполнено</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата обращения: </span><br>
+                      03.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Статус: </span><br>
+                      Выполнено
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>                 
                   <tr class="main-table__item">
                     <td>Замена канализации</td>
-                    <td>04.05.2023 г.</td>
-                    <td>Отменено</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата обращения: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Статус: </span><br>
+                      Отменено
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Ремонт камеры наблюдения</td>
-                    <td>04.05.2023 г.</td>
-                    <td>Выполнено</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата обращения: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Статус: </span><br>
+                      Выполнено
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                 </tbody>
               </table>
 
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between flex-column flex-sm-row align-items-center gap-5 gap-sm-0">
                 <button class="main-table__payment btn--blue btn">Создать заявку</button>
                 <button class="main-table__more d-flex align-items-center">
                   Смотреть больше
@@ -387,22 +466,34 @@
                 <tbody>
                   <tr class="main-table__item">
                     <td>Ремонт окна</td>
-                    <td>03.05.2023 г.</td>
-                    <td>Выполнено</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата обращения: </span><br>
+                      03.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Статус: </span><br>
+                      Выполнено
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>
                   <tr class="main-table__item">
                     <td>Замена ручки двери</td>
-                    <td>04.05.2023 г.</td>
-                    <td>Отменено</td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Дата обращения: </span><br>
+                      04.05.2023 г.
+                    </td>
+                    <td>
+                      <span class="d-inline-block d-md-none">Статус: </span><br>
+                      Отменено
+                    </td>
                     <td><button class="main-table__detail btn" data-toggle="modal"
                       data-target="#modal-main">Детали</button></td>
                   </tr>           
                 </tbody>
               </table>
 
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between flex-column flex-sm-row align-items-center gap-5 gap-sm-0">
                 <button class="main-table__payment btn--blue btn">Создать заявку</button>
                 <button class="main-table__more d-flex align-items-center">
                   Смотреть больше
@@ -420,7 +511,7 @@
           <h3 class="main-item__title">Видеонаблюдение</h3>
    
           <div class="main-content">
-            <table class="main-table">
+            <table class="main-table main-table_video">
               <thead>
                 <tr>
                   <td></td>                 
@@ -464,7 +555,7 @@
         <div class="main-item">
           <h3 class="main-item__title">Имущество</h3>   
           <div class="main-content">
-            <table class="main-table">
+            <table class="main-table main-table_video">
               <thead>
                 <tr>
                   <td></td>                 
@@ -510,13 +601,13 @@
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
-  <div class="container d-flex justify-content-between">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
     <div class="footer__left">
-      <div class="footer__logos d-flex align-items-center">
+      <div class="footer__logos d-flex justify-content-center justify-content-md-start align-items-center">
         <a href="#"><img src="img/authorize/logo_zhek.svg" alt="logo"></a>
         <a href="#"><img src="img/authorize/logo_sana.webp" alt="logo"></a>
       </div>
-      <div class="footer__socials d-flex">
+      <div class="footer__socials d-none d-md-flex">
         <span class="footer__socials-name">Сана в соцсетях:</span>
         <ul class="footer__socials-list d-flex align-items-center">
           <li>
@@ -542,6 +633,26 @@
         <span>Круглосуточная служба поддержки клиентов:</span>
         <a class="footer__phone" href="tel:78142332121">+7 (8142) 33 21 21</a>
         <button class="footer__contacts-btn btn">Заказать звонок</button>
+        <div class="footer__socials d-flex d-md-none">
+          <span class="footer__socials-name">Сана в соцсетях:</span>
+          <ul class="footer__socials-list d-flex align-items-center">
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/footer/socials-1.svg" alt="logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/footer/socials-2.svg" alt="logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/footer/socials-3.svg" alt="logo">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__politics d-none d-lg-flex justify-content-end">
         <a href="#">Политика конфиденциальности</a>
@@ -612,26 +723,55 @@
         <table class="modal-main__table">
           <thead>
             <tr>
-              <td>ФИО</td>
+              <td>                
+                ФИО
+              </td>
               <td>Документ удост.личн.</td>
               <td>Статус: </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Перова Ольга Николаевна</td>
-              <td>Паспорт: 2007 875616</td>
-              <td>Собственник</td>
+              <td>
+                <span class="d-inline-block d-md-none">ФИО</span><br>
+                Перова Ольга Николаевна
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Документ удост.личн.</span><br>
+                Паспорт: 2007 875616
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Статус: </span><br>
+                Собственник
+              </td>
             </tr>
             <tr>
-              <td>Перов Анатолий Вениаминович</td>
-              <td>Паспорт: 2001 887723</td>
-              <td>Собственник</td>
+              <td>
+                <span class="d-inline-block d-md-none">ФИО</span><br>
+                Перов Анатолий Вениаминович
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Документ удост.личн.</span><br>
+                Паспорт: 2001 887723
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Статус: </span><br>
+                Собственник
+              </td>
             </tr>
             <tr>
-              <td>Перов Матвей Анатольевич</td>
-              <td>Свид.о рожд: 7783219912</td>
-              <td>Прописан</td>
+              <td>
+                <span class="d-inline-block d-md-none">ФИО</span><br>
+                Перов Матвей Анатольевич
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Документ удост.личн.</span><br>
+                Свид.о рожд: 7783219912
+              </td>
+              <td>
+                <span class="d-inline-block d-md-none">Статус: </span><br>
+                Прописан
+              </td>
             </tr>
           </tbody>
         </table>
@@ -1025,7 +1165,7 @@
       <p class="d-block d-lg-none mt-3 scroll-action-text">*Сдвиньте ползунок, нажимая на пространство справа или слева от него, чтобы посмотреть
         квитанцию целиком</p>
 
-      <div class="d-flex justify-content-between align-items-center print-wrapper gap-2">
+      <div class="d-flex justify-content-between align-items-center print-wrapper gap-5 gap-md-2 flex-column flex-md-row">
         <span class="color-black">Дата показания счетчиков: 20.04.2023 г.</span>
         <button class="btn-sm modal__print-btn">Распечатать квитанцию для оплаты</button>
       </div>
@@ -1186,7 +1326,7 @@
       <p class="d-block d-lg-none mt-3 scroll-action-text">*Сдвиньте ползунок, нажимая на пространство справа или слева от него, чтобы посмотреть
         квитанцию целиком</p>
 
-      <div class="d-flex justify-content-between align-items-center print-wrapper gap-2">
+      <div class="d-flex justify-content-between align-items-center print-wrapper gap-5 gap-md-2 flex-column flex-md-row">
         <span class="color-black">Дата показания счетчиков: 20.04.2023 г.</span>
         <button class="btn-sm modal__print-btn">Распечатать квитанцию</button>
       </div>

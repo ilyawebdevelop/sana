@@ -3,6 +3,12 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
+    @media(max-width: 1426px){
+      grid-template-columns: 706px auto;
+    }
+    @media(max-width: 1199px){
+      grid-template-columns: 1fr;
+    }
   }
 
   &__left {
@@ -12,12 +18,32 @@
     width: 530px;
     margin-right: 84px;
     padding-bottom: 40px;
+    @media(max-width: 1426px){
+      margin-left: 84px;
+    }
+    @media(max-width: 1199px){
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 210px;
+      padding-bottom: 210px;
+      min-height: 100vh;
+    }
+    @media(max-width: 767px){
+      max-width: 100%;
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 60px;
+    }
   }
 
   &__right {
     background-image: linear-gradient(to right, #0353a1 0%, #0374e2 100%);
     position: relative;
     min-height: 100vh;
+    @media(max-width: 1199px){
+      display: none;
+    }
   }
 
   &__logo {
@@ -56,14 +82,22 @@
       font-weight: 500;     
       line-height: 40px; 
       margin-bottom: 46px;
+      @media(max-width: 767px){
+        text-align: center;
+      }
     }
   }
   &-header {
     margin-bottom: 79px;
+    align-items: center;
   }
 }
 .authorize-header__logo-sana {
-  width: 185px;
+  width: 187px;
+  height: 100%;
+  @media(max-width: 410px){
+    width: 140px;
+  }
 }
 .authorize__link {
   text-decoration: underline;
@@ -77,4 +111,8 @@
 .authorize__content-subtitle {
   font-weight: 500;
   font-size: 18px;
+  @media(max-width: 767px){
+    text-align: center;
+    display: block;
+  }
 }

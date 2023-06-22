@@ -81,6 +81,9 @@ table {
   @media(max-width: 1199px){
     padding-left: 24px;
   }
+  @media(max-width: 767px){
+    width: 100%;
+  }
   &::placeholder {
     color: #b0b0b0;
     font-size: 16px;
@@ -175,7 +178,7 @@ h1 {
 .select-form {
   border: 1px solid #838383;
   border-radius: 10px;
-  padding-right: 16px;
+  padding-right: 28px;
   padding-left: 16px;
   padding-top: 9px;
   padding-bottom: 9px;

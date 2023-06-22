@@ -52,6 +52,10 @@
     border-radius: 15px;
     transition: background-color .2s linear, color .2s linear;
     font-size: 16px;
+    @media(max-width: 575px){
+      padding-left: 11px;
+      padding-right: 11px;
+    }
     &:hover {
       background-color: #184aa3;
       color: #fff;
@@ -157,12 +161,19 @@
   font-size: 20px;
   color: #000000;
   margin-top: 41px;
+  @media(max-width: 767px){
+    margin-top: 20px;
+  }
 }
 .header__menu {
   padding: 10px;
   border: 1px solid transparent;
+  position: relative;
   &.active {
     border: 1px solid #585858;
+    .header__menu-close {
+      opacity: 1;
+    }
   }
 }
 .header__exit {
@@ -199,18 +210,18 @@
   height: 53px;
   display: flex;
   align-items: center;
-}
-@media(max-width: 1700px){
-  .main-table__payment {
+  @media(max-width: 1700px){
     font-size: 18px;
     width: 310px;
   }
-}
-@media(max-width: 1530px){
-  .main-table__payment {
+  @media(max-width: 1530px){
     width: fit-content;
   }
+  @media(max-width: 575px){
+    width: 100%;
+  }
 }
+
 .main-table__more {
   column-gap: 13px;
   font-size: 20px;
@@ -332,6 +343,10 @@
   @media(max-width: 991px){
     min-width: 348px;
   }
+  @media(max-width: 575px){
+    min-width: unset;
+    width: fit-content;
+  }
 }
 .modal-payment-btn{
   height: 52px;
@@ -339,6 +354,9 @@
   width: 355px;
   margin-left: auto;
   margin-right: auto;
+  @media(max-width: 575px){
+    width: 100%;
+  }
 }
 .modal-payed-btn {
   width: 355px;

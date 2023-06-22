@@ -17,6 +17,10 @@
         padding-left: 90px;
         padding-right: 90px;
     }
+    @media(max-width: 767px){
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .services-card__descr {
     font-size: 14px;
@@ -26,6 +30,9 @@
     font-size: 30px;
     color: #000000;
     margin-bottom: 6px;
+    @media(max-width: 767px){
+        font-size: 22px;
+    }
 }
 .services-form{
     color: #838383;
@@ -39,6 +46,18 @@
     margin-top: 15px;
     @media(max-width: 1700px){
         column-gap: 10px;
+    }
+    @media(max-width: 575px){
+        column-gap: 0;
+        grid-template-columns: 1fr;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 25px;
+        margin-top: 25px;
+    }
+    @media(max-width: 374px){
+        width: 100%;
     }
 }
 .services-form__input {
@@ -55,3 +74,23 @@
     column-gap: 25px;
     row-gap: 25px;
 }
+.services-form__select-wrapper {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 8px;
+        background: url('@img/icons/service-arrow.svg') no-repeat center center / 15px;
+    }
+}
+
+select.select-form {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
