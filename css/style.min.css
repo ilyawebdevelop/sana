@@ -12819,6 +12819,12 @@ table {
   padding-left: 45px;
   padding-right: 50px;
 }
+@media (max-width: 767px) {
+  .info-sect {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .info-sect p {
   margin-bottom: 30px;
 }
@@ -15364,16 +15370,34 @@ div.events-item__image:hover {
   margin-bottom: 42px;
 }
 
+@media (max-width: 575px) {
+  .uk .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  .uk .info-sect {
+    border-radius: 0;
+  }
+}
+
 .uk-table-wrapper {
   border-top: 1px solid #838383;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .uk-table {
   width: 440px;
+}
+@media (max-width: 991px) {
+  .uk-table {
+    width: 100%;
+  }
 }
 .uk-table thead tr td {
   padding-bottom: 15px;
@@ -15381,15 +15405,52 @@ div.events-item__image:hover {
   color: #686868;
   font-size: 14px;
 }
+.uk-table thead tr td:nth-child(2) {
+  width: 200px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .uk-table thead tr td:nth-child(2) {
+    text-align: end;
+  }
+}
 .uk-table tbody tr td {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 18px;
 }
+.uk-table tbody tr td:nth-child(2) {
+  width: 200px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .uk-table tbody tr td:nth-child(2) {
+    text-align: end;
+  }
+}
 
 .uk-contacts {
   display: flex;
   column-gap: 70px;
+}
+@media (max-width: 1400px) {
+  .uk-contacts {
+    column-gap: 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .uk-contacts {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 45px;
+    column-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .uk-contacts {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
 }
 .uk-contacts__item {
   column-gap: 15px;
@@ -15402,11 +15463,35 @@ div.events-item__image:hover {
 .uk-contacts__item:nth-child(1) {
   width: 368px;
 }
+@media (max-width: 1220px) {
+  .uk-contacts__item:nth-child(1) {
+    grid-column: 6 span;
+    width: 100%;
+  }
+}
 .uk-contacts__item:nth-child(2) {
   width: 330px;
 }
+@media (max-width: 1220px) {
+  .uk-contacts__item:nth-child(2) {
+    grid-column: 6 span;
+    width: 100%;
+  }
+}
 .uk-contacts__item:nth-child(3) {
   width: 390px;
+}
+@media (max-width: 1220px) {
+  .uk-contacts__item:nth-child(3) {
+    grid-column: 6 span;
+    width: 100%;
+  }
+}
+@media (max-width: 1220px) {
+  .uk-contacts__item:nth-child(4) {
+    grid-column: 6 span;
+    width: 100%;
+  }
 }
 .uk-contacts__name {
   color: #000000;
