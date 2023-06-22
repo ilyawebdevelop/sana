@@ -13019,6 +13019,12 @@ h4 {
   column-gap: 14px;
   transition: background 0.2s linear, opacity 0.2s linear, color 0.2s linear;
 }
+@media (max-width: 440px) {
+  .btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .btn--blue {
   background-color: #184aa3;
   color: #fff;
@@ -13243,7 +13249,7 @@ h4 {
 .order-form__btn {
   height: 60px;
   margin-top: 45px;
-  width: 400px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -13253,7 +13259,7 @@ h4 {
 }
 
 .order-item__status-btn {
-  width: 400px;
+  width: 100%;
   height: 60px;
   color: #fff;
   margin-top: 50px;
@@ -15660,6 +15666,12 @@ select.select-form {
   padding-top: 45px;
   padding-bottom: 80px;
 }
+@media (max-width: 575px) {
+  .order .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .order-item {
   padding-top: 52px;
   padding-left: 50px;
@@ -15712,6 +15724,7 @@ select.select-form {
 .order-item__images .gallery__img {
   position: relative;
   grid-column: 4 span;
+  height: 79px;
 }
 .order-item__images .gallery__img:hover:after {
   transform: translateY(-8px);
@@ -15748,6 +15761,47 @@ select.select-form {
 
 .order-item__date {
   font-size: 18px;
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 25px;
+}
+
+.order-item {
+  grid-column: 4 span;
+}
+@media (max-width: 1500px) {
+  .order-item {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  .order-item {
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 991px) {
+  .order-item {
+    grid-column: 12 span;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .order-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  .order-item {
+    border-radius: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .cabinet {
