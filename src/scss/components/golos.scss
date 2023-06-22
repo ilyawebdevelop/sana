@@ -1,5 +1,13 @@
 .golosovanie {
   padding-top: 45px;
+
+  .container {
+    @media(max-width: 575px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   padding-bottom: 45px;
 
   &__grid {
@@ -10,6 +18,9 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-column: 4 span;
     background-color: #fff;
     border-radius: 10px;
@@ -17,6 +28,29 @@
     padding-left: 49px;
     padding-bottom: 55px;
     padding-right: 49px;
+
+    @media(max-width: 1400px) {
+      grid-column: 6 span;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    @media(max-width: 991px) {
+      grid-column: 12 span;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    @media(max-width: 767px) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    @media(max-width: 575px) {
+      border-radius: 0;
+    }
 
     &-title {
       font-size: 23px;
@@ -28,12 +62,6 @@
       color: #323232;
     }
   }
-}
-
-.golosovanie__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .golosovanie__item-result {
@@ -57,7 +85,7 @@
 }
 
 .golosovanie-quest-checkbox {
-  margin-right: 15px;
+  margin-right: 0;
 
   input {
     display: none;
@@ -81,6 +109,7 @@
 
     .rect {
       width: 37px;
+      min-width: 37px;
       height: 37px;
       border: 1px solid #737373;
       border-radius: 10px;
@@ -123,16 +152,19 @@
 
 .result-total {
   column-gap: 12px;
+
   &__line {
     height: 23px;
     background-color: #184aa3;
     border-radius: 5px;
   }
+
   &__count {
     color: #4e4e4e;
     white-space: nowrap;
   }
 }
+
 .total-line-wrapper {
   // width: 300px;
 }

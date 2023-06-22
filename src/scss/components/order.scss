@@ -1,6 +1,12 @@
 .order {
     padding-top: 45px;
     padding-bottom: 80px;
+    .container {
+        @media(max-width: 575px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
     &-item {
         padding-top: 52px;
         padding-left: 50px;
@@ -46,6 +52,7 @@
     .gallery__img {
         position: relative;
         grid-column: 4 span;
+        height: 79px;
         &:hover:after {
            transform: translateY(-8px);
         }
@@ -82,4 +89,33 @@
 }
 .order-item__date {
     font-size: 18px;
+}
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px;
+}
+.order-item {
+    grid-column: 4 span;
+    @media(max-width: 1500px){
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media(max-width: 1400px){
+        grid-column: 6 span;
+    }
+    @media(max-width: 991px){
+        grid-column: 12 span;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    @media(max-width: 767px){
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media(max-width: 575px){
+        border-radius: 0;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
