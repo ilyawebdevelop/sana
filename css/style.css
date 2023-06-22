@@ -13128,11 +13128,11 @@ h4 {
 }
 
 .golosovanie__item-btn {
-  width: 400px;
   margin-top: 55px;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .chat-message__btn {
@@ -14601,6 +14601,12 @@ div.events-item__image:hover {
   padding-top: 45px;
   padding-bottom: 45px;
 }
+@media (max-width: 575px) {
+  .golosovanie .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .golosovanie__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -14608,6 +14614,9 @@ div.events-item__image:hover {
   row-gap: 30px;
 }
 .golosovanie__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-column: 4 span;
   background-color: #fff;
   border-radius: 10px;
@@ -14616,6 +14625,33 @@ div.events-item__image:hover {
   padding-bottom: 55px;
   padding-right: 49px;
 }
+@media (max-width: 1400px) {
+  .golosovanie__item {
+    grid-column: 6 span;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .golosovanie__item {
+    grid-column: 12 span;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .golosovanie__item {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .golosovanie__item {
+    border-radius: 0;
+  }
+}
 .golosovanie__item-title {
   font-size: 23px;
   color: #323232;
@@ -14623,12 +14659,6 @@ div.events-item__image:hover {
 }
 .golosovanie__item-subtitle {
   color: #323232;
-}
-
-.golosovanie__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .golosovanie__item-result {
@@ -14650,7 +14680,7 @@ div.events-item__image:hover {
 }
 
 .golosovanie-quest-checkbox {
-  margin-right: 15px;
+  margin-right: 0;
 }
 .golosovanie-quest-checkbox input {
   display: none;
@@ -14666,6 +14696,7 @@ div.events-item__image:hover {
 }
 .golosovanie-quest-checkbox label .rect {
   width: 37px;
+  min-width: 37px;
   height: 37px;
   border: 1px solid #737373;
   border-radius: 10px;
