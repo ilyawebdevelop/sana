@@ -16209,6 +16209,12 @@ select.select-form {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .cabinet-item__photo {
+    width: 130px;
+  }
+}
+
 .payment {
   padding-top: 45px;
   padding-bottom: 80px;
