@@ -1,0 +1,33 @@
+.schetchiki-sect {
+    .container {
+        @media(max-width: 575px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+.schetchiki-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+  
+    .main-item {
+        grid-column: 6 span;
+        @media(max-width: 1440px){
+            grid-column: 12 span;
+        }
+        @media(max-width: 575px){
+            border-radius: 0;
+        }
+        .main-table__detail {
+            @media(max-width: 575px){
+                min-width: 187px;
+            }
+        }
+        .main-table tbody tr td:nth-child(3) {
+            max-width: 187px;
+            width: 187px;
+        }
+    }
+}

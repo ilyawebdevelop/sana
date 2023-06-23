@@ -234,6 +234,9 @@ div.events-item__image {
 
 .modal-poverka__title {
   margin-bottom: 50px;
+  @media(max-width: 767px){
+    margin-bottom: 30px;
+  }
 
   @media(max-width: 575px) {
     padding-left: 20px;
@@ -269,8 +272,21 @@ div.events-item__image {
   z-index: 1;
 }
 
-.modal-poverka .modal-content {
-  // overflow: hidden;
+.modal-poverka  {
+  .modal-dialog {
+    @media(max-width: 991px){
+      max-width: 100%;
+    }
+    @media(max-width: 575px){
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .modal-form::after {
+    @media(max-width: 991px){
+      width: calc(100% + 61px);
+    }
+  }
 }
 
 .modal-form__grid {
@@ -278,6 +294,10 @@ div.events-item__image {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
   row-gap: 25px;
+  @media(max-width: 767px){
+  grid-template-columns: 1fr;
+    column-gap: 0;
+  }
 }
 
 .modal-form__col {
@@ -293,6 +313,9 @@ div.events-item__image {
 }
 
 .modal-info__item {
+  @media(max-width: 410px){
+    flex-direction: column;
+  }
   span:nth-child(1) {
     min-width: 230px;
   }
@@ -362,6 +385,7 @@ div.events-item__image {
 
 .dogovor-slide__content {
   padding-left: 21px;
+  padding-right: 20px;
 }
 
 .dogovor-slide__row {
@@ -373,6 +397,11 @@ div.events-item__image {
 
   &:nth-child(1) {
     max-width: 225px;
+  }
+  &:nth-child(2){
+    @media(max-width: 575px){
+      text-align: end;
+    }
   }
 }
 
@@ -500,11 +529,17 @@ div.events-item__image {
 }
 
 #modal-payed-ipoteka {
-  // .modal-content {
-  //   @media(max-width: 991px){
-  //     padding-right: 0;
-  //   }
-  // }
+  .modal-content {
+    @media(max-width: 575px){
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+  .modal-poverka__title {
+    @media(max-width: 575px){
+      padding-left: 0;
+    }
+  }
 }
 
 
@@ -551,7 +586,9 @@ div.events-item__image {
     margin-left: -30px;
     position: relative;
   }
-
+  @media(max-width: 575px){
+    right: -18px;
+  }
 
   table {
     @media(max-width: 991px) {
@@ -719,5 +756,23 @@ div.events-item__image {
   @media(max-width: 575px) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+#modal-poverka .modal-poverka__title {
+  @media(max-width: 575px){
+    padding-left: 0;
+    line-height: 27px;
+  }
+}
+#modal-add .modal-poverka__title {
+  @media(max-width: 575px){
+    padding-left: 0;
+    line-height: 27px;
+  }
+}
+#modal-take .modal-poverka__title {
+  @media(max-width: 575px){
+    padding-left: 0;
+    line-height: 27px;
   }
 }
