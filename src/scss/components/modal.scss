@@ -776,3 +776,27 @@ div.events-item__image {
     line-height: 27px;
   }
 }
+#modal-personal-new {
+  .modal-content {
+    @media(max-width: 991px){
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+  }
+  .modal-poverka__title {
+    @media(max-width: 575px){
+      padding-left: 0;
+    }
+  }
+}
+.personal-form__row.personal-form__row_center {
+  @media(max-width: 815px){
+    align-items: center;
+  }
+}
+#modal-personal-change {
+  .modal-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

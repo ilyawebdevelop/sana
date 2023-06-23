@@ -316,9 +316,16 @@
   border-radius: 29px;
   height: 58px;
   font-size: 18px;
+  @media(max-width: 815px){
+    margin-top: 15px;
+  }
 }
 .personal-form__row {
   margin-bottom: 32px;
+  @media(max-width: 815px){
+    margin-bottom: 23px;
+    align-items: center;
+  }
   .form-wrapper {
     width: 100%;
   }
@@ -327,6 +334,9 @@
   }
   .form-input_sm {
     width: 300px;
+    @media(max-width: 815px){
+      width: 100%;
+    }
   }
 }
 .personal-form__btn {
@@ -334,6 +344,14 @@
   margin-top: 90px;
   font-size: 16px;
   border-radius: 30px;
+  @media(max-width: 815px){
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  @media(max-width: 575px){
+    width: 100%;
+  }
 }
 .personal-change-file-btn {
   height: 44px;

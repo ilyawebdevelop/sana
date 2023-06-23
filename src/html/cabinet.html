@@ -1,70 +1,82 @@
 <section class="cabinet" id="cabinet">
     <div class="container">
-        <div class="row cabinet__row">
-            <div class="col-lg-6">
-                <div class="cabinet-item">
-                    <h3>Личные данные</h3>
-                    <div class="d-flex align-items-center cabinet-item__person">
-                        <img class="cabinet-item__photo" src="@img/personal/photo.png" alt="person">
-                        <span>Перова Ольга Николаевна</span>
+
+        <div class="cabinet-grid">
+
+            <div class="cabinet-item">
+                <h3>Личные данные</h3>
+                <div class="d-flex align-items-center cabinet-item__person">
+                    <img class="cabinet-item__photo" src="@img/personal/photo.png" alt="person">
+                    <span>Перова Ольга Николаевна</span>
+                </div>
+                <div class="cabinet-item__contacts">
+                    <span>Контактный телефон: +7 (922) 450 32 67</span>
+                    <span>E-mail: perova_olga@gmail.com</span>
+                </div>
+                <button class="btn btn--blue cabinet-item__btn" data-toggle="modal"
+                    data-target="#modal-personal-change">Внести изменения</button>
+            </div>
+
+            <div class="cabinet-item cabinet-item_content">
+                <h3>Имущество</h3>
+                <div class="main-content">
+                    <table class="main-table">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Площадь: </td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="main-table__item">
+                                <td>ул. Чкалова, д.40, кв. 44</td>
+                                <td>
+                                    <span class="d-inline-block d-md-none">Площадь: </span><br>
+                                    120 кв.м.
+                                </td>
+                                <td><button class="cabinet__item-main main-table__detail btn active">Основное</button>
+                                </td>
+                            </tr>
+                            <tr class="main-table__item">
+                                <td>ул. Чкалова, д.40, Парк.место №33</td>
+                                <td>
+                                    <span class="d-inline-block d-md-none">Площадь: </span><br>
+                                    18 кв.м.
+                                </td>
+                                <td><button class="cabinet__item-main main-table__detail btn">Сделать
+                                        основным</button></td>
+                            </tr>
+                            <tr class="main-table__item">
+                                <td>ул. Чапаева, д.50, Помещение №12</td>
+                                <td>
+                                    <span class="d-inline-block d-md-none">Площадь: </span><br>
+                                    42,5 кв.м.
+                                </td>
+                                <td><button class="cabinet__item-main main-table__detail btn">Сделать
+                                        основным</button></td>
+                            </tr>
+                            <tr class="main-table__item">
+                                <td>ул. Чапаева, д.50, Помещение №14</td>
+                                <td>
+                                    <span class="d-inline-block d-md-none">Площадь: </span><br>
+                                    31,74 кв.м.
+                                </td>
+                                <td><button class="cabinet__item-main main-table__detail btn">Сделать
+                                        основным</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="main-table__payment btn--blue btn" data-toggle="modal"
+                            data-target="#modal-personal-new">Добавить новое</button>
                     </div>
-                    <div class="cabinet-item__contacts">
-                        <span>Контактный телефон: +7 (922) 450 32 67</span>
-                        <span>E-mail: perova_olga@gmail.com</span>
-                    </div>
-                    <button class="btn btn--blue cabinet-item__btn" data-toggle="modal"
-                        data-target="#modal-personal-change">Внести изменения</button>
+
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="cabinet-item cabinet-item_content">
-                    <h3>Имущество</h3>
-                    <div class="main-content">
-                        <table class="main-table">
-                            <thead>
-                                <tr>
-                                    <td></td>
-                                    <td>Площадь: </td>
-                                    <td></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="main-table__item">
-                                    <td>ул. Чкалова, д.40, кв. 44</td>
-                                    <td>120 кв.м.</td>
-                                    <td><button
-                                            class="cabinet__item-main main-table__detail btn active">Основное</button>
-                                    </td>
-                                </tr>
-                                <tr class="main-table__item">
-                                    <td>ул. Чкалова, д.40, Парк.место №33</td>
-                                    <td>18 кв.м.</td>
-                                    <td><button class="cabinet__item-main main-table__detail btn">Сделать
-                                            основным</button></td>
-                                </tr>
-                                <tr class="main-table__item">
-                                    <td>ул. Чапаева, д.50, Помещение №12</td>
-                                    <td>42,5 кв.м.</td>
-                                    <td><button class="cabinet__item-main main-table__detail btn">Сделать
-                                            основным</button></td>
-                                </tr>
-                                <tr class="main-table__item">
-                                    <td>ул. Чапаева, д.50, Помещение №14</td>
-                                    <td>31,74 кв.м.</td>
-                                    <td><button class="cabinet__item-main main-table__detail btn">Сделать
-                                            основным</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <button class="main-table__payment btn--blue btn" data-toggle="modal"
-                                data-target="#modal-personal-new">Добавить новое</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
         </div>
+
     </div>
 </section>

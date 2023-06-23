@@ -2,6 +2,13 @@
     padding-top: 45px;
     padding-bottom: 80px;
 
+    .container {
+        @media(max-width: 575px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
     &__row {
         row-gap: 30px;
     }
@@ -14,6 +21,10 @@
         padding-left: 50px;
         padding-right: 55px;
         padding-bottom: 55px;
+
+        @media(max-width: 575px) {
+            border-radius: 0;
+        }
 
         &_content {
             display: grid;
@@ -55,14 +66,30 @@
     align-items: center;
     column-gap: 11px;
 
+    @media(max-width: 815px) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 12px;
+    }
+
     &>span {
         width: 158px;
         min-width: 158px;
+
+        @media(max-width: 815px) {
+            min-width: unset;
+            width: 100%;
+        }
     }
 }
 
 .personal-form__row_new {
     display: none;
+
+    @media(max-width: 815px) {
+        text-align: center;
+        font-size: 14px;
+    }
 
     &.active {
         display: block;
@@ -72,6 +99,10 @@
 .personal-form__image-wrapper {
     column-gap: 50px;
     margin-bottom: 40px;
+    @media(max-width: 767px){
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 #modal-personal-change {
@@ -87,11 +118,67 @@
 #personal-change-file {
     display: none;
 }
+
 .personal-form__image {
     img {
         width: 211px;
         height: 211px;
         object-fit: cover;
         border-radius: 50%;
+    }
+}
+
+.cabinet-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.cabinet-item {
+    grid-column: 6 span;
+
+    @media(max-width: 1199px) {
+        grid-column: 12 span;
+    }
+
+    @media(max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-table__detail {
+        @media(max-width: 1400px) {
+            min-width: 195px;
+        }
+    }
+
+    .main-table tbody tr td:first-child {
+        @media(max-width: 767px) {
+            grid-column: 12 span;
+            max-width: 100%;
+        }
+
+    }
+
+    .main-table tbody tr td:nth-child(2) {
+        @media(max-width: 450px) {
+            grid-column: 4 span;
+        }
+    }
+
+    .main-table tbody tr td:nth-child(3) {
+        @media(max-width: 767px) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @media(max-width: 450px) {
+            grid-column: 8 span;
+        }
+    }
+
+    .main-table tbody tr {
+        align-items: center;
     }
 }
