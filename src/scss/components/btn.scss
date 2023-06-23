@@ -164,6 +164,33 @@
   font-size: 20px;
   color: #000000;
   margin-top: 41px;
+  position: relative;
+  width: fit-content;
+  img {
+    transition: all .2s linear;
+  }
+  .btn-more-hover {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+
+  }
+  &:hover {
+   
+    .btn-more-hover {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+      position: absolute;    
+      z-index: 1;
+    }
+    .btn-more {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
   @media(max-width: 767px){
     margin-top: 20px;
   }
@@ -230,8 +257,34 @@
   font-size: 20px;
   color: #000000;
   transition: color .2s linear;
+  position: relative;
+  img {
+    transition: all .2s linear;
+  }
+  .btn-more-hover {
+    opacity: 0;
+    visibility: hidden;
+    // display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   &:hover {
-    color: #0353a1;
+    // color: #0353a1;
+    .btn-more-hover {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+    .btn-more {
+      opacity: 0;
+      visibility: hidden;
+      // display: none;
+    }
   }
 }
 

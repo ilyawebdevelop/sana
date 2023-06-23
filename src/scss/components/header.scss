@@ -180,25 +180,33 @@
       padding-bottom: 22px;
       padding-top: 22px;
       position: relative;
+      .menu-icon-white {
+        display: none;
+      }
+      .menu-icon-black {
+        display: block;
+      }
 
       @media(max-width: 991px) {
-        justify-content: center;
+        // justify-content: center;
+        padding-left: 17px;
       }
 
       &:hover {
         color: #0353a1;
       }
 
+      img {
+        z-index: 1;
+      }
+
       &.active {
         color: #fff;
-
-        svg {
-
-          fill: #fff;
-
-          path {
-            fill: #fff;
-          }
+        .menu-icon-white {
+          display: block;
+        }
+        .menu-icon-black {
+          display: none;
         }
 
         &::after {

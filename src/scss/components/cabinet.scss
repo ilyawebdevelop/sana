@@ -182,3 +182,14 @@
         align-items: center;
     }
 }
+.cabinet-item__photo {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    @media(max-width: 767px){
+        width: 130px;
+        min-width: 130px;
+        height: 130px;
+    }
+}

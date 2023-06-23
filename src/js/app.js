@@ -57,7 +57,7 @@ $('#chat-message-file').on('change', function (event, files, label) {
   var file_name = this.value.replace(/\\/g, '/').replace(/.*\//, '')
   $('.filename').text(file_name);
   $('.filename-wrapper').addClass('active');
-  $("#chat-message-file")[0].value = "";
+  // $("#chat-message-file")[0].value = "";
 });
 
 let chatMessageInputFile = document.querySelector('#chat-message-file');
@@ -77,19 +77,6 @@ for (let item of galleryItems) {
     showThumbByDefault: false
   })
 }
-
-// cabinet-btn-main
-let cabinetBtnAllMain = document.querySelectorAll('.cabinet__item-main');
-cabinetBtnAllMain.forEach(el => {
-  el.addEventListener('click', () => {
-    cabinetBtnAllMain.forEach(el=>{ 
-      el.classList.remove('active'); 
-    });
-
-    el.classList.add('active');
-    
-  });
-});
 
 // file-uploading styling personal modal new field
 $('#personal-new-file').on('change', function (event, files, label) {
@@ -112,7 +99,7 @@ function uploadFile(file, formImage, formUrlImage) {
     formImage.value = '';
     return;
   }
-  formImage.value = '';
+  // formImage.value = '';
 
   if (file.size > 1 * 1024 * 1024) {
     alert('Файл должен быть менее 1 МБ.');
@@ -149,6 +136,7 @@ servicesInputDate.forEach(el => {
   new AirDatepicker(el, { 
     multipleDates: false,
     timepicker: true,  
+    autoClose: true,
   })
 });
 
@@ -157,7 +145,8 @@ let schetchikiInputDate = document.querySelectorAll('.form-input-date');
 schetchikiInputDate.forEach(el => {
   new AirDatepicker(el, { 
     multipleDates: false,
-    inline: false
+    inline: false,
+    autoClose: true,
   })
 });
 

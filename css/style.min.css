@@ -12782,7 +12782,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body.hidden {
+body.modal-open {
   overflow: hidden;
 }
 
@@ -13159,6 +13159,28 @@ h4 {
   font-size: 20px;
   color: #000000;
   margin-top: 41px;
+  position: relative;
+  width: fit-content;
+}
+.events-item__btn img {
+  transition: all 0.2s linear;
+}
+.events-item__btn .btn-more-hover {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+}
+.events-item__btn:hover .btn-more-hover {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.events-item__btn:hover .btn-more {
+  opacity: 0;
+  visibility: hidden;
 }
 @media (max-width: 767px) {
   .events-item__btn {
@@ -13235,9 +13257,30 @@ h4 {
   font-size: 20px;
   color: #000000;
   transition: color 0.2s linear;
+  position: relative;
 }
-.main-table__more:hover {
-  color: #0353a1;
+.main-table__more img {
+  transition: all 0.2s linear;
+}
+.main-table__more .btn-more-hover {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-table__more:hover .btn-more-hover {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.main-table__more:hover .btn-more {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .services-form__btn {
@@ -14532,22 +14575,31 @@ div.events-item__image:hover {
   padding-top: 22px;
   position: relative;
 }
+.header__nav-list li a .menu-icon-white {
+  display: none;
+}
+.header__nav-list li a .menu-icon-black {
+  display: block;
+}
 @media (max-width: 991px) {
   .header__nav-list li a {
-    justify-content: center;
+    padding-left: 17px;
   }
 }
 .header__nav-list li a:hover {
   color: #0353a1;
 }
+.header__nav-list li a img {
+  z-index: 1;
+}
 .header__nav-list li a.active {
   color: #fff;
 }
-.header__nav-list li a.active svg {
-  fill: #fff;
+.header__nav-list li a.active .menu-icon-white {
+  display: block;
 }
-.header__nav-list li a.active svg path {
-  fill: #fff;
+.header__nav-list li a.active .menu-icon-black {
+  display: none;
 }
 .header__nav-list li a.active::after {
   content: "";
@@ -16209,9 +16261,17 @@ select.select-form {
   align-items: center;
 }
 
+.cabinet-item__photo {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 @media (max-width: 767px) {
   .cabinet-item__photo {
     width: 130px;
+    min-width: 130px;
+    height: 130px;
   }
 }
 
